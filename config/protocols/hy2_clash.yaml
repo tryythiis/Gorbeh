@@ -122,6 +122,14 @@ dns:
 proxies:
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
+    server: "62.210.124.146"
+    port: 22000
+    password: "dongtaiwang.com"
+    sni: "62.210.124.146"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
     server: "156.226.173.8"
     port: 8443
     password: "9c23940e-efd8-4763-bfb5-54739b50893d"
@@ -130,30 +138,26 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "181.214.99.162"
-    port: 35000
-    password: "b4bd0613-ff7c-4f2f-954d-185915e6ddad"
-    sni: "api.kermanshahi.org"
+    server: "130.61.50.75"
+    port: 6443
+    password: "zhangyang"
+    sni: "130.61.50.75"
     skip-cert-verify: true
     udp: true
-    obfs: "salamander"
-    obfs-password: "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "206.71.158.23"
-    port: 45000
-    password: "Telegram-->@Ln2Ray"
-    sni: "gavazn.55994421.xyz"
+    server: "144.31.224.14"
+    port: 443
+    password: "123456789StrongPass"
+    sni: "www.cloudflare.com"
     skip-cert-verify: true
     udp: true
-    obfs: "salamander"
-    obfs-password: "Telegram-->@Ln2Ray"
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "38.165.21.126"
-    port: 29794
-    password: "fGIvSUXOYn7WYPNAc2PmjYuIKbw"
-    sni: "bing.com"
+    server: "jp1.xn--mesx36n.com"
+    port: 23001
+    password: "1fe714a1-d35e-4fb4-b3c7-6037eeef2cfc"
+    sni: "jp1.xn--mesx36n.com"
     skip-cert-verify: true
     udp: true
 
@@ -178,6 +182,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   - name: "Auto"
     type: url-test
@@ -190,6 +195,7 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   - name: "Fallback"
     type: fallback
@@ -197,6 +203,7 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
