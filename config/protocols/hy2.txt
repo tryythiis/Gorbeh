@@ -1,5 +1,2 @@
-hy2://123456789StrongPass@144.31.224.14:443/?insecure=1&sni=www.cloudflare.com#@DeltaKroneckerGithub
-hy2://fGIvSUXOYn7WYPNAc2PmjYuIKbw@38.165.21.126:29794?sni=bing.com#@DeltaKroneckerGithub
 hy2://9c23940e-efd8-4763-bfb5-54739b50893d@156.226.173.8:8443/?insecure=1&sni=hy5.hy2yydsapi.top#@DeltaKroneckerGithub
-hy2://8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9@22f48047-t6pb40-tasftf-duku.hk1.hyhuawei.com:443?sni=22f48047-t6pb40-tasftf-duku.hk1.hyhuawei.com#@DeltaKroneckerGithub
-hy2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@181.214.99.162:35000/?insecure=1&sni=api.kermanshahi.org&obfs=salamander&obfs-password=@JavidnamanIran-Javid-SHAH-KingRezaPahlavi&note=@FreeOnlineVPN#@DeltaKroneckerGithub
+hy2://dongtaiwang.com@62.210.124.146:22000#@DeltaKroneckerGithub

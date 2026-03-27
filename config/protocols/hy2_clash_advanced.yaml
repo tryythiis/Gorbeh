@@ -61,22 +61,6 @@ dns:
 proxies:
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "144.31.224.14"
-    port: 443
-    password: "123456789StrongPass"
-    sni: "www.cloudflare.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "38.165.21.126"
-    port: 29794
-    password: "fGIvSUXOYn7WYPNAc2PmjYuIKbw"
-    sni: "bing.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
     server: "156.226.173.8"
     port: 8443
     password: "9c23940e-efd8-4763-bfb5-54739b50893d"
@@ -85,22 +69,12 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "22f48047-t6pb40-tasftf-duku.hk1.hyhuawei.com"
-    port: 443
-    password: "8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9"
-    sni: "22f48047-t6pb40-tasftf-duku.hk1.hyhuawei.com"
+    server: "62.210.124.146"
+    port: 22000
+    password: "dongtaiwang.com"
+    sni: "62.210.124.146"
     skip-cert-verify: true
     udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "181.214.99.162"
-    port: 35000
-    password: "b4bd0613-ff7c-4f2f-954d-185915e6ddad"
-    sni: "api.kermanshahi.org"
-    skip-cert-verify: true
-    udp: true
-    obfs: "salamander"
-    obfs-password: "@JavidnamanIran-Javid-SHAH-KingRezaPahlavi"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -145,9 +119,6 @@ proxy-groups:
     proxies:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
 
   - name: "LB-CDN"
     type: load-balance
@@ -157,9 +128,6 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
 
@@ -173,9 +141,6 @@ proxy-groups:
     proxies:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
 
   - name: "FAST-CDN"
     type: url-test
@@ -184,9 +149,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
 
@@ -200,17 +162,11 @@ proxy-groups:
     proxies:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
 
