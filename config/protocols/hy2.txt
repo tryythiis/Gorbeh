@@ -1,0 +1,2 @@
+hy2://6987a475-97a5-40ce-90fe-a59a21aa1c08@hjnd.0101.pw:8444?sni=hjnd.0101.pw#@DeltaKroneckerGithub
+hy2://48b36b6a-eaa6-4843-9231-0bb8b38b5da5@sg-hy2.onetaplink.app:443?obfs=salamander&obfs-password=OrT7yQQIMqcvKdet&sni=hy2-sg.onetaplink.app#@DeltaKroneckerGithub
