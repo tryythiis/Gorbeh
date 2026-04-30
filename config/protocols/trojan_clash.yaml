@@ -122,136 +122,15 @@ dns:
 proxies:
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "138.124.111.115"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
+    server: "svip-hg.xiaobaivpn.icu"
+    port: 28809
+    password: "dc17386d-4383-49f8-b11c-d9ea04ca2f7f"
+    sni: "svip-hg.xiaobaivpn.icu"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.18.12.149"
-    port: 443
-    password: "1710442808"
-    sni: "subb.nrshop198.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "subb.nrshop198.workers.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "162.159.36.5"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net%3A443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.21.26.36"
-    port: 443
-    password: "bpb-trojan"
-    sni: "vless.herogoing.top"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/tr?ed=2560"
-      headers:
-        Host: "vless.herogoing.top"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "185.220.238.77"
-    port: 11543
-    password: "HutaoCloud"
-    sni: "185.220.238.77"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/api"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "185.184.223.138"
-    port: 4196
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.21.75.193"
-    port: 443
-    password: "bpb-trojan"
-    sni: "mashdt.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/tr?ed=2560"
-      headers:
-        Host: "mashdt.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "43.161.221.27"
-    port: 443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.255"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.15"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.155.209"
+    server: "188.114.99.0"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -278,83 +157,12 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "v2.dabache.top"
-    port: 443
-    password: "87d1bfd4-574e-4c96-ad42-0426f27461ff"
-    sni: "_acme-challenge.sb.cloudns.biz"
+    server: "svip-us.xiaobaivpn.icu"
+    port: 28811
+    password: "e70415c6-d937-4e67-975a-ffa84f486fda"
+    sni: "svip-us.xiaobaivpn.icu"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "_acme-challenge.sb.cloudns.biz"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.67.180.92"
-    port: 443
-    password: "humanity"
-    sni: "www.multiplydose.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.multiplydose.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.152.23"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.131"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.20.6.134"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.223"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "172.67.174.196"
@@ -370,42 +178,7 @@ proxies:
         Host: "wing2452.nyc.mn"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "82.117.255.37"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "82.117.255.37"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "162.159.36.5"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "//assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.18.155.119"
-    port: 443
-    password: "988sR-269PKCKlb&3pMrFTEr"
-    sni: "LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
-      headers:
-        Host: "letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "chatgpt.com"
+    server: "172.64.147.143"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -416,6 +189,56 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "hl-freedom-2.undef.network"
+    port: 443
+    password: "mJVGfrOkZGnMywJD2uwmuXgOQ"
+    sni: "HL-FREEDOM-2.UNDEF.NETWORK"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/f2fc2a1f"
+      headers:
+        Host: "hl-freedom-2.undef.network"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "185.220.238.77"
+    port: 11543
+    password: "HutaoCloud"
+    sni: "185.220.238.77"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/api"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.20.6.134"
+    port: 443
+    password: "humanity"
+    sni: "www.multiplydose.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.multiplydose.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "ubu.okaoclax.me"
+    port: 443
+    password: "13c169be-8592-4eaa-94cb-69c859e7d987"
+    sni: "ubu.okaoclax.me"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trojan-ws"
+      headers:
+        Host: "ubu.okaoclax.me"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "172.64.146.161"
@@ -431,8 +254,30 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "198.13.37.176"
+    server: "45.149.114.75"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "45.149.114.75"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.17.185.207"
     port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net:443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "158.178.230.113"
+    port: 8443
     password: "162534"
     sni: "cchh2.pages.dev"
     skip-cert-verify: true
@@ -442,19 +287,6 @@ proxies:
       path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
       headers:
         Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.18.185.26"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "104.20.6.134"
@@ -470,94 +302,21 @@ proxies:
         Host: "Koma-YT.PAGeS.Dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "89.167.100.106"
+    server: "172.67.190.160"
     port: 443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "91.184.250.116"
-    port: 2083
-    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
-    sni: "xo.e0f.cx"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trojan-ws"
-      headers:
-        Host: "xo.e0f.cx"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.106"
-    port: 2096
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/tr"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.18.12.149"
-    port: 8443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "64.94.95.118"
-    port: 57142
-    password: "kkzh2prsyr2ik47as615"
-    sni: "64.94.95.118"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "109.234.211.66"
-    port: 8443
-    password: "trojan"
-    sni: "store.timimi.dpdns.org"
+    password: "freedom"
+    sni: "042.eLEctrocElLCo-cf-042-Fe0.wOrkERs.deV"
     skip-cert-verify: true
     udp: true
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/eyJqdW5rIjoiZ3JCVzl1T1ciLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
       headers:
-        Host: "store.timimi.dpdns.org"
+        Host: "042.electrocellco-cf-042-fe0.workers.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "108.160.133.80"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "jp.111000.cc.cd"
+    server: "162.159.152.2"
     port: 443
     password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     sni: "sni.111000.dynv6.net"
@@ -568,170 +327,6 @@ proxies:
       path: "/?proxyip=ip.111000.de5.net%3A443"
       headers:
         Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "saas.sin.fan"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net%3A443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.227"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "82.118.16.61"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "82.118.16.61"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "198.13.62.34"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.210"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "85.155.176.129"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "87.236.146.32"
-    port: 2083
-    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
-    sni: "xo.e0f.cx"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trojan-ws"
-      headers:
-        Host: "xo.e0f.cx"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "217.60.248.59"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "8.6.112.6"
-    port: 443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "140.238.43.40"
-    port: 24534
-    password: "e136d465-0558-43b9-b50c-b1f45d4cb2c2"
-    sni: "jp2-8sb.6121999.dpdns.org"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "45.12.146.179"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "45.12.146.179"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "142.91.108.54"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "103.231.73.181"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "103.231.73.181"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.154.211"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "172.64.147.205"
@@ -747,20 +342,49 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "134.209.103.4"
+    server: "svip-us.xiaobaivpn.icu"
+    port: 28811
+    password: "39edcbab-49dd-4326-9f77-305c2e45d45c"
+    sni: "svip-us.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.13.149"
     port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
+    password: "humanity"
+    sni: "www.ignitelimit.com"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      path: "/assignment"
       headers:
-        Host: "cchh2.pages.dev"
+        Host: "www.ignitelimit.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.146.102"
+    server: "vip3.kaixincloud.top"
+    port: 443
+    password: "bpb-trojan"
+    sni: "mashdt.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tr"
+      headers:
+        Host: "mashdt.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "65.20.102.54"
+    port: 443
+    password: "842b5f9dd11e458d8613c907c4cc5723"
+    sni: "www.gpt123.one"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.252"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -773,20 +397,7 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.146.129"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "206.189.157.20"
+    server: "161.33.197.118"
     port: 443
     password: "162534"
     sni: "cchh2.pages.dev"
@@ -799,7 +410,33 @@ proxies:
         Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.18.16.56"
+    server: "vless.herogoing.top"
+    port: 443
+    password: "bpb-trojan"
+    sni: "vless.herogoing.top"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tr?ed=2560"
+      headers:
+        Host: "vless.herogoing.top"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz"
+    port: 443
+    password: "87d1bfd4-574e-4c96-ad42-0426f27461ff"
+    sni: "_acme-challenge.sb.cloudns.biz"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "_acme-challenge.sb.cloudns.biz"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.16.80.73"
     port: 443
     password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     sni: "sni.111000.dynv6.net"
@@ -812,7 +449,59 @@ proxies:
         Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.21.72.233"
+    server: "43.165.190.11"
+    port: 42841
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "143.198.211.180"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "85.155.176.129"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "128.199.252.180"
+    port: 443
+    password: "13c169be-8592-4eaa-94cb-69c859e7d987"
+    sni: "ubu.okaoclax.me"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trojan-ws"
+      headers:
+        Host: "ubu.okaoclax.me"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.21.227.134"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -825,18 +514,97 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "usa.visa.com"
-    port: 443
-    password: "zWFjJENcljZm"
-    sni: "vahidqaz-7o61u7.vahidqaz.workers.dev"
+    server: "140.238.43.40"
+    port: 24534
+    password: "e136d465-0558-43b9-b50c-b1f45d4cb2c2"
+    sni: "jp2-8sb.6121999.dpdns.org"
     skip-cert-verify: true
     udp: true
-    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "78.159.131.12"
+    port: 28259
+    password: "MeaDiUmPlkWbZJ2BON8tz"
+    sni: "ads.x5.ru"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-hg.xiaobaivpn.icu"
+    port: 28809
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-hg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "www.gossipglove.com"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
     network: ws
     ws-opts:
-      path: "/?ed=2560"
+      path: "/assignment"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-tg.xiaobaivpn.icu"
+    port: 28804
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-tg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "46.250.230.93"
+    port: 8443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
       headers:
-        Host: "vahidqaz-7o61u7.vahidqaz.workers.dev"
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-us.xiaobaivpn.icu"
+    port: 28810
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-us.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-hg.xiaobaivpn.icu"
+    port: 28807
+    password: "99a2b3c7-c32e-402c-a052-83498bd0fc88"
+    sni: "svip-hg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "138.2.31.37"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-hg.xiaobaivpn.icu"
+    port: 28808
+    password: "39edcbab-49dd-4326-9f77-305c2e45d45c"
+    sni: "svip-hg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "172.64.150.28"
@@ -853,55 +621,7 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "ch-2.bexum.fun"
-    port: 443
-    password: "BmVb9TGoytYhaLnZhkrVCtx8khbQFTA_"
-    sni: "ch-2.bexum.fun"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "162.159.153.212"
-    port: 2087
-    password: "r137979f"
-    sni: "sheleqaz.emotionreza.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sheleqaz.emotionreza.workers.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "bestcf.030101.xyz"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net%3A443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.17.185.207"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.180"
+    server: "104.18.33.45"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -914,13 +634,25 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "2.56.172.83"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "2.56.172.83"
+    server: "svip-tg.xiaobaivpn.icu"
+    port: 28805
+    password: "39edcbab-49dd-4326-9f77-305c2e45d45c"
+    sni: "svip-tg.xiaobaivpn.icu"
     skip-cert-verify: true
     udp: true
-    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.12.149"
+    port: 443
+    password: "1710442808"
+    sni: "subb.nrshop198.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "subb.nrshop198.workers.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "172.64.147.29"
@@ -936,7 +668,32 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "v3.dabache.top"
+    server: "sni.111000.dynv6.net"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "68.183.227.216"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.211"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -949,34 +706,7 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.149.54"
-    port: 2096
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/tr"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "8.39.125.191"
-    port: 2083
-    password: "Nova-Proxy"
-    sni: "spring-queen-a95f.cewon19053.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "spring-queen-a95f.cewon19053.workers.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.2"
+    server: "172.64.147.137"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -989,33 +719,41 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "95.85.243.216"
-    port: 2083
-    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
-    sni: "xo.e0f.cx"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trojan-ws"
-      headers:
-        Host: "xo.e0f.cx"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "wing2452.nyc.mn"
+    server: "104.17.25.173"
     port: 443
-    password: "bpb-trojan"
-    sni: "wing2452.nyc.mn"
+    password: "humanity"
+    sni: "www.gossipglove.com"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/tr?ed=2560"
+      path: "/assignment"
       headers:
-        Host: "wing2452.nyc.mn"
+        Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "162.159.36.20"
+    server: "172.64.53.190"
+    port: 443
+    password: "823cbccd-3a71-4248-ac3c-3c460de1552d"
+    sni: "snll667.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "//"
+      headers:
+        Host: "snll667.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "45.12.146.179"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "45.12.146.179"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.16.56"
     port: 443
     password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     sni: "sni.111000.dynv6.net"
@@ -1023,28 +761,28 @@ proxies:
     udp: true
     network: ws
     ws-opts:
-      path: "/?proxyip=ip.111000.de5.net%3A443"
+      path: "/"
       headers:
         Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.146.143"
+    server: "161.33.190.243"
     port: 443
-    password: "87d1bfd4-574e-4c96-ad42-0426f27461ff"
-    sni: "_acme-challenge.sb.cloudns.biz"
+    password: "162534"
+    sni: "cchh2.pages.dev"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/"
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
       headers:
-        Host: "_acme-challenge.sb.cloudns.biz"
+        Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "13.38.179.226"
-    port: 22223
-    password: "telegram-id-directvpn"
-    sni: "trojan.burgerip.co.uk"
+    server: "svip-us.xiaobaivpn.icu"
+    port: 28812
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-us.xiaobaivpn.icu"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
@@ -1062,47 +800,7 @@ proxies:
         Host: "subb.nrshop198.workers.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "8.6.112.0"
-    port: 443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.146.198"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.18.37.228"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "159.223.60.207"
+    server: "46.8.226.108"
     port: 443
     password: "162534"
     sni: "cchh2.pages.dev"
@@ -1115,7 +813,20 @@ proxies:
         Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.147.85"
+    server: "cf.877774.xyz"
+    port: 443
+    password: "823cbccd-3a71-4248-ac3c-3c460de1552d"
+    sni: "snll667.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/%2F"
+      headers:
+        Host: "snll667.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.15"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -1128,17 +839,12 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "8.6.112.0"
-    port: 2096
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
+    server: "svip-hg.xiaobaivpn.icu"
+    port: 28808
+    password: "dc17386d-4383-49f8-b11c-d9ea04ca2f7f"
+    sni: "svip-hg.xiaobaivpn.icu"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/tr"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "172.64.146.37"
@@ -1154,7 +860,873 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.147.24"
+    server: "172.64.152.23"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "185.18.250.245"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.17.150.76"
+    port: 443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "162.159.36.5"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "//assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.29"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net%3A443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "152.42.192.218"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "31.57.172.187"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.227"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.165"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.21.59.101"
+    port: 443
+    password: "bpb-trojan"
+    sni: "wing2452.nyc.mn"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tr?ed=2560"
+      headers:
+        Host: "wing2452.nyc.mn"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.149.54"
+    port: 2096
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tr"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.156.119"
+    port: 443
+    password: "988sR-269PKCKlb&3pMrFTEr"
+    sni: "LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoicGpncHl4eVZoSnZQcFRTIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ=="
+      headers:
+        Host: "letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-sg.xiaobaivpn.icu"
+    port: 28813
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-sg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "23.227.38.178"
+    port: 443
+    password: "13d29042-ab82-4195-9cd4-2bafc518e201"
+    sni: "q6clkp794liy3y90.hktimecsgo.xyz"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/images"
+      headers:
+        Host: "q6clkp794liy3y90.hktimecsgo.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "www.multiplydose.com"
+    port: 443
+    password: "humanity"
+    sni: "www.multiplydose.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.multiplydose.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.255"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "129.212.234.156"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "5.223.85.30"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "95.85.243.216"
+    port: 2083
+    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
+    sni: "xo.e0f.cx"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trojan-ws"
+      headers:
+        Host: "xo.e0f.cx"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.143"
+    port: 443
+    password: "87d1bfd4-574e-4c96-ad42-0426f27461ff"
+    sni: "_acme-challenge.sb.cloudns.biz"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "_acme-challenge.sb.cloudns.biz"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.41.190"
+    port: 443
+    password: "823cbccd-3a71-4248-ac3c-3c460de1552d"
+    sni: "snll667.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/%2F"
+      headers:
+        Host: "snll667.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "185.184.223.138"
+    port: 4196
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "152.42.237.17"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "8.6.112.0"
+    port: 2096
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tr"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.66"
+    port: 443
+    password: "823cbccd-3a71-4248-ac3c-3c460de1552d"
+    sni: "snll667.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/%2F"
+      headers:
+        Host: "snll667.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "64.94.95.118"
+    port: 57142
+    password: "kkzh2prsyr2ik47as615"
+    sni: "64.94.95.118"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "162.159.153.2"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net%3A443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "192.142.4.232"
+    port: 2083
+    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
+    sni: "xo.e0f.cx"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trojan-ws"
+      headers:
+        Host: "xo.e0f.cx"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.119"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "139.180.143.248"
+    port: 8443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "bestcf.030101.xyz"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net%3A443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "hl-freedom-1.undef.network"
+    port: 443
+    password: "JaFKnqNcvnBT63t3rquidGsln"
+    sni: "HL-FREEDOM-1.UNDEF.NETWORK"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/f2fc2a1f"
+      headers:
+        Host: "hl-freedom-1.undef.network"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.152.23"
+    port: 2096
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tr"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "irancell.buzzmuzzpanel.online"
+    port: 443
+    password: "A4u^p(_UR*F6"
+    sni: "027.eLECTROcelLCO-cf-027.WorKerS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoidDJ0UDljR2ZIaVBQakg2byIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+      headers:
+        Host: "027.electrocellco-cf-027.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.198"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.21.26.36"
+    port: 443
+    password: "bpb-trojan"
+    sni: "vless.herogoing.top"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tr?ed=2560"
+      headers:
+        Host: "vless.herogoing.top"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "160.119.251.210"
+    port: 2083
+    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
+    sni: "xo.e0f.cx"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trojan-ws"
+      headers:
+        Host: "xo.e0f.cx"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "95.40.61.115"
+    port: 443
+    password: "823cbccd-3a71-4248-ac3c-3c460de1552d"
+    sni: "snll667.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "snll667.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "138.124.111.115"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "usa.visa.com"
+    port: 443
+    password: "zWFjJENcljZm"
+    sni: "vahidqaz-7o61u7.vahidqaz.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "vahidqaz-7o61u7.vahidqaz.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "64.176.42.143"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "194.59.5.253"
+    port: 443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "5.180.78.22"
+    port: 443
+    password: "af4b064a9c39472fb34ad8b113acdc6b"
+    sni: "5.180.78.22"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "bpbg.anguswen.top"
+    port: 8443
+    password: "123456"
+    sni: "BPbG.AnguSWEN.Top"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoiNDhOYUJ4WFhzc0EiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJicGIueW91c2VmLmlzZWdhcm8uY29tIl19"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-us.xiaobaivpn.icu"
+    port: 28812
+    password: "39edcbab-49dd-4326-9f77-305c2e45d45c"
+    sni: "svip-us.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "2.56.172.83"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "2.56.172.83"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-us.xiaobaivpn.icu"
+    port: 28810
+    password: "99a2b3c7-c32e-402c-a052-83498bd0fc88"
+    sni: "svip-us.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "162.159.17.189"
+    port: 443
+    password: "humanity"
+    sni: "www.multiplydose.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.multiplydose.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "wing2452.nyc.mn"
+    port: 443
+    password: "bpb-trojan"
+    sni: "wing2452.nyc.mn"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tr?ed=2560"
+      headers:
+        Host: "wing2452.nyc.mn"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "85.208.108.63"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "85.208.108.63"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.17.101.139"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net%3A443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.16.250.22"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "162.159.36.20"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net%3A443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "8.6.112.0"
+    port: 443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.2"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.12.149"
+    port: 8443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-sg.xiaobaivpn.icu"
+    port: 28814
+    password: "99a2b3c7-c32e-402c-a052-83498bd0fc88"
+    sni: "svip-sg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.102"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-sg.xiaobaivpn.icu"
+    port: 28813
+    password: "99a2b3c7-c32e-402c-a052-83498bd0fc88"
+    sni: "svip-sg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "77.91.78.72"
+    port: 443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "43.168.16.112"
+    port: 443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.85"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.185.26"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "158.101.132.216"
+    port: 8443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "188.114.96.3"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "185.18.250.252"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "193.123.233.168"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.21.72.233"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-us.xiaobaivpn.icu"
+    port: 28810
+    password: "e70415c6-d937-4e67-975a-ffa84f486fda"
+    sni: "svip-us.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "101.32.244.117"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.155.209"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -1169,6 +1741,392 @@ proxies:
     type: trojan
     server: "104.20.6.134"
     port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net:443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.17.223.49"
+    port: 443
+    password: "humanity"
+    sni: "www.creationlong.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.creationlong.org"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.43"
+    port: 443
+    password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0"
+    sni: "blackshadow.dpdns.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/195.123.218.174-443"
+      headers:
+        Host: "blackshadow.dpdns.org"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "167.172.68.31"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-hg.xiaobaivpn.icu"
+    port: 28807
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-hg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.12.149"
+    port: 443
+    password: "humanity"
+    sni: "www.multiplydose.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.multiplydose.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.24"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.27"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.210"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "109.234.211.66"
+    port: 8443
+    password: "trojan"
+    sni: "store.timimi.dpdns.org"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "store.timimi.dpdns.org"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.21.213"
+    port: 2096
+    password: "Nova-Proxy"
+    sni: "persianwarrior.benjipiaggio.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "persianwarrior.benjipiaggio.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "8.6.112.6"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net%3A443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "64.94.95.117"
+    port: 57142
+    password: "kkzh2prsyr2ik47as615"
+    sni: "static.rutube.ru"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "134.209.103.4"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "162.159.153.212"
+    port: 2087
+    password: "r137979f"
+    sni: "sheleqaz.emotionreza.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sheleqaz.emotionreza.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "86.107.100.13"
+    port: 2083
+    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
+    sni: "xo.e0f.cx"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trojan-ws"
+      headers:
+        Host: "xo.e0f.cx"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "63.179.8.52"
+    port: 22223
+    password: "telegram-id-directvpn"
+    sni: "trojan.burgerip.co.uk"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-hg.xiaobaivpn.icu"
+    port: 28808
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-hg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.131"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "94.131.101.19"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "94.131.101.19"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "45.82.245.37"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "45.82.245.37"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "207.65.189.9"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "217.60.248.59"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.66.44.230"
+    port: 8443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tro8sFW1S91B6sZrM1?ed=2560"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "45.15.140.128"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "45.15.140.128"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "149.129.91.58"
+    port: 23779
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.237"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.12.149"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "65.109.186.249"
+    port: 2053
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "v2.dabache.top"
+    port: 443
+    password: "87d1bfd4-574e-4c96-ad42-0426f27461ff"
+    sni: "_acme-challenge.sb.cloudns.biz"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "_acme-challenge.sb.cloudns.biz"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "spring-tooth-7fa3.ahmadrj.workers.dev"
+    port: 443
+    password: "Nova-Proxy"
+    sni: "spring-tooth-7fa3.ahmadrj.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "random"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.154.211"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.16.56"
+    port: 2096
     password: "8r<[9'l6hAO#8ZQi"
     sni: "Koma-YT.PAGeS.Dev"
     skip-cert-verify: true
@@ -1180,7 +2138,200 @@ proxies:
         Host: "Koma-YT.PAGeS.Dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.16.250.22"
+    server: "saas.sin.fan"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net%3A443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.67.155.172"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.199"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-sg.xiaobaivpn.icu"
+    port: 28814
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-sg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.149.54"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.66.47.45"
+    port: 443
+    password: "humanity"
+    sni: "www.creationlong.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.creationlong.org"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "159.65.12.42"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "v3.dabache.top"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-jp.xiaobaivpn.icu"
+    port: 28803
+    password: "39edcbab-49dd-4326-9f77-305c2e45d45c"
+    sni: "svip-jp.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.21.224.5"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "vip2.kaixincloud.top"
+    port: 443
+    password: "87d1bfd4-574e-4c96-ad42-0426f27461ff"
+    sni: "_acme-challenge.sb.cloudns.biz"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "_acme-challenge.sb.cloudns.biz"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "Koma-YT.PAGeS.Dev"
+    port: 2096
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/tr"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "64.94.95.115"
+    port: 57142
+    password: "kkzh2prsyr2ik47as615"
+    sni: "static.rutube.ru"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "185.121.134.40"
+    port: 8443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/@anonymouskeys"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.116"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.175"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.21.40.34"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -1207,285 +2358,7 @@ proxies:
         Host: "vahidqaz-7o61u7.vahidqaz.workers.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "vip3.kaixincloud.top"
-    port: 443
-    password: "bpb-trojan"
-    sni: "mashdt.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/tr"
-      headers:
-        Host: "mashdt.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "hl-freedom-1.undef.network"
-    port: 443
-    password: "JaFKnqNcvnBT63t3rquidGsln"
-    sni: "HL-FREEDOM-1.UNDEF.NETWORK"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/f2fc2a1f"
-      headers:
-        Host: "hl-freedom-1.undef.network"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.175"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.18.12.149"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "spring-tooth-7fa3.ahmadrj.workers.dev"
-    port: 443
-    password: "Nova-Proxy"
-    sni: "spring-tooth-7fa3.ahmadrj.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "45.15.140.128"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "45.15.140.128"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "38.55.125.175"
-    port: 39792
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.143"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.79"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "185.18.250.252"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.67.190.160"
-    port: 443
-    password: "freedom"
-    sni: "042.eLEctrocElLCo-cf-042-Fe0.wOrkERs.deV"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoiZ3JCVzl1T1ciLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
-      headers:
-        Host: "042.electrocellco-cf-042-fe0.workers.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.67.135.88"
-    port: 443
-    password: "bpb-trojan"
-    sni: "vless.herogoing.top"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/tr?ed=2560"
-      headers:
-        Host: "vless.herogoing.top"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "129.212.234.156"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "139.180.143.248"
-    port: 8443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "v1.dabache.top"
-    port: 443
-    password: "humanity"
-    sni: "www.multiplydose.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.multiplydose.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.227"
-    port: 443
-    password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0"
-    sni: "blackshadow.dpdns.org"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/195.123.218.174-443"
-      headers:
-        Host: "blackshadow.dpdns.org"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "www.calmlunch.com"
-    port: 443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.146.43"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "193.123.233.168"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "45.15.171.80"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "45.15.171.80"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "217.60.248.94"
-    port: 8443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "101.32.244.117"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.16.147.104"
+    server: "208.103.161.110"
     port: 443
     password: "humanity"
     sni: "www.creationlong.org"
@@ -1498,42 +2371,20 @@ proxies:
         Host: "www.creationlong.org"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "russia.com"
+    server: "142.91.108.54"
     port: 443
-    password: "bpb-trojan"
-    sni: "bpb.wdgg1979.nyc.mn"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "randomized"
-    network: ws
-    ws-opts:
-      path: "/tr?ed=2560"
-      headers:
-        Host: "bpb.wdgg1979.nyc.mn"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "64.94.95.114"
-    port: 57142
-    password: "kkzh2prsyr2ik47as615"
-    sni: "static.rutube.ru"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.16.80.73"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
+    password: "162534"
+    sni: "cchh2.pages.dev"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/"
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
       headers:
-        Host: "sni.111000.dynv6.net"
+        Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "140.245.107.0"
+    server: "5.223.56.239"
     port: 8443
     password: "162534"
     sni: "cchh2.pages.dev"
@@ -1546,104 +2397,36 @@ proxies:
         Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "152.42.237.62"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "216.105.168.115"
-    port: 59125
-    password: "harz989mzcktd92m1vlf"
-    sni: "216.105.168.115"
+    server: "svip-tg.xiaobaivpn.icu"
+    port: 28805
+    password: "dc17386d-4383-49f8-b11c-d9ea04ca2f7f"
+    sni: "svip-tg.xiaobaivpn.icu"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "38.147.163.152"
-    port: 25258
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
+    server: "svip-hg.xiaobaivpn.icu"
+    port: 28809
+    password: "e70415c6-d937-4e67-975a-ffa84f486fda"
+    sni: "svip-hg.xiaobaivpn.icu"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "www.ignitelimit.com"
+    server: "104.18.16.56"
     port: 443
     password: "humanity"
-    sni: "www.ignitelimit.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "114.33.57.170"
-    port: 443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.21.59.101"
-    port: 443
-    password: "bpb-trojan"
-    sni: "wing2452.nyc.mn"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/tr?ed=2560"
-      headers:
-        Host: "wing2452.nyc.mn"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "hl-freedom-1.undef.network"
-    port: 443
-    password: "GZOof2R1ej4yML1NxajR2frGQ"
-    sni: "HL-FREEDOM-1.UNDEF.NETWORK"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/f2fc2a1f"
-      headers:
-        Host: "hl-freedom-1.undef.network"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.18.13.149"
-    port: 443
-    password: "humanity"
-    sni: "www.ignitelimit.com"
+    sni: "www.creationlong.org"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
       path: "/assignment"
       headers:
-        Host: "www.ignitelimit.com"
+        Host: "www.creationlong.org"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "5.223.85.30"
+    server: "159.65.133.248"
     port: 443
     password: "162534"
     sni: "cchh2.pages.dev"
@@ -1656,85 +2439,13 @@ proxies:
         Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "109.234.211.66"
-    port: 2087
-    password: "trojan"
-    sni: "store.timimi.dpdns.org"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)"
-      headers:
-        Host: "store.timimi.dpdns.org"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "34.143.159.175"
-    port: 443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "160.119.251.210"
-    port: 2083
-    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
-    sni: "xo.e0f.cx"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trojan-ws"
-      headers:
-        Host: "xo.e0f.cx"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "kz-1.bexum.fun"
-    port: 5443
-    password: "BmVb9TGoytYhaLnZhkrVCtx8khbQFTA_"
-    sni: "kz-1.bexum.fun"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "vip2.kaixincloud.top"
-    port: 443
-    password: "87d1bfd4-574e-4c96-ad42-0426f27461ff"
-    sni: "_acme-challenge.sb.cloudns.biz"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "_acme-challenge.sb.cloudns.biz"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "161.33.197.118"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.66.47.45"
+    server: "172.67.180.92"
     port: 443
     password: "humanity"
     sni: "www.multiplydose.com"
     skip-cert-verify: true
     udp: true
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/assignment"
@@ -1742,59 +2453,7 @@ proxies:
         Host: "www.multiplydose.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.146.237"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "139.59.127.117"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.252"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.146.66"
-    port: 443
-    password: "823cbccd-3a71-4248-ac3c-3c460de1552d"
-    sni: "snll667.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/%2F"
-      headers:
-        Host: "snll667.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "185.18.250.245"
+    server: "162.159.36.20"
     port: 443
     password: "humanity"
     sni: "www.calmlunch.com"
@@ -1807,72 +2466,42 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.18.33.45"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
+    server: "45.12.134.57"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "45.12.134.57"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "43.165.190.11"
-    port: 42841
-    password: "162534"
-    sni: "cchh2.pages.dev"
+    server: "51.75.86.196"
+    port: 55646
+    password: "03mpolj39zyewzufal2r"
+    sni: "51.75.86.196"
     skip-cert-verify: true
     udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "8.39.125.191"
+    port: 2083
+    password: "Nova-Proxy"
+    sni: "spring-queen-a95f.cewon19053.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "random"
     network: ws
     ws-opts:
       path: "/?ed=2560"
       headers:
-        Host: "cchh2.pages.dev"
+        Host: "spring-queen-a95f.cewon19053.workers.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "freeyx.cloudflare88.eu.org"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
+    server: "64.94.95.114"
+    port: 57142
+    password: "kkzh2prsyr2ik47as615"
+    sni: "static.rutube.ru"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&proxyip=ip.111000.de5.net:443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "149.248.39.92"
-    port: 443
-    password: "d30ab83dbde4480082048fb315bedebd"
-    sni: "149.248.39.92"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "jp2-8sb.6121999.dpdns.org"
-    port: 24534
-    password: "e136d465-0558-43b9-b50c-b1f45d4cb2c2"
-    sni: "jp2-8sb.6121999.dpdns.org"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "170.168.102.234"
-    port: 2083
-    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
-    sni: "xo.e0f.cx"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trojan-ws"
-      headers:
-        Host: "xo.e0f.cx"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "104.18.3.150"
@@ -1889,7 +2518,7 @@ proxies:
         Host: "vahidqaz-7o61u7.vahidqaz.workers.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.67.155.172"
+    server: "172.64.147.180"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -1902,168 +2531,13 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "94.131.101.19"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "94.131.101.19"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "8.6.112.6"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net%3A443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.29"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net%3A443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.165"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "162.159.152.2"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net%3A443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "bpbg.anguswen.top"
-    port: 8443
-    password: "123456"
-    sni: "BPbG.AnguSWEN.Top"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoiNDhOYUJ4WFhzc0EiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJicGIueW91c2VmLmlzZWdhcm8uY29tIl19"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.18.12.149"
-    port: 443
-    password: "humanity"
-    sni: "www.multiplydose.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.multiplydose.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "ubu.okaoclax.me"
-    port: 443
-    password: "13c169be-8592-4eaa-94cb-69c859e7d987"
-    sni: "ubu.okaoclax.me"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trojan-ws"
-      headers:
-        Host: "ubu.okaoclax.me"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "116.206.178.228"
-    port: 28551
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "64.176.42.143"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "45.120.179.89"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "45.120.179.89"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.21.224.5"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "45.149.114.75"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "45.149.114.75"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "188.114.98.0"
+    server: "104.18.37.228"
     port: 443
     password: "humanity"
     sni: "www.calmlunch.com"
     skip-cert-verify: true
     udp: true
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/assignment"
@@ -2071,304 +2545,7 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "www.gossipglove.com"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.149.54"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.146.43"
-    port: 443
-    password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0"
-    sni: "blackshadow.dpdns.org"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/195.123.218.174-443"
-      headers:
-        Host: "blackshadow.dpdns.org"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.146.116"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.146.211"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "208.103.161.110"
-    port: 443
-    password: "humanity"
-    sni: "www.creationlong.org"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.creationlong.org"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "cf.877774.xyz"
-    port: 443
-    password: "823cbccd-3a71-4248-ac3c-3c460de1552d"
-    sni: "snll667.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/%2F"
-      headers:
-        Host: "snll667.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.19.229.21"
-    port: 443
-    password: "humanity"
-    sni: "www.creationlong.org"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.creationlong.org"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.146.129"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net%3A443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "62.60.253.89"
-    port: 443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.17.101.139"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "Koma-YT.PAGeS.Dev"
-    port: 2096
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/tr"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.147.183"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "51.75.86.196"
-    port: 55646
-    password: "03mpolj39zyewzufal2r"
-    sni: "51.75.86.196"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "149.104.25.35"
-    port: 15124
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "85.208.108.63"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "85.208.108.63"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.146.153"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "sourceforge.net"
-    port: 443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "143.198.211.180"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "hl-freedom-2.undef.network"
-    port: 443
-    password: "mJVGfrOkZGnMywJD2uwmuXgOQ"
-    sni: "HL-FREEDOM-2.UNDEF.NETWORK"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/f2fc2a1f"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "149.129.91.58"
-    port: 23779
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "192.142.4.232"
-    port: 2083
-    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
-    sni: "xo.e0f.cx"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trojan-ws"
-      headers:
-        Host: "xo.e0f.cx"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.17.25.173"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "64.94.95.115"
-    port: 57142
-    password: "kkzh2prsyr2ik47as615"
-    sni: "static.rutube.ru"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "159.65.133.248"
+    server: "108.160.133.80"
     port: 443
     password: "162534"
     sni: "cchh2.pages.dev"
@@ -2394,39 +2571,28 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.20.6.134"
-    port: 443
-    password: "humanity"
-    sni: "www.multiplydose.com"
+    server: "216.105.168.115"
+    port: 59125
+    password: "harz989mzcktd92m1vlf"
+    sni: "216.105.168.115"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.multiplydose.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "68.183.227.216"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
+    server: "svip-tg.xiaobaivpn.icu"
+    port: 28805
+    password: "e70415c6-d937-4e67-975a-ffa84f486fda"
+    sni: "svip-tg.xiaobaivpn.icu"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "188.114.96.3"
+    server: "172.64.147.183"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
     skip-cert-verify: true
     udp: true
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/assignment"
@@ -2434,34 +2600,7 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.18.41.190"
-    port: 443
-    password: "823cbccd-3a71-4248-ac3c-3c460de1552d"
-    sni: "snll667.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/%2F"
-      headers:
-        Host: "snll667.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "141.147.174.243"
-    port: 443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "162.159.36.20"
+    server: "www.calmlunch.com"
     port: 443
     password: "humanity"
     sni: "www.calmlunch.com"
@@ -2474,107 +2613,43 @@ proxies:
         Host: "www.calmlunch.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "207.65.189.9"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "sni.111000.dynv6.net"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "152.42.192.218"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "23.227.38.178"
-    port: 443
-    password: "13d29042-ab82-4195-9cd4-2bafc518e201"
-    sni: "q6clkp794liy3y90.hktimecsgo.xyz"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/images"
-      headers:
-        Host: "q6clkp794liy3y90.hktimecsgo.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "158.178.230.113"
-    port: 8443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "167.172.68.31"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "162.159.153.2"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net%3A443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.21.40.34"
+    server: "8.6.112.6"
     port: 443
     password: "humanity"
-    sni: "www.gossipglove.com"
+    sni: "www.creationlong.org"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
       path: "/assignment"
       headers:
-        Host: "www.gossipglove.com"
+        Host: "www.creationlong.org"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.19.229.21"
+    port: 443
+    password: "humanity"
+    sni: "www.creationlong.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.creationlong.org"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "cloudflare-ip.mofashi.ltd"
+    port: 443
+    password: "2399fe0a-b359-40a9-a3f0-b70c3c177a01"
+    sni: "aa.beijng.dpdns.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "aa.beijng.dpdns.org"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "amanm.wsone.icu"
@@ -2583,158 +2658,6 @@ proxies:
     sni: "amanm.wsone.icu"
     skip-cert-verify: true
     udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.18.16.56"
-    port: 2096
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/tr"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "161.33.190.243"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.21.227.134"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "13.38.179.226"
-    port: 22222
-    password: "telegram-id-privatevpns"
-    sni: "trojan.burgerip.co.uk"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.146.1"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.17.150.76"
-    port: 443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "www.multiplydose.com"
-    port: 443
-    password: "humanity"
-    sni: "www.multiplydose.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.multiplydose.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.18.21.213"
-    port: 2096
-    password: "Nova-Proxy"
-    sni: "persianwarrior.benjipiaggio.workers.dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "random"
-    network: ws
-    ws-opts:
-      path: "/?ed=2560"
-      headers:
-        Host: "persianwarrior.benjipiaggio.workers.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz"
-    port: 443
-    password: "87d1bfd4-574e-4c96-ad42-0426f27461ff"
-    sni: "_acme-challenge.sb.cloudns.biz"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "_acme-challenge.sb.cloudns.biz"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.152.23"
-    port: 443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "5.223.56.239"
-    port: 8443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "46.8.226.108"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "172.64.147.166"
@@ -2750,20 +2673,47 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.18.16.56"
-    port: 443
-    password: "humanity"
-    sni: "www.creationlong.org"
+    server: "149.33.19.105"
+    port: 2083
+    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
+    sni: "xo.e0f.cx"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/assignment"
+      path: "/trojan-ws"
       headers:
-        Host: "www.creationlong.org"
+        Host: "xo.e0f.cx"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.147.119"
+    server: "91.184.250.116"
+    port: 2083
+    password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
+    sni: "xo.e0f.cx"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trojan-ws"
+      headers:
+        Host: "xo.e0f.cx"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.129"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net:443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.223"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -2776,15 +2726,7 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "64.94.95.117"
-    port: 57142
-    password: "kkzh2prsyr2ik47as615"
-    sni: "static.rutube.ru"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.146.27"
+    server: "chatgpt.com"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -2797,59 +2739,30 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "217.60.38.249"
-    port: 8443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "45.12.134.57"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "45.12.134.57"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "138.2.31.37"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "45.82.245.37"
-    port: 4443
-    password: "strong-secret-pass-777"
-    sni: "45.82.245.37"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "www.creationlong.org"
+    server: "172.64.146.1"
     port: 443
     password: "humanity"
-    sni: "www.creationlong.org"
+    sni: "www.gossipglove.com"
     skip-cert-verify: true
     udp: true
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.227"
+    port: 443
+    password: "ff1dbbc9-ddf2-4d6c-a315-61ecd4223bc0"
+    sni: "blackshadow.dpdns.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/195.123.218.174-443"
+      headers:
+        Host: "blackshadow.dpdns.org"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "v1.dabache.top"
@@ -2865,46 +2778,7 @@ proxies:
         Host: "mashdt.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "128.199.252.180"
-    port: 443
-    password: "13c169be-8592-4eaa-94cb-69c859e7d987"
-    sni: "ubu.okaoclax.me"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trojan-ws"
-      headers:
-        Host: "ubu.okaoclax.me"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "104.17.223.49"
-    port: 443
-    password: "humanity"
-    sni: "www.creationlong.org"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.creationlong.org"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "159.65.12.42"
-    port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "162.159.17.189"
+    server: "172.66.44.211"
     port: 443
     password: "humanity"
     sni: "www.multiplydose.com"
@@ -2917,7 +2791,357 @@ proxies:
         Host: "www.multiplydose.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "104.18.156.119"
+    server: "v1.dabache.top"
+    port: 443
+    password: "humanity"
+    sni: "www.multiplydose.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.multiplydose.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "139.59.127.117"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-hg.xiaobaivpn.icu"
+    port: 28807
+    password: "39edcbab-49dd-4326-9f77-305c2e45d45c"
+    sni: "svip-hg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "82.118.16.61"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "82.118.16.61"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.79"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "45.120.179.89"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "45.120.179.89"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-jp.xiaobaivpn.icu"
+    port: 28801
+    password: "39edcbab-49dd-4326-9f77-305c2e45d45c"
+    sni: "svip-jp.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-tg.xiaobaivpn.icu"
+    port: 28805
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-tg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "159.223.60.207"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-tg.xiaobaivpn.icu"
+    port: 28806
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-tg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "217.60.248.94"
+    port: 8443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-sg.xiaobaivpn.icu"
+    port: 28814
+    password: "39edcbab-49dd-4326-9f77-305c2e45d45c"
+    sni: "svip-sg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "sourceforge.net"
+    port: 443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "dggg.wsone.icu"
+    port: 443
+    password: "M7v%w11Se*"
+    sni: "dggg.wsone.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.153"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "206.189.157.20"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-us.xiaobaivpn.icu"
+    port: 28810
+    password: "39edcbab-49dd-4326-9f77-305c2e45d45c"
+    sni: "svip-us.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-jp.xiaobaivpn.icu"
+    port: 28802
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-jp.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "162.159.36.5"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net%3A443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-jp.xiaobaivpn.icu"
+    port: 28803
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-jp.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "jp2-8sb.6121999.dpdns.org"
+    port: 24534
+    password: "e136d465-0558-43b9-b50c-b1f45d4cb2c2"
+    sni: "jp2-8sb.6121999.dpdns.org"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "198.13.37.176"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.9.83"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "103.231.73.181"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "103.231.73.181"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "188.114.98.0"
+    port: 443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.152.23"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.147.133"
+    port: 443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "63.179.8.52"
+    port: 22222
+    password: "telegram-id-privatevpns"
+    sni: "trojan.burgerip.co.uk"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-jp.xiaobaivpn.icu"
+    port: 28803
+    password: "99a2b3c7-c32e-402c-a052-83498bd0fc88"
+    sni: "svip-jp.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-jp.xiaobaivpn.icu"
+    port: 28801
+    password: "2d544f19-ff61-4e36-93f8-9950962179a5"
+    sni: "svip-jp.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "152.42.237.62"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "198.13.62.34"
+    port: 443
+    password: "162534"
+    sni: "cchh2.pages.dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "www.creationlong.org"
+    port: 443
+    password: "humanity"
+    sni: "www.creationlong.org"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "104.18.155.119"
     port: 443
     password: "988sR-269PKCKlb&3pMrFTEr"
     sni: "LetiRanbrEaTh-7RrkEvFu2HJBIs5UHCXWztz24T5Vp6trF1oka8Dkrw0n.HE3fmQ6z0mfSZSK3Xy2E.wOrkers.deV"
@@ -2931,59 +3155,7 @@ proxies:
         Host: "letiranbreath-7rrkevfu2hjbis5uhcxwztz24t5vp6trf1oka8dkrw0n.he3fmq6z0mfszsk3xy2e.workers.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.66.44.211"
-    port: 443
-    password: "humanity"
-    sni: "www.creationlong.org"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.creationlong.org"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "172.64.53.190"
-    port: 443
-    password: "823cbccd-3a71-4248-ac3c-3c460de1552d"
-    sni: "snll667.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "//"
-      headers:
-        Host: "snll667.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "95.40.61.115"
-    port: 443
-    password: "823cbccd-3a71-4248-ac3c-3c460de1552d"
-    sni: "snll667.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "snll667.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "irancell.buzzmuzzpanel.online"
-    port: 443
-    password: "A4u^p(_UR*F6"
-    sni: "027.eLECTROcelLCO-cf-027.WorKerS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoidDJ0UDljR2ZIaVBQakg2byIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
-      headers:
-        Host: "027.electrocellco-cf-027.workers.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "149.33.19.105"
+    server: "170.168.102.234"
     port: 2083
     password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
     sni: "xo.e0f.cx"
@@ -2996,7 +3168,7 @@ proxies:
         Host: "xo.e0f.cx"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "86.107.100.13"
+    server: "87.236.146.32"
     port: 2083
     password: "q2jXRWncMA7pQren_VjQKhSQfoBWK_"
     sni: "xo.e0f.cx"
@@ -3009,7 +3181,36 @@ proxies:
         Host: "xo.e0f.cx"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.147.137"
+    server: "svip-sg.xiaobaivpn.icu"
+    port: 28815
+    password: "e70415c6-d937-4e67-975a-ffa84f486fda"
+    sni: "svip-sg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "109.234.211.66"
+    port: 2087
+    password: "trojan"
+    sni: "store.timimi.dpdns.org"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)"
+      headers:
+        Host: "store.timimi.dpdns.org"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "svip-tg.xiaobaivpn.icu"
+    port: 28805
+    password: "99a2b3c7-c32e-402c-a052-83498bd0fc88"
+    sni: "svip-tg.xiaobaivpn.icu"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.129"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -3022,20 +3223,28 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "188.114.99.0"
-    port: 443
-    password: "humanity"
-    sni: "www.gossipglove.com"
+    server: "82.117.255.37"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "82.117.255.37"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "140.245.107.0"
+    port: 8443
+    password: "162534"
+    sni: "cchh2.pages.dev"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/assignment"
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
       headers:
-        Host: "www.gossipglove.com"
+        Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "vless.herogoing.top"
+    server: "172.67.135.88"
     port: 443
     password: "bpb-trojan"
     sni: "vless.herogoing.top"
@@ -3048,54 +3257,33 @@ proxies:
         Host: "vless.herogoing.top"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "46.250.230.93"
-    port: 8443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "78.159.131.12"
-    port: 28259
-    password: "MeaDiUmPlkWbZJ2BON8tz"
-    sni: "ads.x5.ru"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "158.101.132.216"
-    port: 8443
-    password: "162534"
-    sni: "cchh2.pages.dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "31.57.172.187"
+    server: "freeyx.cloudflare88.eu.org"
     port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      path: "/?ed=2560&proxyip=ip.111000.de5.net:443"
       headers:
-        Host: "cchh2.pages.dev"
+        Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "172.64.146.199"
+    server: "jp.111000.cc.cd"
+    port: 443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net%3A443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "172.64.146.43"
     port: 443
     password: "humanity"
     sni: "www.gossipglove.com"
@@ -3108,30 +3296,24 @@ proxies:
         Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "43.154.4.49"
-    port: 443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
+    server: "45.15.171.80"
+    port: 4443
+    password: "strong-secret-pass-777"
+    sni: "45.15.171.80"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub"
     type: trojan
-    server: "152.42.237.17"
+    server: "www.ignitelimit.com"
     port: 443
-    password: "162534"
-    sni: "cchh2.pages.dev"
+    password: "humanity"
+    sni: "www.ignitelimit.com"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
-      headers:
-        Host: "cchh2.pages.dev"
+      path: "/assignment"
 
 proxy-groups:
   - name: "PROXY"
@@ -3150,6 +3332,34 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
@@ -3640,6 +3850,34 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   - name: "Fallback"
     type: fallback
@@ -3647,6 +3885,34 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"

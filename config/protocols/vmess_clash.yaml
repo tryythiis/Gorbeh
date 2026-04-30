@@ -122,58 +122,17 @@ dns:
 proxies:
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "hk.aicvideo.info"
-    port: 8810
-    uuid: "c7075b83-2d8f-4b76-b6fd-cc829ae6d75a"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "www.bing.com"
-    network: ws
-    ws-opts:
-      path: "/dgs"
-      headers:
-        Host: "www.bing.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "134.195.198.147"
+    server: "140.238.2.250"
     port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vkvd127.mycdn.me"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "vk.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "169.197.142.22"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    uuid: "41a7089a-040b-4538-8b8d-010902405bde"
     alterId: 0
     cipher: "auto"
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "82.198.246.250"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "m.cnmjin.net"
-    port: 16648
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
+    server: "planb.mojcn.com"
+    port: 16641
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
     alterId: 0
     cipher: "auto"
     udp: true
@@ -181,7 +140,45 @@ proxies:
     ws-opts:
       path: "/"
       headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.11.178"
+    port: 80
+    uuid: "b3cdfe2d-5eac-4b0d-a8eb-d3f6a647e13f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: h2
+    h2-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.238.82.7"
+    port: 443
+    uuid: "37b20639-0d6e-46f2-9db5-472201b10cdd"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "47.238.82.7"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "n1753356378.4u9ma.icu"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.90.106.24"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "🔒 [By EbraSha]"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "www.shopify.com"
@@ -197,36 +194,65 @@ proxies:
         Host: "de.gfw.hidns.co"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "us1-ss.flyparts.cn"
-    port: 10022
-    uuid: "a9afe91f-c9c0-4cbc-908a-e623892dfeaf"
+    server: "104.168.1.102"
+    port: 8222
+    uuid: "254d4bbf-e3b8-4855-ae5c-b36854de47f6"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "us1-ss.flyparts.cn"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "140.238.2.250"
-    port: 443
-    uuid: "41a7089a-040b-4538-8b8d-010902405bde"
+    server: "45.89.52.207"
+    port: 39651
+    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
     alterId: 0
     cipher: "auto"
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "47.243.135.74"
-    port: 55185
-    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
+    server: "104.168.1.102"
+    port: 8222
+    uuid: "4b64bbe9-347d-4cbe-83e6-0c925a9583d8"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
-      path: "/Notif_Chat"
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.90.106.24"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "38.107.234.57"
+    port: 80
+    uuid: "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "66.163.117.58"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "45.92.70.236"
@@ -235,6 +261,19 @@ proxies:
     alterId: 0
     cipher: "auto"
     udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "m.cnmjin.net"
+    port: 16641
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "47.90.244.153"
@@ -248,215 +287,48 @@ proxies:
       path: "/ws"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "m.cnmjin.net"
-    port: 16632
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "152.67.218.38"
-    port: 443
-    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "152.67.8.205"
+    server: "pq-hungary1.09vpn.com"
     port: 80
-    uuid: "9db4c708-aef8-4359-821b-38e47990be0d"
+    uuid: "703f722a-4bdf-4e9d-9afd-a681fdf87c74"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
-      path: "/"
-      headers:
-        Host: "152.67.8.205"
+      path: "/vmess/"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "23.162.200.227"
+    server: "172.111.146.64"
+    port: 80
+    uuid: "05b8c783-7f59-47f9-9923-06a465679f6a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "172.111.146.64"
+    port: 80
+    uuid: "05b8c783-7f59-47f9-9923-06a465679f6a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "94.131.108.36"
     port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nelly.homes"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "nelly.homes"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.92.70.236"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16644
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
+    uuid: "9855f1f0-a800-40d4-8b38-c7d3eb79302d"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
       path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "t.cnmjcn.cyou"
-    port: 16632
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "165.140.216.141"
-    port: 443
-    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.89.52.207"
-    port: 39651
-    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.89.52.207"
-    port: 39651
-    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "23.162.200.227"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vkvd127.mycdn.me"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "vk.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.90.106.24"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "🔒 [By EbraSha]"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "141.95.65.9"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "supervpn.super.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "sanjose01.zgjok.com"
-    port: 443
-    uuid: "96d21cfe-b264-4bf3-8349-fb076d40837e"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sanjose01.zgjok.com"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sanjose01.zgjok.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "n1761296878.4u9ma.icu"
-    port: 443
-    uuid: "78f61544-3393-4e6b-9c77-5deaa0c7471d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "n1761296878.4u9ma.icu"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "m.cnmjin.net"
-    port: 16645
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "n1753101277.4u9ma.icu"
@@ -475,23 +347,151 @@ proxies:
         Host: "n1753101277.4u9ma.icu"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "23.226.135.232"
-    port: 55310
-    uuid: "22066968-ef90-455e-b981-4bf782d25386"
+    server: "38.110.1.246"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
     alterId: 0
     cipher: "auto"
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "47.90.244.153"
-    port: 8443
-    uuid: "65e2a985-ad20-4486-a7ec-b67b20ee56af"
+    server: "169.197.142.22"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "planb.mojcn.com"
+    port: 16616
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
-      path: "/ws"
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "23.162.200.227"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "chatgpt.com"
+    port: 8443
+    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
+    alterId: 0
+    cipher: "none"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v2ray1.dozapp.xyz"
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: "v2ray1.dozapp.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "planb.mojcn.com"
+    port: 16645
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "85.90.217.42"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "103.127.243.55"
+    port: 58051
+    uuid: "8e5b521a-4a56-4bd7-baf1-bfcdf55d6cf1"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: h2
+    h2-opts:
+      path: "/ABCDE"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.89.52.207"
+    port: 39651
+    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.214"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.89.52.207"
+    port: 39651
+    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "158.51.121.63"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "seribus.org"
+    network: ws
+    ws-opts:
+      path: "linkvws"
+      headers:
+        Host: "seribus.org"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "n1761296889.4u9ma.icu"
+    port: 443
+    uuid: "5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "n1761296889.4u9ma.icu"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "n1761296889.4u9ma.icu"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "47.244.120.197"
@@ -505,9 +505,404 @@ proxies:
       path: "/arki"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "t.cnmjcn.cyou"
-    port: 16618
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
+    server: "v10.hdacd.com"
+    port: 30807
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "n1753348736.lie5d.cyou"
+    port: 443
+    uuid: "f267eac3-dfb4-45be-a480-7e1847ca04ab"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "n1753348736.lie5d.cyou"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "n1753348736.lie5d.cyou"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "140.83.51.161"
+    port: 25686
+    uuid: "6733c357-ba11-4e9f-f00f-7d87f2776ff9"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/cctv13.m3u8"
+      headers:
+        Host: "jp02.a0a.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.79.236.9"
+    port: 47034
+    uuid: "6f2879e2-7595-4fc2-ca7e-3c163dbe0d4b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "153.121.73.175"
+    port: 49803
+    uuid: "cd3dacbc-2b7b-4718-83ad-ab870f87e12e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.154.195.38"
+    port: 35034
+    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.97"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "134.195.198.147"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "inna.cfd"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "inna.cfd"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.243.135.74"
+    port: 55185
+    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/Notif_Chat"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.80.215.80"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.92.70.236"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.97"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.46"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.80.215.80"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "hk01.653ebeeb-5f60-4be5-958d-7bf4839cdccd.ef6616fd-5b06-482f-9d64-183745659cbf.byteprivatelink.com"
+    port: 443
+    uuid: "948f0b34-3e53-49e8-9874-b75cef63dbcb"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.12306.cn"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "12306"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "v8.hdacd.com"
+    port: 30808
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "usaapp1.jisuyun.top"
+    port: 2053
+    uuid: "4b80aa86-4354-40bb-d2a3-47126cff0bea"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "usaapp1.jisuyun.top"
+    network: ws
+    ws-opts:
+      path: "/usavm"
+      headers:
+        Host: "usaapp1.jisuyun.top"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.242.163.203"
+    port: 443
+    uuid: "78f61544-3393-4e6b-9c77-5deaa0c7471d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "n1761296878.4u9ma.icu"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "149.88.23.207"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "104.168.1.102"
+    port: 8222
+    uuid: "1c9d6cfe-df9c-40bc-bcb9-8ba7dc31aae3"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.89.53.115"
+    port: 2053
+    uuid: "9b91e960-f8f7-41aa-ac67-f5c7b6b72e74"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "45.89.53.115"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "chuncheon03.zgjok.com"
+    port: 443
+    uuid: "81d5cac4-d039-4874-9a20-c391f580012d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "chuncheon03.zgjok.com"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "chuncheon03.zgjok.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "n1761296878.4u9ma.icu"
+    port: 443
+    uuid: "78f61544-3393-4e6b-9c77-5deaa0c7471d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "n1761296878.4u9ma.icu"
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "172.67.152.227"
+    port: 443
+    uuid: "0bf1cead-bdd4-4692-b3d4-6866ccb9f37a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "tw53.cowjump.site"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "tw53.cowjump.site"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "23.162.200.227"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.140.216.141"
+    port: 443
+    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.140.216.141"
+    port: 443
+    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "kr03.a0a.xyz"
+    port: 80
+    uuid: "ae5d1a01-72db-4842-fcba-7bd006ff04bb"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/cctv13.m3u8"
+      headers:
+        Host: "kr03.a0a.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.90.244.153"
+    port: 8443
+    uuid: "65e2a985-ad20-4486-a7ec-b67b20ee56af"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "66.163.117.58"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.89.52.207"
+    port: 39651
+    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "66.163.117.58"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "104.18.16.56"
+    port: 443
+    uuid: "b1ec4769-f5e9-46f1-8a03-ed90286a10a0"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "wcc.teamv.ir"
+    client-fingerprint: "chrome"
+    network: httpupgrade
+    httpupgrade-opts:
+      path: "/JMMRkgrUTZejLBUAP7Pp"
+      host: "wcc.teamv.ir"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "134.195.198.147"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "inna.cfd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "inna.cfd"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.140.216.141"
+    port: 443
+    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "141.95.65.9"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "m.cnmjin.net"
+    port: 16645
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
     alterId: 0
     cipher: "auto"
     udp: true
@@ -515,7 +910,291 @@ proxies:
     ws-opts:
       path: "/"
       headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.243.135.74"
+    port: 55185
+    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/Notif_Chat"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "fsdns1.ectunnelvpn.me"
+    port: 80
+    uuid: "6b2d86e5-df05-4511-a79f-82d53ce99b36"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess"
+      headers:
+        Host: "fsdns1.ectunnelvpn.me"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "46.246.126.154"
+    port: 443
+    uuid: "f2fd0786-1059-4f64-d54e-3f3a568c6c68"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "v4.hdacd.com"
+    port: 30804
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "n1753101277.4u9ma.icu"
+    port: 443
+    uuid: "6ea48dfe-7de2-45dc-9267-d4d9effad9fc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "n1753101277.4u9ma.icu"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "n1753101277.4u9ma.icu"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "67.220.72.237"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 1
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "jp01.a0a.xyz"
+    port: 80
+    uuid: "11c3627f-31e8-4695-dfbd-34076e2f1f5d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/cctv13.m3u8"
+      headers:
+        Host: "jp01.a0a.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "t.cnmjcn.cyou"
+    port: 16622
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "85.90.217.42"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.226.135.232"
+    port: 55310
+    uuid: "22066968-ef90-455e-b981-4bf782d25386"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "t.cnmjcn.cyou"
+    port: 16632
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "152.67.218.38"
+    port: 443
+    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vkvd127.mycdn.me"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "planb.mojcn.com"
+    port: 16626
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "152.67.8.205"
+    port: 80
+    uuid: "9db4c708-aef8-4359-821b-38e47990be0d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "153.121.73.175"
+    port: 32221
+    uuid: "b06054ae-f249-438e-998a-8e67bd8df653"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "usaapp2.jisuyun.top"
+    port: 2053
+    uuid: "95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "usaapp2.jisuyun.top"
+    network: ws
+    ws-opts:
+      path: "/usavm"
+      headers:
+        Host: "usaapp2.jisuyun.top"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "51.89.41.22"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "planb.mojcn.com"
+    port: 16617
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "134.195.196.211"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "www.shopify.com"
+    port: 80
+    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "de.gfw.hidns.co"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "154.205.136.122"
+    port: 37849
+    uuid: "30e88f67-8445-43ca-ff2b-961bbf6339fc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.243.135.74"
+    port: 55185
+    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/Notif_Chat"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "61.245.11.60"
+    port: 80
+    uuid: "a3e3a710-79f8-4ae0-b83c-607aab40d197"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: "61.245.11.60"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "192.210.236.15"
+    port: 10329
+    uuid: "66c59c4f-e97a-4604-8791-e5b113055128"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "162.19.204.71"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+    client-fingerprint: "chrome"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "23.162.200.227"
@@ -535,295 +1214,20 @@ proxies:
         Host: "23.162.200.227"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "104.17.77.77"
-    port: 8443
-    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
-    alterId: 0
-    cipher: "none"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "v2ray1.dozapp.xyz"
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: "v2ray1.dozapp.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16626
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
+    server: "47.243.135.74"
+    port: 55185
+    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
+      path: "/Notif_Chat"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "134.195.198.147"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "inna.cfd"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "inna.cfd"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16617
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "www.shopify.com"
-    port: 80
-    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/danfeng"
-      headers:
-        Host: "de.gfw.hidns.co"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "chatgpt.com"
-    port: 8443
-    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
-    alterId: 0
-    cipher: "none"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "v2ray1.dozapp.xyz"
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: "v2ray1.dozapp.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "82.198.246.9"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.90.106.24"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "supervpn.super.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "51.89.41.22"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "supervpn.super.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "165.154.195.38"
-    port: 35034
-    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.92.70.236"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "152.67.218.38"
-    port: 443
-    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "152.67.218.38"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "141.95.65.9"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "supervpn.super.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "vc.fly.dev"
-    port: 443
-    uuid: "35379219-6535-4f2e-a4fe-3e44f61e0eee"
-    alterId: 32
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vc.fly.dev"
-    network: ws
-    ws-opts:
-      path: "/vc"
-      headers:
-        Host: "vc.fly.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "172.236.249.24"
-    port: 2053
-    uuid: "4b80aa86-4354-40bb-d2a3-47126cff0bea"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "usaapp1.jisuyun.top"
-    network: ws
-    ws-opts:
-      path: "/usavm"
-      headers:
-        Host: "usaapp1.jisuyun.top"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "pq-hungary1.09vpn.com"
-    port: 80
-    uuid: "703f722a-4bdf-4e9d-9afd-a681fdf87c74"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vmess/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "v35.hdacd.com"
-    port: 30835
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.242.163.203"
-    port: 443
-    uuid: "78f61544-3393-4e6b-9c77-5deaa0c7471d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "n1761296878.4u9ma.icu"
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.89.52.207"
-    port: 39651
-    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "165.154.195.38"
-    port: 35034
-    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "159.223.13.109"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "supervpn.super.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "kr03.a0a.xyz"
-    port: 80
-    uuid: "ae5d1a01-72db-4842-fcba-7bd006ff04bb"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/cctv13.m3u8"
-      headers:
-        Host: "kr03.a0a.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "m.cnmjin.net"
-    port: 16616
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "216.167.46.226"
-    port: 57138
-    uuid: "b18ae1c7-b9ef-433c-ebd0-36bb9c62cf86"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "117.18.125.183"
-    port: 57460
-    uuid: "8c99e6bf-a701-4534-cdde-abecd1d6826f"
+    server: "149.88.23.202"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
     alterId: 0
     cipher: "auto"
     udp: true
@@ -837,90 +1241,7 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "47.90.244.153"
-    port: 8443
-    uuid: "65e2a985-ad20-4486-a7ec-b67b20ee56af"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ws"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "152.67.208.31"
-    port: 443
-    uuid: "81d5cac4-d039-4874-9a20-c391f580012d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "chuncheon03.zgjok.com"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "chuncheon03.zgjok.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "n1761296889.4u9ma.icu"
-    port: 443
-    uuid: "5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "n1761296889.4u9ma.icu"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "n1761296889.4u9ma.icu"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.243.135.74"
-    port: 55185
-    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/Notif_Chat"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "www.shopify.com"
-    port: 80
-    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/danfeng"
-      headers:
-        Host: "de.gfw.hidns.co"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "104.18.16.56"
-    port: 443
-    uuid: "b1ec4769-f5e9-46f1-8a03-ed90286a10a0"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wcc.teamv.ir"
-    client-fingerprint: "chrome"
-    network: httpupgrade
-    httpupgrade-opts:
-      path: "/JMMRkgrUTZejLBUAP7Pp"
-      host: "wcc.teamv.ir"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.90.106.24"
+    server: "141.95.65.9"
     port: 1234
     uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
     alterId: 0
@@ -928,29 +1249,10 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: " "
+    servername: "🔒 [By EbraSha]"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.90.244.153"
-    port: 8443
-    uuid: "65e2a985-ad20-4486-a7ec-b67b20ee56af"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ws"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "134.195.198.147"
+    server: "23.162.200.227"
     port: 443
     uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
     alterId: 0
@@ -958,54 +1260,10 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "inna.cfd"
+    servername: "23.162.200.227"
     network: ws
     ws-opts:
       path: "/linkvws"
-      headers:
-        Host: "inna.cfd"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "v30.hdacd.com"
-    port: 30830
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "85.90.217.42"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16645
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "152.67.218.38"
-    port: 443
-    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "152.67.218.38"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "141.95.65.9"
@@ -1019,190 +1277,12 @@ proxies:
     servername: "141.95.65.9"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "172.104.80.66"
+    server: "172.233.17.76"
     port: 22324
     uuid: "04621bae-ab36-11ec-b909-0242ac120002"
     alterId: 1
     cipher: "auto"
     udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16616
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "82.198.246.250"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.80.215.80"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "134.195.198.147"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "inna.cfd"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "inna.cfd"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "152.67.218.38"
-    port: 443
-    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vkvd127.mycdn.me"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "154.205.136.122"
-    port: 37849
-    uuid: "30e88f67-8445-43ca-ff2b-961bbf6339fc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "162.19.204.71"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "supervpn.super.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "165.140.216.141"
-    port: 443
-    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.90.106.24"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "supervpn.super.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.76.254.70"
-    port: 443
-    uuid: "6ea48dfe-7de2-45dc-9267-d4d9effad9fc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "n1753101277.4u9ma.icu"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "n1753101277.4u9ma.icu"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "104.168.1.102"
-    port: 8222
-    uuid: "4b64bbe9-347d-4cbe-83e6-0c925a9583d8"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "us1-ss.flyparts.cn"
-    port: 10022
-    uuid: "941a7999-68bc-45d8-bb7f-b0a2f1d16fe4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "us1-ss.flyparts.cn"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "82.198.246.97"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "104.17.77.77"
-    port: 8443
-    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
-    alterId: 0
-    cipher: "none"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "v2ray1.dozapp.xyz"
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: "v2ray1.dozapp.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16648
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "23.162.200.227"
@@ -1222,42 +1302,7 @@ proxies:
         Host: "nelly.homes"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "158.51.121.63"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "seribus.org"
-    network: ws
-    ws-opts:
-      path: "linkvws"
-      headers:
-        Host: "seribus.org"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.80.215.80"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "77.90.11.178"
-    port: 80
-    uuid: "b3cdfe2d-5eac-4b0d-a8eb-d3f6a647e13f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: h2
-    h2-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "172.233.17.76"
+    server: "216.106.183.35"
     port: 22324
     uuid: "04621bae-ab36-11ec-b909-0242ac120002"
     alterId: 1
@@ -1265,7 +1310,49 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "85.90.217.42"
+    server: "45.90.106.24"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "103.143.238.196"
+    port: 21879
+    uuid: "1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "103.143.238.196"
+    network: ws
+    ws-opts:
+      path: "/vmesswss"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "134.195.198.147"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vkvd127.mycdn.me"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "vk.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "66.163.117.58"
     port: 22324
     uuid: "04621bae-ab36-11ec-b909-0242ac120002"
     alterId: 0
@@ -1273,31 +1360,55 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "www.shopify.com"
-    port: 80
-    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
+    server: "us1-ss.flyparts.cn"
+    port: 10022
+    uuid: "e3ac1293-c58b-438e-9d09-dfc131c9fa11"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
-      path: "/danfeng"
+      path: "/"
       headers:
-        Host: "de.gfw.hidns.co"
+        Host: "us1-ss.flyparts.cn"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "47.244.120.197"
-    port: 44867
-    uuid: "845e6b08-2919-4290-ade0-5dc7dcea59ca"
+    server: "141.95.65.9"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
     alterId: 0
-    cipher: "auto"
+    cipher: "aes-128-gcm"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "104.17.77.77"
+    port: 8443
+    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
+    alterId: 0
+    cipher: "none"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v2ray1.dozapp.xyz"
     network: ws
     ws-opts:
-      path: "/arki"
+      path: "/lMnsZUN4/"
+      headers:
+        Host: "v2ray1.dozapp.xyz"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "82.198.246.214"
+    server: "v24.hdacd.com"
+    port: 30824
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.250"
     port: 180
     uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
     alterId: 0
@@ -1305,7 +1416,23 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "104.21.2.202"
+    server: "45.89.52.207"
+    port: 39651
+    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.250"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "tw53.cowjump.site"
     port: 443
     uuid: "0bf1cead-bdd4-4692-b3d4-6866ccb9f37a"
     alterId: 0
@@ -1321,23 +1448,171 @@ proxies:
         Host: "tw53.cowjump.site"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "82.198.246.233"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    server: "213.156.141.52"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
     alterId: 0
     cipher: "auto"
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "47.243.135.74"
-    port: 55185
-    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vkvd127.mycdn.me"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "vk.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "us1-ss.flyparts.cn"
+    port: 10022
+    uuid: "941a7999-68bc-45d8-bb7f-b0a2f1d16fe4"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
-      path: "/Notif_Chat"
+      path: "/"
+      headers:
+        Host: "us1-ss.flyparts.cn"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "154.205.136.122"
+    port: 37849
+    uuid: "30e88f67-8445-43ca-ff2b-961bbf6339fc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "152.67.218.38"
+    port: 443
+    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vkvd127.mycdn.me"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "140.238.2.250"
+    port: 443
+    uuid: "41a7089a-040b-4538-8b8d-010902405bde"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nelly.homes"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "nelly.homes"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.92.70.236"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "t.cnmjcn.cyou"
+    port: 16641
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "85.90.217.42"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "67.220.85.46"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.89.52.207"
+    port: 39651
+    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "us1-ss.flyparts.cn"
+    port: 10022
+    uuid: "a9afe91f-c9c0-4cbc-908a-e623892dfeaf"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "us1-ss.flyparts.cn"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "103.143.238.196"
+    port: 28384
+    uuid: "1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "103.143.238.196"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.244.120.197"
+    port: 44867
+    uuid: "845e6b08-2919-4290-ade0-5dc7dcea59ca"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/arki"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "134.195.198.147"
@@ -1348,13 +1623,75 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "inna.cfd"
+    servername: "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/linkvws"
       headers:
-        Host: "inna.cfd"
+        Host: "vk.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.89.52.207"
+    port: 39651
+    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "66.163.117.58"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.244.120.197"
+    port: 36703
+    uuid: "45b83519-9c4f-4052-a11b-02e017b636d4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/arki"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.244.120.197"
+    port: 36703
+    uuid: "45b83519-9c4f-4052-a11b-02e017b636d4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/arki"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "66.163.117.58"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "104.17.77.77"
+    port: 8443
+    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
+    alterId: 0
+    cipher: "none"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v2ray1.dozapp.xyz"
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: "v2ray1.dozapp.xyz"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "n1753101277.4u9ma.icu"
@@ -1373,17 +1710,71 @@ proxies:
         Host: "n1753101277.4u9ma.icu"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "82.198.246.37"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    server: "45.80.215.80"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
     alterId: 0
     cipher: "auto"
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
+    server: "104.17.77.77"
+    port: 8443
+    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
+    alterId: 0
+    cipher: "none"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v2ray1.dozapp.xyz"
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: "v2ray1.dozapp.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vkvd127.mycdn.me"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "vk.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "216.106.185.141"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "m.cnmjin.net"
+    port: 16618
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
     server: "47.244.120.197"
-    port: 36703
-    uuid: "45b83519-9c4f-4052-a11b-02e017b636d4"
+    port: 44867
+    uuid: "845e6b08-2919-4290-ade0-5dc7dcea59ca"
     alterId: 0
     cipher: "auto"
     udp: true
@@ -1392,49 +1783,99 @@ proxies:
       path: "/arki"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "67.220.95.3"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    server: "104.17.77.77"
+    port: 8443
+    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
     alterId: 0
-    cipher: "aes-128-gcm"
+    cipher: "none"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v2ray1.dozapp.xyz"
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: "v2ray1.dozapp.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.92.70.236"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "t.cnmjcn.cyou"
-    port: 16616
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
+    server: "134.195.198.147"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "inna.cfd"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "inna.cfd"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.243.135.74"
+    port: 55185
+    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
+      path: "/Notif_Chat"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "45.89.52.207"
-    port: 39651
-    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca"
+    server: "fsdns1.ectunnelvpn.me"
     port: 80
-    uuid: "e2923bc6-8204-4768-98ea-379d48ea8a7a"
+    uuid: "6b2d86e5-df05-4511-a79f-82d53ce99b36"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
-      path: "/1awNzxRSwKsdkPVKP0ZQqlHjt10sp"
+      path: "/vmess"
       headers:
-        Host: "heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca"
+        Host: "fsdns1.ectunnelvpn.me"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "82.198.246.97"
+    server: "45.80.215.80"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "172.111.146.64"
+    port: 80
+    uuid: "05b8c783-7f59-47f9-9923-06a465679f6a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.92.70.236"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.37"
     port: 180
     uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
     alterId: 0
@@ -1442,44 +1883,117 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "165.140.216.141"
+    server: "134.195.198.147"
     port: 443
-    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
     alterId: 0
     cipher: "auto"
     udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "us1-ss.flyparts.cn"
-    port: 10022
-    uuid: "91a988dc-99d5-4c0d-a999-a1d4dd72ad21"
-    alterId: 0
-    cipher: "auto"
-    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "inna.cfd"
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/linkvws"
       headers:
-        Host: "us1-ss.flyparts.cn"
+        Host: "inna.cfd"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "104.168.1.102"
-    port: 8222
-    uuid: "0d9bd1bc-6d14-44f2-8bfa-dd6210d1b14f"
+    server: "141.95.65.9"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: " "
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "www.shopify.com"
+    port: 80
+    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
     alterId: 0
     cipher: "auto"
     udp: true
     network: ws
     ws-opts:
-      path: "/"
+      path: "/danfeng"
+      headers:
+        Host: "de.gfw.hidns.co"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "165.140.216.141"
-    port: 443
-    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+    server: "5.188.190.252"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 1
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.9"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
     alterId: 0
     cipher: "auto"
     udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "hk.aicvideo.info"
+    port: 8810
+    uuid: "c7075b83-2d8f-4b76-b6fd-cc829ae6d75a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "www.bing.com"
+    network: ws
+    ws-opts:
+      path: "/dgs"
+      headers:
+        Host: "www.bing.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "119.46.51.45"
+    port: 25689
+    uuid: "ae1b23b3-ca47-457f-badf-4748ffef6b0d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.90.106.24"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: " "
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "v30.hdacd.com"
+    port: 30830
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "www.shopify.com"
+    port: 80
+    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "de.gfw.hidns.co"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "23.162.200.227"
@@ -1499,6 +2013,635 @@ proxies:
         Host: "nelly.homes"
   - name: "@DeltaKroneckerGithub"
     type: vmess
+    server: "165.140.216.141"
+    port: 443
+    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "m.cnmjin.net"
+    port: 16616
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.92.70.236"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "m.cnmjin.net"
+    port: 16632
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "216.238.86.158"
+    port: 34460
+    uuid: "90be214d-048c-4ea2-a602-b8e4d4e51e36"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.140.216.141"
+    port: 443
+    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "38.114.123.42"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "kr02.a0a.xyz"
+    port: 80
+    uuid: "5155860e-d07d-46c3-9128-3afbd84626c7"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/cctv13.m3u8"
+      headers:
+        Host: "kr02.a0a.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "v6.hdacd.com"
+    port: 30806
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.90.244.153"
+    port: 8443
+    uuid: "65e2a985-ad20-4486-a7ec-b67b20ee56af"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "84.17.41.2"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "m.cnmjin.net"
+    port: 16644
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.37"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "planb.mojcn.com"
+    port: 16632
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "66.163.117.58"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.15.170.237"
+    port: 80
+    uuid: "820d4b4f-3357-4dc7-9381-6e5fd52b5f39"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: "pelang.org"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca"
+    port: 80
+    uuid: "e2923bc6-8204-4768-98ea-379d48ea8a7a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/1awNzxRSwKsdkPVKP0ZQqlHjt10sp"
+      headers:
+        Host: "heu83ujieiwoeu83j2ewjehuwehu8.dentiscan.ca"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "172.111.146.64"
+    port: 80
+    uuid: "05b8c783-7f59-47f9-9923-06a465679f6a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "jp02.a0a.xyz"
+    port: 25686
+    uuid: "6733c357-ba11-4e9f-f00f-7d87f2776ff9"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/cctv13.m3u8"
+      headers:
+        Host: "jp02.a0a.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vkvd127.mycdn.me"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "vk.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "pe1.bctuo.top"
+    port: 443
+    uuid: "31801968-9877-4ef5-be87-56503c34a69d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "t.cnmjcn.cyou"
+    port: 16648
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.90.244.153"
+    port: 8443
+    uuid: "65e2a985-ad20-4486-a7ec-b67b20ee56af"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "planb.mojcn.com"
+    port: 16644
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "172.236.249.24"
+    port: 2053
+    uuid: "4b80aa86-4354-40bb-d2a3-47126cff0bea"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "usaapp1.jisuyun.top"
+    network: ws
+    ws-opts:
+      path: "/usavm"
+      headers:
+        Host: "usaapp1.jisuyun.top"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "t.cnmjcn.cyou"
+    port: 16617
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.97"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.97"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "v33.hdacd.com"
+    port: 30833
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "119.46.51.45"
+    port: 42553
+    uuid: "bc30cc65-bc08-4843-85b6-1cac2b8a9753"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.90.244.153"
+    port: 8443
+    uuid: "65e2a985-ad20-4486-a7ec-b67b20ee56af"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/ws"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "m.cnmjin.net"
+    port: 16648
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.154.195.38"
+    port: 35034
+    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "152.67.218.38"
+    port: 443
+    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "152.67.218.38"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "104.168.1.102"
+    port: 8222
+    uuid: "0d9bd1bc-6d14-44f2-8bfa-dd6210d1b14f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "planb.mojcn.com"
+    port: 16622
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "141.95.65.9"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "154.205.136.122"
+    port: 37849
+    uuid: "30e88f67-8445-43ca-ff2b-961bbf6339fc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "77.90.11.178"
+    port: 17662
+    uuid: "eafa523f-3472-4efc-f1c5-6ce25b3910a9"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: h2
+    h2-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "159.223.13.109"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "vc.fly.dev"
+    port: 443
+    uuid: "35379219-6535-4f2e-a4fe-3e44f61e0eee"
+    alterId: 32
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vc.fly.dev"
+    network: ws
+    ws-opts:
+      path: "/vc"
+      headers:
+        Host: "vc.fly.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.90.106.24"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "45.90.106.24"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vkvd127.mycdn.me"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "vk.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "104.17.77.77"
+    port: 8443
+    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
+    alterId: 0
+    cipher: "none"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "v2ray1.dozapp.xyz"
+    network: ws
+    ws-opts:
+      path: "/lMnsZUN4/"
+      headers:
+        Host: "v2ray1.dozapp.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.90.106.24"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "sanjose01.zgjok.com"
+    port: 443
+    uuid: "96d21cfe-b264-4bf3-8349-fb076d40837e"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sanjose01.zgjok.com"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sanjose01.zgjok.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "152.67.218.38"
+    port: 443
+    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vkvd127.mycdn.me"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "vk.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.250"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "216.167.46.226"
+    port: 57138
+    uuid: "b18ae1c7-b9ef-433c-ebd0-36bb9c62cf86"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.15.170.237"
+    port: 80
+    uuid: "820d4b4f-3357-4dc7-9381-6e5fd52b5f39"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: "pelang.org"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "fsdns1.ectunnelvpn.me"
+    port: 80
+    uuid: "6b2d86e5-df05-4511-a79f-82d53ce99b36"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess"
+      headers:
+        Host: "fsdns1.ectunnelvpn.me"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "154.205.136.122"
+    port: 37849
+    uuid: "30e88f67-8445-43ca-ff2b-961bbf6339fc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "m.cnmjin.net"
+    port: 16622
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "planb.mojcn.com"
+    port: 16648
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
     server: "www.shopify.com"
     port: 80
     uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
@@ -1510,6 +2653,303 @@ proxies:
       path: "/danfeng"
       headers:
         Host: "de.gfw.hidns.co"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "117.18.125.183"
+    port: 57460
+    uuid: "8c99e6bf-a701-4534-cdde-abecd1d6826f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.15.170.237"
+    port: 80
+    uuid: "820d4b4f-3357-4dc7-9381-6e5fd52b5f39"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: "pelang.org"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "152.67.208.31"
+    port: 443
+    uuid: "81d5cac4-d039-4874-9a20-c391f580012d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "chuncheon03.zgjok.com"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "chuncheon03.zgjok.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.92.70.236"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.15.170.237"
+    port: 80
+    uuid: "820d4b4f-3357-4dc7-9381-6e5fd52b5f39"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+      headers:
+        Host: "pelang.org"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.198"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "www.shopify.com"
+    port: 80
+    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/danfeng"
+      headers:
+        Host: "de.gfw.hidns.co"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.89.52.207"
+    port: 39651
+    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "v36.hdacd.com"
+    port: 30836
+    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
+    alterId: 2
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "us1-ss.flyparts.cn"
+    port: 10022
+    uuid: "51cfc665-a557-4809-8ead-90d4bbd2ac81"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "us1-ss.flyparts.cn"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "66.163.117.58"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "152.67.218.38"
+    port: 443
+    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "152.67.218.38"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "134.195.198.147"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "inna.cfd"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "inna.cfd"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.238.130.197"
+    port: 443
+    uuid: "f267eac3-dfb4-45be-a480-7e1847ca04ab"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "n1753348736.lie5d.cyou"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "n1753348736.lie5d.cyou"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "t.cnmjcn.cyou"
+    port: 16616
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "node-us.connectsuite.org"
+    port: 2053
+    uuid: "9b91e960-f8f7-41aa-ac67-f5c7b6b72e74"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "node-us.connectsuite.org"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "141.95.65.9"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "🔒"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.76.254.70"
+    port: 443
+    uuid: "6ea48dfe-7de2-45dc-9267-d4d9effad9fc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "n1753101277.4u9ma.icu"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "n1753101277.4u9ma.icu"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "134.195.198.147"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "inna.cfd"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "inna.cfd"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "152.67.218.38"
+    port: 443
+    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "47.244.120.197"
+    port: 36703
+    uuid: "45b83519-9c4f-4052-a11b-02e017b636d4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/arki"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "172.104.80.66"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 1
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "152.67.218.38"
+    port: 443
+    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.90.106.24"
+    port: 1234
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "🔒"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "134.195.198.147"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "vkvd127.mycdn.me"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "vk.com"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "n1753356378.4u9ma.icu"
@@ -1528,9 +2968,194 @@ proxies:
         Host: "n1753356378.4u9ma.icu"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "61.245.11.60"
+    server: "47.244.120.197"
+    port: 44867
+    uuid: "845e6b08-2919-4290-ade0-5dc7dcea59ca"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/arki"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "134.195.198.147"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "vk.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "82.198.246.233"
+    port: 180
+    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "t.cnmjcn.cyou"
+    port: 16645
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "168.138.43.75"
     port: 80
-    uuid: "a3e3a710-79f8-4ae0-b83c-607aab40d197"
+    uuid: "11c3627f-31e8-4695-dfbd-34076e2f1f5d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/cctv13.m3u8"
+      headers:
+        Host: "jp01.a0a.xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "23.162.200.227"
+    port: 443
+    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "nelly.homes"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/linkvws"
+      headers:
+        Host: "nelly.homes"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "172.111.146.64"
+    port: 80
+    uuid: "05b8c783-7f59-47f9-9923-06a465679f6a"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/vmess/"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "38.91.107.49"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "66.163.117.58"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "t.cnmjcn.cyou"
+    port: 16618
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "140.238.2.250"
+    port: 443
+    uuid: "41a7089a-040b-4538-8b8d-010902405bde"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.154.195.38"
+    port: 35034
+    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "67.220.95.3"
+    port: 18000
+    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "66.163.117.58"
+    port: 22324
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "165.140.216.141"
+    port: 443
+    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "m.cnmjin.net"
+    port: 16617
+    uuid: "41640310-21b9-4c77-bce0-a15db735d8c4"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "61dcc0db21b2fdedf982d571e6fd4e1d.mobgslb.tbcache.com"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "43.162.105.30"
+    port: 10022
+    uuid: "91a988dc-99d5-4c0d-a999-a1d4dd72ad21"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "us1-ss.flyparts.cn"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.15.185.17"
+    port: 80
+    uuid: "c503a96a-a2f5-4847-a31f-20c17ecf3be4"
     alterId: 0
     cipher: "auto"
     udp: true
@@ -1538,7 +3163,15 @@ proxies:
     ws-opts:
       path: "/vmess/"
       headers:
-        Host: "61.245.11.60"
+        Host: "45.15.185.17"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "45.89.52.207"
+    port: 39651
+    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
+    alterId: 0
+    cipher: "auto"
+    udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "cf.090227.xyz"
@@ -1565,239 +3198,29 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "vkvd127.mycdn.me"
+    servername: "nelly.homes"
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/linkvws"
       headers:
-        Host: "vk.com"
+        Host: "nelly.homes"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "us1-ss.flyparts.cn"
-    port: 10022
-    uuid: "e3ac1293-c58b-438e-9d09-dfc131c9fa11"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "us1-ss.flyparts.cn"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "165.140.216.141"
+    server: "104.21.2.202"
     port: 443
-    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "23.162.200.227"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
+    uuid: "0bf1cead-bdd4-4692-b3d4-6866ccb9f37a"
     alterId: 0
     cipher: "auto"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "23.162.200.227"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.15.170.237"
-    port: 80
-    uuid: "820d4b4f-3357-4dc7-9381-6e5fd52b5f39"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vmess/"
-      headers:
-        Host: "pelang.org"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "216.106.183.35"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 1
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16622
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
+    servername: "tw53.cowjump.site"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "213.156.141.52"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "216.106.185.141"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "m.cnmjin.net"
-    port: 16644
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "152.67.218.38"
-    port: 443
-    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "vkvd127.mycdn.me"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "5.188.190.252"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.92.70.236"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16641
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "141.95.65.9"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: " "
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "153.121.73.175"
-    port: 32221
-    uuid: "b06054ae-f249-438e-998a-8e67bd8df653"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "23.162.200.227"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "23.162.200.227"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "119.46.51.45"
-    port: 42553
-    uuid: "bc30cc65-bc08-4843-85b6-1cac2b8a9753"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "usaapp1.jisuyun.top"
-    port: 2053
-    uuid: "4b80aa86-4354-40bb-d2a3-47126cff0bea"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "usaapp1.jisuyun.top"
-    network: ws
-    ws-opts:
-      path: "/usavm"
-      headers:
-        Host: "usaapp1.jisuyun.top"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "m.cnmjin.net"
-    port: 16622
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
+        Host: "tw53.cowjump.site"
   - name: "@DeltaKroneckerGithub"
     type: vmess
     server: "45.89.52.207"
@@ -1825,1271 +3248,6 @@ proxies:
         Host: "23.162.200.227"
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "134.195.198.147"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vkvd127.mycdn.me"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "vk.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "82.198.246.250"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "153.121.73.175"
-    port: 49803
-    uuid: "cd3dacbc-2b7b-4718-83ad-ab870f87e12e"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.92.70.236"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.90.106.24"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "supervpn.super.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "46.246.126.154"
-    port: 443
-    uuid: "f2fd0786-1059-4f64-d54e-3f3a568c6c68"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.244.120.197"
-    port: 36703
-    uuid: "45b83519-9c4f-4052-a11b-02e017b636d4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/arki"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "m.cnmjin.net"
-    port: 16617
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "t.cnmjcn.cyou"
-    port: 16645
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "134.195.198.147"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "vk.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.89.52.207"
-    port: 39651
-    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16632
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "23.162.200.198"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "216.238.86.158"
-    port: 34460
-    uuid: "90be214d-048c-4ea2-a602-b8e4d4e51e36"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "www.shopify.com"
-    port: 80
-    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/danfeng"
-      headers:
-        Host: "de.gfw.hidns.co"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "154.205.136.122"
-    port: 37849
-    uuid: "30e88f67-8445-43ca-ff2b-961bbf6339fc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.244.120.197"
-    port: 44867
-    uuid: "845e6b08-2919-4290-ade0-5dc7dcea59ca"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/arki"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "us1-ss.flyparts.cn"
-    port: 10022
-    uuid: "51cfc665-a557-4809-8ead-90d4bbd2ac81"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "us1-ss.flyparts.cn"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "jp02.a0a.xyz"
-    port: 25686
-    uuid: "6733c357-ba11-4e9f-f00f-7d87f2776ff9"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/cctv13.m3u8"
-      headers:
-        Host: "jp02.a0a.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "www.shopify.com"
-    port: 80
-    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/danfeng"
-      headers:
-        Host: "de.gfw.hidns.co"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16618
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "v10.hdacd.com"
-    port: 30807
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "152.67.218.38"
-    port: 443
-    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "23.162.200.227"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vkvd127.mycdn.me"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "vk.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.79.236.9"
-    port: 47034
-    uuid: "6f2879e2-7595-4fc2-ca7e-3c163dbe0d4b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "82.198.246.97"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.90.244.153"
-    port: 8443
-    uuid: "65e2a985-ad20-4486-a7ec-b67b20ee56af"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/ws"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "85.90.217.42"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "kr02.a0a.xyz"
-    port: 80
-    uuid: "5155860e-d07d-46c3-9128-3afbd84626c7"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/cctv13.m3u8"
-      headers:
-        Host: "kr02.a0a.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "82.198.246.37"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "67.220.72.237"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 1
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "n1753101277.4u9ma.icu"
-    port: 443
-    uuid: "6ea48dfe-7de2-45dc-9267-d4d9effad9fc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "n1753101277.4u9ma.icu"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "n1753101277.4u9ma.icu"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "35.212.177.67"
-    port: 40029
-    uuid: "e8ab37c7-2b1d-4776-c062-2cac8fc066e1"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.80.215.80"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "23.162.200.227"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nelly.homes"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "nelly.homes"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "84.17.41.2"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.192.101.134"
-    port: 9527
-    uuid: "ae862e1d-3b8c-443a-027b-37c6c69ef43c"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "82.198.246.46"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "t.cnmjcn.cyou"
-    port: 16622
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "pq-Hungary1.09vpn.com"
-    port: 8443
-    uuid: "6f1f1a18-ecc4-4513-890e-fd193042f564"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "pq-Hungary1.09vpn.com"
-    network: ws
-    ws-opts:
-      path: "/vmess/"
-      headers:
-        Host: "pq-Hungary1.09vpn.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "38.147.191.123"
-    port: 8810
-    uuid: "c7075b83-2d8f-4b76-b6fd-cc829ae6d75a"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "hk.aicvideo.info"
-    network: ws
-    ws-opts:
-      path: "/dgs"
-      headers:
-        Host: "www.bing.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "n1753348736.lie5d.cyou"
-    port: 443
-    uuid: "f267eac3-dfb4-45be-a480-7e1847ca04ab"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "n1753348736.lie5d.cyou"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "n1753348736.lie5d.cyou"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.243.135.74"
-    port: 55185
-    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/Notif_Chat"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.244.120.197"
-    port: 44867
-    uuid: "845e6b08-2919-4290-ade0-5dc7dcea59ca"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/arki"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "134.195.198.147"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "inna.cfd"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "inna.cfd"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "103.100.158.18"
-    port: 29025
-    uuid: "c45ab62e-5d25-486a-f91e-807fe4b9c23f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "140.238.2.250"
-    port: 443
-    uuid: "41a7089a-040b-4538-8b8d-010902405bde"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "134.195.198.147"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "vk.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "82.198.246.97"
-    port: 180
-    uuid: "d13fc2f5-3e05-4795-81eb-44143a09e552"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "104.17.77.77"
-    port: 8443
-    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
-    alterId: 0
-    cipher: "none"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "v2ray1.dozapp.xyz"
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: "v2ray1.dozapp.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.238.82.7"
-    port: 443
-    uuid: "37b20639-0d6e-46f2-9db5-472201b10cdd"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "47.238.82.7"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "n1753356378.4u9ma.icu"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "141.95.65.9"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "supervpn.super.com"
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "node-us.connectsuite.org"
-    port: 2053
-    uuid: "9b91e960-f8f7-41aa-ac67-f5c7b6b72e74"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "node-us.connectsuite.org"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "pe1.bctuo.top"
-    port: 443
-    uuid: "31801968-9877-4ef5-be87-56503c34a69d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "23.162.200.227"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "23.162.200.227"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.89.52.207"
-    port: 39651
-    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "172.67.152.227"
-    port: 443
-    uuid: "0bf1cead-bdd4-4692-b3d4-6866ccb9f37a"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tw53.cowjump.site"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "tw53.cowjump.site"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "192.210.236.15"
-    port: 10329
-    uuid: "66c59c4f-e97a-4604-8791-e5b113055128"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "67.220.85.46"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "38.114.123.42"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.243.135.74"
-    port: 55185
-    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/Notif_Chat"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "141.95.65.9"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "🔒 [By EbraSha]"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.238.130.197"
-    port: 443
-    uuid: "f267eac3-dfb4-45be-a480-7e1847ca04ab"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "n1753348736.lie5d.cyou"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "n1753348736.lie5d.cyou"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "v8.hdacd.com"
-    port: 30808
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "fsdns1.ectunnelvpn.me"
-    port: 80
-    uuid: "6b2d86e5-df05-4511-a79f-82d53ce99b36"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vmess"
-      headers:
-        Host: "fsdns1.ectunnelvpn.me"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "v6.hdacd.com"
-    port: 30806
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.89.52.207"
-    port: 39651
-    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "jp01.a0a.xyz"
-    port: 80
-    uuid: "11c3627f-31e8-4695-dfbd-34076e2f1f5d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/cctv13.m3u8"
-      headers:
-        Host: "jp01.a0a.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "n1753101277.4u9ma.icu"
-    port: 443
-    uuid: "6ea48dfe-7de2-45dc-9267-d4d9effad9fc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "n1753101277.4u9ma.icu"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "n1753101277.4u9ma.icu"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "104.168.1.102"
-    port: 8222
-    uuid: "1c9d6cfe-df9c-40bc-bcb9-8ba7dc31aae3"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "v33.hdacd.com"
-    port: 30833
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "104.17.77.77"
-    port: 8443
-    uuid: "60441548-b68e-43b2-8191-e3b884be4b3c"
-    alterId: 0
-    cipher: "none"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "v2ray1.dozapp.xyz"
-    network: ws
-    ws-opts:
-      path: "/lMnsZUN4/"
-      headers:
-        Host: "v2ray1.dozapp.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "134.195.196.211"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.89.52.207"
-    port: 39651
-    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "fsdns1.ectunnelvpn.me"
-    port: 80
-    uuid: "6b2d86e5-df05-4511-a79f-82d53ce99b36"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vmess"
-      headers:
-        Host: "fsdns1.ectunnelvpn.me"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "103.143.238.196"
-    port: 21879
-    uuid: "1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "103.143.238.196"
-    network: ws
-    ws-opts:
-      path: "/vmesswss"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "103.143.238.196"
-    port: 28384
-    uuid: "1e1a6b3b-14b2-4ae4-9aa9-880ba5dff6fa"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "103.143.238.196"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "us1-ss.flyparts.cn"
-    port: 10022
-    uuid: "8323d559-0ee0-4fde-a405-bb07778e0cc8"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "us1-ss.flyparts.cn"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "www.shopify.com"
-    port: 80
-    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/danfeng"
-      headers:
-        Host: "de.gfw.hidns.co"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "chuncheon03.zgjok.com"
-    port: 443
-    uuid: "81d5cac4-d039-4874-9a20-c391f580012d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "chuncheon03.zgjok.com"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "chuncheon03.zgjok.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "fsdns1.ectunnelvpn.me"
-    port: 80
-    uuid: "6b2d86e5-df05-4511-a79f-82d53ce99b36"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vmess"
-      headers:
-        Host: "fsdns1.ectunnelvpn.me"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "v4.hdacd.com"
-    port: 30804
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "23.162.200.227"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vkvd127.mycdn.me"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "vk.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.244.120.197"
-    port: 36703
-    uuid: "45b83519-9c4f-4052-a11b-02e017b636d4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/arki"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "165.140.216.141"
-    port: 443
-    uuid: "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "152.67.218.38"
-    port: 443
-    uuid: "b5e9480a-b7aa-40a4-f9a7-5299b5e363b4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "152.67.218.38"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "www.shopify.com"
-    port: 80
-    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/danfeng"
-      headers:
-        Host: "de.gfw.hidns.co"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "43.128.70.62"
-    port: 443
-    uuid: "7eb64dc1-5b5c-4795-8383-e1964c45477b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16645
-    uuid: "e4f74364-435b-49f1-bdbd-60a24dc99588"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "26244e9a2fd545178a435722e996eb61.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "149.88.23.202"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "134.195.198.147"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "inna.cfd"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "inna.cfd"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "www.shopify.com"
-    port: 80
-    uuid: "3171ac5c-d746-4298-82e0-d46f2f5aa51f"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/danfeng"
-      headers:
-        Host: "de.gfw.hidns.co"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "v45.hdacd.com"
-    port: 30845
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "38.91.107.49"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.15.170.237"
-    port: 80
-    uuid: "820d4b4f-3357-4dc7-9381-6e5fd52b5f39"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vmess/"
-      headers:
-        Host: "pelang.org"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "us1-ss.flyparts.cn"
-    port: 10022
-    uuid: "ad1402a0-9923-4e1d-893f-bc7410b7efc0"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "us1-ss.flyparts.cn"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.80.215.80"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "m.cnmjin.net"
-    port: 16618
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "104.168.1.102"
-    port: 8222
-    uuid: "254d4bbf-e3b8-4855-ae5c-b36854de47f6"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "168.138.43.75"
-    port: 80
-    uuid: "11c3627f-31e8-4695-dfbd-34076e2f1f5d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/cctv13.m3u8"
-      headers:
-        Host: "jp01.a0a.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.15.185.17"
-    port: 80
-    uuid: "c503a96a-a2f5-4847-a31f-20c17ecf3be4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vmess/"
-      headers:
-        Host: "45.15.185.17"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.92.70.236"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "154.205.136.122"
-    port: 37849
-    uuid: "30e88f67-8445-43ca-ff2b-961bbf6339fc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "t.cnmjcn.cyou"
-    port: 16648
-    uuid: "e4f74364-435b-49f1-bdbd-60a24dc99588"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "26244e9a2fd545178a435722e996eb61.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "38.110.1.246"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "t.cnmjcn.cyou"
-    port: 16616
-    uuid: "e4f74364-435b-49f1-bdbd-60a24dc99588"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "26244e9a2fd545178a435722e996eb61.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16616
-    uuid: "e4f74364-435b-49f1-bdbd-60a24dc99588"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "26244e9a2fd545178a435722e996eb61.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "141.95.65.9"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "🔒"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
     server: "172.232.103.186"
     port: 22324
     uuid: "04621bae-ab36-11ec-b909-0242ac120002"
@@ -3098,299 +3256,9 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vmess
-    server: "t.cnmjcn.cyou"
-    port: 16648
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.90.106.24"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "🔒"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "66.163.117.58"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "140.238.2.250"
-    port: 443
-    uuid: "41a7089a-040b-4538-8b8d-010902405bde"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "23.162.200.227"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "nelly.homes"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "nelly.homes"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.15.170.237"
-    port: 80
-    uuid: "820d4b4f-3357-4dc7-9381-6e5fd52b5f39"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/vmess/"
-      headers:
-        Host: "pelang.org"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "tw53.cowjump.site"
-    port: 443
-    uuid: "0bf1cead-bdd4-4692-b3d4-6866ccb9f37a"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tw53.cowjump.site"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "tw53.cowjump.site"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.89.52.207"
-    port: 39651
-    uuid: "ac4c12c5-45f2-4398-a718-9983941ede2b"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "23.162.200.227"
-    port: 443
-    uuid: "03fcc618-b93d-6796-6aed-8a38c975d581"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "vkvd127.mycdn.me"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/linkvws"
-      headers:
-        Host: "vk.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "creativecommons.org"
-    port: 8443
-    uuid: "39382034-3920-4130-b220-393820353120"
-    alterId: 0
-    cipher: "none"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "tr-1.stunnel.cc"
-    network: ws
-    ws-opts:
-      path: "/ws"
-      headers:
-        Host: "tr-1.stunnel.cc"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "165.154.195.38"
-    port: 35034
-    uuid: "959a8caf-4cea-43d0-a548-3628e7ddfafc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "119.46.51.45"
-    port: 25689
-    uuid: "ae1b23b3-ca47-457f-badf-4748ffef6b0d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "154.205.136.122"
-    port: 37849
-    uuid: "30e88f67-8445-43ca-ff2b-961bbf6339fc"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.92.70.236"
-    port: 22324
-    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "t.cnmjcn.cyou"
-    port: 16617
-    uuid: "c3bb4d48-63db-439e-bb4b-a541729c4f72"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "b51d264b1d49f78bcc89624068d93405.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "47.244.120.197"
-    port: 36703
-    uuid: "45b83519-9c4f-4052-a11b-02e017b636d4"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/arki"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "planb.mojcn.com"
-    port: 16648
-    uuid: "e4f74364-435b-49f1-bdbd-60a24dc99588"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "26244e9a2fd545178a435722e996eb61.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "94.131.108.36"
-    port: 443
-    uuid: "9855f1f0-a800-40d4-8b38-c7d3eb79302d"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "v36.hdacd.com"
-    port: 30836
-    uuid: "cbb3f877-d1fb-344c-87a9-d153bffd5484"
-    alterId: 2
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "140.83.51.161"
-    port: 25686
-    uuid: "6733c357-ba11-4e9f-f00f-7d87f2776ff9"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/cctv13.m3u8"
-      headers:
-        Host: "jp02.a0a.xyz"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.89.53.115"
-    port: 2053
-    uuid: "9b91e960-f8f7-41aa-ac67-f5c7b6b72e74"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "45.89.53.115"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "m.cnmjin.net"
-    port: 16644
-    uuid: "e4f74364-435b-49f1-bdbd-60a24dc99588"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "26244e9a2fd545178a435722e996eb61.mobgslb.tbcache.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "45.90.106.24"
-    port: 1234
-    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "45.90.106.24"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "149.88.23.207"
-    port: 18000
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "usaapp2.jisuyun.top"
-    port: 2053
-    uuid: "95dd45fb-8e36-4ff2-fa9e-24b68a34f3cd"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "usaapp2.jisuyun.top"
-    network: ws
-    ws-opts:
-      path: "/usavm"
-      headers:
-        Host: "usaapp2.jisuyun.top"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "us02.bctuo.top"
-    port: 1443
-    uuid: "31801968-9877-4ef5-be87-56503c34a69d"
+    server: "45.192.101.134"
+    port: 9527
+    uuid: "ae862e1d-3b8c-443a-027b-37c6c69ef43c"
     alterId: 0
     cipher: "auto"
     udp: true
@@ -3412,16 +3280,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
@@ -3980,16 +3838,6 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
 
   - name: "Fallback"
     type: fallback
@@ -3997,16 +3845,6 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
