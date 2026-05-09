@@ -122,39 +122,71 @@ dns:
 proxies:
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "vpn-us-018.fastervpn.world"
-    port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-us-018.fastervpn.world"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
     server: "163.172.113.118"
-    port: 41581
+    port: 41389
     password: "dongtaiwang.com"
     sni: "www.microsoft.com"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
+    server: "vpn-jp-011.fastervpn.world"
+    port: 443
+    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
+    sni: "vpn-jp-011.fastervpn.world"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
+    server: "37.114.49.38"
+    port: 2056
+    password: "4d092122-268a-4a1a-b23f-83931c5abc3a"
+    sni: "37.114.49.38"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
+    server: "vpn-kr-003.fastervpn.world"
+    port: 443
+    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
+    sni: "vpn-kr-003.fastervpn.world"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
+    server: "3.149.9.12"
+    port: 443
+    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
+    sni: "vpn-us-003.fastervpn.world"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
+    server: "130.61.50.75"
+    port: 6443
+    password: "zhangyang"
+    sni: "130.61.50.75"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
     server: "163.172.113.118"
-    port: 41802
+    port: 41915
     password: "dongtaiwang.com"
     sni: "www.microsoft.com"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "vpn-jp-003.fastervpn.world"
+    server: "vpn-us-002.fastervpn.world"
     port: 443
     password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-jp-003.fastervpn.world"
+    sni: "vpn-us-002.fastervpn.world"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "45.12.146.179"
+    server: "103.231.73.181"
     port: 444
     password: "strong-secret-pass-777"
     sni: "www.microsoft.com"
@@ -164,24 +196,18 @@ proxies:
     obfs-password: "cry_me_a_r1ver_2026"
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "46.38.157.183"
-    port: 10003
-    password: "f8551394-bf88-4ade-a835-3628dc7de30a"
-    sni: "46.38.157.183"
+    server: "nrealistic.nn-foto.ru"
+    port: 8932
+    password: "rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf"
+    sni: "nrealistic.nn-foto.ru"
     skip-cert-verify: true
     udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "vpn-us-017.fastervpn.world"
-    port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-us-017.fastervpn.world"
-    skip-cert-verify: true
-    udp: true
+    obfs: "salamander"
+    obfs-password: "CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W"
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
     server: "163.172.113.118"
-    port: 41283
+    port: 41073
     password: "dongtaiwang.com"
     sni: "www.microsoft.com"
     skip-cert-verify: true
@@ -196,10 +222,10 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "vpn-sg-002.fastervpn.world"
-    port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-sg-002.fastervpn.world"
+    server: "163.172.113.118"
+    port: 41273
+    password: "dongtaiwang.com"
+    sni: "www.microsoft.com"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
@@ -212,34 +238,42 @@ proxies:
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "163.172.113.118"
-    port: 41590
-    password: "dongtaiwang.com"
-    sni: "www.microsoft.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "163.172.113.118"
-    port: 41947
-    password: "dongtaiwang.com"
-    sni: "www.microsoft.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "vpn-us-016.fastervpn.world"
+    server: "vpn-us-020.fastervpn.world"
     port: 443
     password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-us-016.fastervpn.world"
+    sni: "vpn-us-020.fastervpn.world"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
+    server: "vpn-jp-001.fastervpn.world"
+    port: 443
+    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
+    sni: "vpn-jp-001.fastervpn.world"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
+    server: "vpn-jp-004.fastervpn.world"
+    port: 443
+    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
+    sni: "vpn-jp-004.fastervpn.world"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
     server: "163.172.113.118"
-    port: 41689
+    port: 41283
     password: "dongtaiwang.com"
     sni: "www.microsoft.com"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: hysteria2
+    server: "vpn-us-018.fastervpn.world"
+    port: 443
+    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
+    sni: "vpn-us-018.fastervpn.world"
     skip-cert-verify: true
     udp: true
   - name: "@DeltaKroneckerGithub"
@@ -254,50 +288,10 @@ proxies:
     obfs-password: "cry_me_a_r1ver_2026"
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "vpn-in-001.fastervpn.world"
+    server: "3.148.212.110"
     port: 443
     password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-in-001.fastervpn.world"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "167.234.249.46"
-    port: 444
-    password: "sysadmin.sysadmin"
-    sni: "a.961229.xyz"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "163.172.113.118"
-    port: 41484
-    password: "dongtaiwang.com"
-    sni: "www.microsoft.com"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "vpn-us-005.fastervpn.world"
-    port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-us-005.fastervpn.world"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "vpn-us-021.fastervpn.world"
-    port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-us-021.fastervpn.world"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "46.38.157.183"
-    port: 10001
-    password: "58b662c7-9481-4689-968c-76e048f1a958"
-    sni: "46.38.157.183"
+    sni: "vpn-us-003.fastervpn.world"
     skip-cert-verify: true
     udp: true
 
@@ -318,7 +312,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
@@ -369,7 +362,6 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
 
   - name: "Fallback"
     type: fallback
@@ -377,7 +369,6 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
