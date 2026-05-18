@@ -121,127 +121,190 @@ dns:
 
 proxies:
   - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "13.115.3.140"
+    type: trojan
+    server: "www.calmlunch.com"
     port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "https://t.me/WangCai2🇨🇳"
+    password: "humanity"
+    sni: "www.calmlunch.com"
     skip-cert-verify: true
     udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
   - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "54.250.218.42"
-    port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "https://t.me/WangCai2🇨🇳"
-    skip-cert-verify: true
+    type: vless
+    server: "104.17.169.216"
+    port: 80
+    uuid: "0ca855d9-7c03-40eb-929b-919f934abdc3"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        Host: "amirvpn.amirhm00100.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "ss.018.node-for-bigairport.win"
+    port: 16098
+    cipher: "aes-256-gcm"
+    password: "6c4bd474-ac23-47fc-8742-c8f990357836"
     udp: true
   - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "37.114.49.38"
-    port: 2056
-    password: "4d092122-268a-4a1a-b23f-83931c5abc3a"
-    sni: "37.114.49.38"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "15.237.176.6"
-    port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "15.237.176.6"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "musicclips.videolinks.ru"
+    type: vless
+    server: "node-fi.dostup-est.info"
     port: 8443
-    password: "rstnnl:XmFNUbpdnnIy7df1YtfLyzVgzt8U9GUv"
-    sni: "musicclips.videolinks.ru"
-    skip-cert-verify: true
+    uuid: "c931f737-cafe-4e4f-998a-a65517941256"
     udp: true
-    obfs: "salamander"
-    obfs-password: "hH0l2Acqz3RtodoSCNCpNJqDSZtp4Qw"
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "cdnjs.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "Ubibgn_MlW_zHo9LwjNH_b6SLNWwTJFwq7wW2ggLtUs"
+      short-id: "88ce6b586fcaf681"
   - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "vpn-sg-003.fastervpn.world"
+    type: vless
+    server: "27.50.49.231"
     port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-sg-003.fastervpn.world"
-    skip-cert-verify: true
+    uuid: "981fca81-5be1-41f8-ac9b-d138e8109943"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "babayaga-6i7.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?Telegram🇨🇳@WangCai2="
+      headers:
+        Host: "babayaga-6i7.pages.dev"
   - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "vpn-kr-003.fastervpn.world"
+    type: vless
+    server: "www.panel.com"
+    port: 2053
+    uuid: "8c4604ef-749c-4b56-adf1-7da405002a21"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "qyi.fqjd663.ggff.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "qyi.fqjd663.ggff.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "v3.dabache.top"
+    port: 2053
+    uuid: "d37a75db-76b6-4db8-b213-0d5b044d138d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "hio-awx.pages.dev"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/fast"
+      headers:
+        Host: "hio-awx.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "51.44.16.107"
+    port: 31413
+    uuid: "5454343b-541b-4c96-8c2a-52e81079d124"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "firefox"
+    reality-opts:
+      public-key: "nMlxwhP34_5wFPscbso_hOfRDmsj9DonMpDSXUrnJR8"
+      short-id: "ead3d6f82a9d"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "146.190.233.213"
     port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-kr-003.fastervpn.world"
+    uuid: "bafacd98-136a-4530-838d-4e5c51838dac"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi8186.qea.ccwu.cc"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "juzi8186.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "91.223.169.88"
+    port: 8443
+    password: "162534"
+    sni: "cchh2.pages.dev"
     skip-cert-verify: true
     udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560&https://t.me/WangCai2🇨🇳"
+      headers:
+        Host: "cchh2.pages.dev"
   - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "vpn-sg-002.fastervpn.world"
+    type: vless
+    server: "62.141.42.201"
     port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-sg-002.fastervpn.world"
-    skip-cert-verify: true
+    uuid: "cc976b15-418b-4f0b-89ce-cd685ffbaf20"
     udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "google.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "odbiaA-5s0mkehtfrf2SBcrKAMDP1sFjxKHJYdDCKgc"
+      short-id: "81"
   - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "202.61.205.86"
-    port: 4433
-    password: "2545ab46-6306-4f2b-badd-5531f384d55f"
-    sni: "de1.xiaoliyu.cyou"
-    skip-cert-verify: true
+    type: vless
+    server: "172.64.147.85"
+    port: 8880
+    uuid: "7890ce31-9a25-4fd4-90e7-80e5823ff510"
     udp: true
+    network: ws
+    ws-opts:
+      path: "/telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2/"
+      headers:
+        Host: "frejd.11258.workers.dev"
   - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "13.236.71.249"
+    type: vless
+    server: "104.16.80.73"
+    port: 2096
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.indevs.in"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.indevs.in"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "104.18.12.149"
     port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "13.236.71.249"
-    skip-cert-verify: true
+    uuid: "a01daac7-1e65-4645-854d-b47d226f6b08"
     udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "13.231.162.174"
-    port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "https://t.me/WangCai2🇨🇳"
+    tls: true
     skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "23.144.12.162"
-    port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "23.144.12.162"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "vpn-jp-001.fastervpn.world"
-    port: 443
-    password: "qQe1z5kU8kN6SlKnDt9Ru3Qp"
-    sni: "vpn-jp-001.fastervpn.world"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "185.228.139.247"
-    port: 4433
-    password: "2545ab46-6306-4f2b-badd-5531f384d55f"
-    sni: "de2.xiaoliyu.cyou"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "68.233.103.254"
-    port: 4433
-    password: "2545ab46-6306-4f2b-badd-5531f384d55f"
-    sni: "ln4.xiaoliyu.cyou"
-    skip-cert-verify: true
-    udp: true
+    servername: "y6-3cj.PAgES.DEV"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "y6-3cj.PAgES.DEV"
 
 proxy-groups:
   - name: "PROXY"
@@ -260,7 +323,6 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
@@ -297,7 +359,6 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
 
   - name: "Fallback"
     type: fallback
@@ -305,7 +366,6 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
