@@ -122,17 +122,7 @@ dns:
 proxies:
   - name: "@DeltaKroneckerGithub"
     type: hysteria2
-    server: "nrealistic.nn-foto.ru"
-    port: 8932
-    password: "rstnnl:7ltZBmta4ahLenTIoywBy3R1Z1PV7ZGf"
-    sni: "nrealistic.nn-foto.ru"
-    skip-cert-verify: true
-    udp: true
-    obfs: "salamander"
-    obfs-password: "CvxXZnSth1bVJKGFP2cof4rI52ifHJ2W"
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "45.12.146.179"
+    server: "45.15.140.128"
     port: 444
     password: "strong-secret-pass-777"
     sni: "www.microsoft.com"
@@ -140,14 +130,6 @@ proxies:
     udp: true
     obfs: "salamander"
     obfs-password: "cry_me_a_r1ver_2026"
-  - name: "@DeltaKroneckerGithub"
-    type: hysteria2
-    server: "138.124.182.202"
-    port: 8443
-    password: "jOIItw1h4D"
-    sni: "latviyaotpusk1.home.kg"
-    skip-cert-verify: true
-    udp: true
 
 proxy-groups:
   - name: "PROXY"
@@ -167,8 +149,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
 
   - name: "Auto"
     type: url-test
@@ -178,8 +158,6 @@ proxy-groups:
     lazy: true
     proxies:
       - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
 
   - name: "Fallback"
     type: fallback
@@ -187,8 +165,6 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
-      - "@DeltaKroneckerGithub"
-      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
 
 rules:
