@@ -131,8 +131,8 @@ type ClashProxy struct {
 	AuthStr    string      `yaml:"auth-str"`
 	AuthStrAlt string      `yaml:"auth_str"`
 	Auth       string      `yaml:"auth"`
-	Up      interface{} `yaml:"up"`
-	Down    interface{} `yaml:"down"`
+	Up         interface{} `yaml:"up"`
+	Down       interface{} `yaml:"down"`
 
 	Obfs         string `yaml:"obfs"`
 	ObfsPassword string `yaml:"obfs-password"`
@@ -152,7 +152,6 @@ type clashConfigWrapper struct {
 
 var cfg Settings
 var fetchHTTPClient = &http.Client{
-	// Timeout is set per-request via context; this is a fallback only.
 	Transport: &http.Transport{
 		MaxIdleConns:          100,
 		MaxIdleConnsPerHost:   10,
@@ -161,6 +160,10 @@ var fetchHTTPClient = &http.Client{
 		DisableKeepAlives:     false,
 	},
 }
+
+// SNI replacement constants
+const sniHost = "127.0.0.1"
+const sniPort = 40443
 
 type protoStat struct {
 	mu         sync.Mutex
@@ -824,7 +827,6 @@ func clashSSToURI(p ClashProxy) string {
 	}
 	portStr := clashPortStr(p.Port)
 
-	// SIP002 format: ss://BASE64(method:password)@host:port[/?plugin]#name
 	userInfo := base64.StdEncoding.EncodeToString([]byte(p.Cipher + ":" + p.Password))
 	q := url.Values{}
 
@@ -849,7 +851,6 @@ func clashSSToURI(p ClashProxy) string {
 		}
 		q.Set("plugin", pluginStr)
 	case "v2ray-plugin":
-		// v2ray-plugin with ws mode can be encoded in URI
 		if p.PluginOpts != nil {
 			mode, _ := p.PluginOpts["mode"].(string)
 			if mode == "websocket" || mode == "" {
@@ -871,7 +872,6 @@ func clashSSToURI(p ClashProxy) string {
 				}
 				q.Set("plugin", pluginStr)
 			} else {
-				// quic or other modes not universally supported
 				return ""
 			}
 		}
@@ -996,7 +996,6 @@ func clashTUICToURI(p ClashProxy) string {
 	if len(p.ALPN) > 0 {
 		q.Set("alpn", strings.Join(p.ALPN, ","))
 	}
-	// Encode congestion-controller if set (non-default)
 	if congestion, ok := p.PluginOpts["congestion-controller"].(string); ok && congestion != "" {
 		q.Set("congestion_control", congestion)
 	}
@@ -1035,7 +1034,6 @@ func isClashYAML(content string) bool {
 		limit = 8192
 	}
 	head := content[:limit]
-	// Check for proxies list header in various formats
 	for _, line := range strings.Split(head, "\n") {
 		t := strings.TrimSpace(line)
 		switch t {
@@ -1046,7 +1044,6 @@ func isClashYAML(content string) bool {
 			return true
 		}
 	}
-	// Check for inline proxy type markers (proxy-provider format)
 	for _, marker := range []string{
 		"type: vmess", "type: vless", "type: trojan",
 		"type: ss\n", "type: ss\r", "type: ssr",
@@ -1297,6 +1294,12 @@ func prepareOutputDirs() error {
 		"config/batches/v2ray",
 		"config/batches/clash",
 		"config/batches/clash_advanced",
+		// SNI output directories
+		"config/sni",
+		"config/sni/protocols",
+		"config/batches/sni_v2ray",
+		"config/batches/sni_clash",
+		"config/batches/sni_clash_advanced",
 	}
 	for _, dir := range dirs {
 		if err := os.MkdirAll(dir, 0755); err != nil {
@@ -1426,7 +1429,7 @@ func fetchRaw(rawURL string, timeout time.Duration) fetchResult {
 type failDetail struct {
 	mu      sync.Mutex
 	reasons map[string]int
-	samples map[string][]string // up to 100 sample config URIs per reason
+	samples map[string][]string
 }
 
 func validateAll(lines []string) []configResult {
@@ -1638,25 +1641,23 @@ func validateAll(lines []string) []configResult {
 		atomic.LoadInt64(&failedStart),
 		atomic.LoadInt64(&failedConn))
 
-	// ── Detailed per-protocol failure report ─────────────────────────────────
 	printFailureReport(protoFails, byProto)
 
 	return out
 }
 
-// printFailureReport prints a detailed statistical breakdown of failures per protocol.
-// classifyFailReason maps a raw fail reason to a precise, groupable category key.
 func classifyFailReason(reason string) string {
 	stripANSI := func(s string) string {
 		return strings.Map(func(r rune) rune {
-			if r == 0x1b { return -1 }
+			if r == 0x1b {
+				return -1
+			}
 			return r
 		}, s)
 	}
 	r := stripANSI(reason)
 
 	switch {
-	// ── PARSE failures ───────────────────────────────────────────────────────
 	case strings.HasPrefix(r, "PARSE: base64:"):
 		return "PARSE › base64 decode error"
 	case strings.HasPrefix(r, "PARSE: json:"):
@@ -1685,13 +1686,16 @@ func classifyFailReason(reason string) string {
 		return "PARSE › unknown security type"
 	case strings.HasPrefix(r, "PARSE:"):
 		msg := strings.TrimPrefix(r, "PARSE: ")
-		if len(msg) > 48 { msg = msg[:48] + "…" }
+		if len(msg) > 48 {
+			msg = msg[:48] + "…"
+		}
 		return "PARSE › " + msg
 
-	// ── SINGBOX_START / START failures ───────────────────────────────────────
 	case strings.HasPrefix(r, "SINGBOX_START:"), strings.HasPrefix(r, "START:"):
 		body := r
-		if i := strings.Index(body, ": "); i != -1 { body = body[i+2:] }
+		if i := strings.Index(body, ": "); i != -1 {
+			body = body[i+2:]
+		}
 		switch {
 		case strings.Contains(body, "port not open"):
 			return "START › port timeout (sing-box didn't listen)"
@@ -1709,17 +1713,17 @@ func classifyFailReason(reason string) string {
 		case strings.Contains(body, "method"):
 			return "START › unsupported SS method"
 		default:
-			if len(body) > 55 { body = body[:55] + "…" }
+			if len(body) > 55 {
+				body = body[:55] + "…"
+			}
 			return "START › " + body
 		}
 
-	// ── CONN failures ────────────────────────────────────────────────────────
 	case strings.HasPrefix(r, "CONN:"):
 		body := strings.TrimPrefix(r, "CONN: ")
-		if i := strings.Index(body, " | SINGBOX:"); i != -1 { body = body[:i] }
-		// Go http errors look like: Get "https://host/path": <real error>
-		// or: Get https://host/path: <real error>
-		// Strip the URL wrapper to expose the real cause.
+		if i := strings.Index(body, " | SINGBOX:"); i != -1 {
+			body = body[:i]
+		}
 		if strings.HasPrefix(body, "Get ") {
 			real := body
 			if i := strings.Index(body, `": `); i != -1 {
@@ -1761,23 +1765,29 @@ func classifyFailReason(reason string) string {
 		case strings.Contains(body, "context expired"):
 			return "CONN › test URL timed out (proxy dead or unreachable)"
 		default:
-			if len(body) > 55 { body = body[:55] + "…" }
+			if len(body) > 55 {
+				body = body[:55] + "…"
+			}
 			return "CONN › " + body
 		}
 
-	// ── FILE / internal errors ────────────────────────────────────────────────
 	case strings.HasPrefix(r, "FILE:"):
 		return "OTHER › temp file error"
 	default:
-		if len(r) > 55 { r = r[:55] + "…" }
+		if len(r) > 55 {
+			r = r[:55] + "…"
+		}
 		return "OTHER › " + r
 	}
 }
 
 func printFailureReport(protoFails map[string]*failDetail, byProto map[string][]string) {
-	type kv struct{ key string; val int }
+	type kv struct {
+		key string
+		val int
+	}
 
-	const W = 78 // total report width
+	const W = 78
 
 	hr := func(ch string) { fmt.Println(strings.Repeat(ch, W)) }
 
@@ -1788,7 +1798,6 @@ func printFailureReport(protoFails map[string]*failDetail, byProto map[string][]
 	fmt.Printf("  %-*s\n", W-3, "Detailed breakdown of why each config failed, grouped by root cause.")
 	hr("═")
 
-	// Gather overall stats for the global summary table
 	type protoRow struct {
 		name      string
 		total     int
@@ -1802,9 +1811,13 @@ func printFailureReport(protoFails map[string]*failDetail, byProto map[string][]
 
 	for _, proto := range cfg.ProtocolOrder {
 		fd := protoFails[proto]
-		if fd == nil { continue }
+		if fd == nil {
+			continue
+		}
 		total := len(byProto[proto])
-		if total == 0 { continue }
+		if total == 0 {
+			continue
+		}
 
 		var pf, sf, cf, of int
 		for key, cnt := range fd.reasons {
@@ -1823,15 +1836,14 @@ func printFailureReport(protoFails map[string]*failDetail, byProto map[string][]
 		rows = append(rows, protoRow{proto, total, total - totalFail, pf, sf, cf, of})
 	}
 
-	// ── Global summary table ─────────────────────────────────────────────────
 	fmt.Println()
 	fmt.Printf("  %-7s %7s %7s %6s  %9s %9s %9s %8s  %s\n",
 		"PROTO", "TOTAL", "PASSED", "PASS%", "PARSE✗", "START✗", "CONN✗", "OTHER✗", "PASS-RATE BAR")
 	fmt.Println("  " + strings.Repeat("─", W-2))
 	for _, row := range rows {
 		passRate := float64(row.passed) / float64(row.total) * 100
-		barLen   := int(passRate / 5)
-		bar      := strings.Repeat("▓", barLen) + strings.Repeat("░", 20-barLen)
+		barLen := int(passRate / 5)
+		bar := strings.Repeat("▓", barLen) + strings.Repeat("░", 20-barLen)
 		fmt.Printf("  %-7s %7d %7d %5.1f%%  %9d %9d %9d %8d  %s\n",
 			strings.ToUpper(row.name),
 			row.total, row.passed, passRate,
@@ -1840,19 +1852,23 @@ func printFailureReport(protoFails map[string]*failDetail, byProto map[string][]
 	}
 	fmt.Println()
 
-	// ── Per-protocol detail ──────────────────────────────────────────────────
 	for _, proto := range cfg.ProtocolOrder {
 		fd := protoFails[proto]
-		if fd == nil { continue }
+		if fd == nil {
+			continue
+		}
 		total := len(byProto[proto])
-		if total == 0 { continue }
+		if total == 0 {
+			continue
+		}
 
 		totalFails := 0
-		for _, c := range fd.reasons { totalFails += c }
-		passed   := total - totalFails
+		for _, c := range fd.reasons {
+			totalFails += c
+		}
+		passed := total - totalFails
 		passRate := float64(passed) / float64(total) * 100
 
-		// Section header
 		fmt.Printf("┌─ %-6s ─────────────────────────────────────────────────────────────\n",
 			strings.ToUpper(proto))
 		fmt.Printf("│  Total: %-6d  Passed: %-6d  Failed: %-6d  Pass rate: %.1f%%\n",
@@ -1864,11 +1880,10 @@ func printFailureReport(protoFails map[string]*failDetail, byProto map[string][]
 			continue
 		}
 
-		// Group into PARSE / START / CONN / OTHER sub-sections
 		sections := []struct{ prefix, label string }{
 			{"PARSE", "Parse Failures  (config could not be decoded/interpreted)"},
 			{"START", "Start Failures  (sing-box refused or couldn't start)"},
-			{"CONN",  "Conn Failures   (proxy started but connection failed)"},
+			{"CONN", "Conn Failures   (proxy started but connection failed)"},
 			{"OTHER", "Other / Unknown"},
 		}
 
@@ -1881,7 +1896,9 @@ func printFailureReport(protoFails map[string]*failDetail, byProto map[string][]
 					secTotal += v
 				}
 			}
-			if len(items) == 0 { continue }
+			if len(items) == 0 {
+				continue
+			}
 			sort.Slice(items, func(i, j int) bool { return items[i].val > items[j].val })
 
 			secPct := float64(secTotal) / float64(totalFails) * 100
@@ -1891,17 +1908,20 @@ func printFailureReport(protoFails map[string]*failDetail, byProto map[string][]
 			fmt.Printf("│    %s\n", strings.Repeat("·", 72))
 
 			for _, item := range items {
-				pct    := float64(item.val) / float64(secTotal) * 100
+				pct := float64(item.val) / float64(secTotal) * 100
 				barLen := int(pct / 5)
-				if barLen > 20 { barLen = 20 }
+				if barLen > 20 {
+					barLen = 20
+				}
 				bar := strings.Repeat("█", barLen)
 
-				// Strip the prefix from the display key (e.g. "PARSE › " -> shown under PARSE section)
 				displayKey := item.key
 				if i := strings.Index(displayKey, " › "); i != -1 {
 					displayKey = displayKey[i+3:]
 				}
-				if len(displayKey) > 51 { displayKey = displayKey[:51] + "…" }
+				if len(displayKey) > 51 {
+					displayKey = displayKey[:51] + "…"
+				}
 
 				fmt.Printf("│    %-52s %7d  %5.1f%%  %s\n",
 					displayKey, item.val, pct, bar)
@@ -1909,7 +1929,9 @@ func printFailureReport(protoFails map[string]*failDetail, byProto map[string][]
 				if samples := fd.samples[item.key]; len(samples) > 0 {
 					fmt.Printf("│    ┌─ SAMPLE CONFIGS (%d) ──────────────────────────────────────────\n", len(samples))
 					for i, s := range samples {
-						if len(s) > 140 { s = s[:140] + "…" }
+						if len(s) > 140 {
+							s = s[:140] + "…"
+						}
 						fmt.Printf("│    │ [%3d] %s\n", i+1, s)
 					}
 					fmt.Printf("│    └──────────────────────────────────────────────────────────────\n")
@@ -1920,12 +1942,11 @@ func printFailureReport(protoFails map[string]*failDetail, byProto map[string][]
 		fmt.Println("└" + strings.Repeat("─", W-1))
 	}
 
-	// ── Overall totals ───────────────────────────────────────────────────────
 	var grandTotal, grandPassed, grandFail int
 	for _, row := range rows {
-		grandTotal  += row.total
+		grandTotal += row.total
 		grandPassed += row.passed
-		grandFail   += row.total - row.passed
+		grandFail += row.total - row.passed
 	}
 	fmt.Println()
 	hr("═")
@@ -2047,8 +2068,6 @@ func waitForPort(addr string, maxWait, interval, dialTimeout time.Duration) bool
 }
 
 func tryHTTP(ctx context.Context, client *http.Client, testURLs []string, maxRetries int) (bool, time.Duration, string) {
-	// HTTPS only: plain HTTP uses HTTP-forward mode (sing-box returns 502).
-	// HTTPS uses CONNECT tunnel which works correctly. Replace any http:// → https://.
 	effectiveURLs := make([]string, 0, len(testURLs))
 	seen := make(map[string]bool)
 	for _, u := range testURLs {
@@ -2079,8 +2098,6 @@ func tryHTTP(ctx context.Context, client *http.Client, testURLs []string, maxRet
 			if err != nil {
 				e := shortenErr(err.Error())
 				lastErr = e
-				// Connection refused / reset / no route = proxy is definitively dead.
-				// No point trying remaining test URLs.
 				if strings.Contains(e, "connection refused") ||
 					strings.Contains(e, "connection reset") ||
 					strings.Contains(e, "no route to host") ||
@@ -2093,25 +2110,15 @@ func tryHTTP(ctx context.Context, client *http.Client, testURLs []string, maxRet
 			code := resp.StatusCode
 			resp.Body.Close()
 
-			// With HTTPS (CONNECT tunnel): reaching here means:
-			// 1) proxy tunnel was established successfully
-			// 2) TLS with the target completed
-			// 3) HTTP response came from the TARGET, not the proxy
-			// => any of these codes = proxy is alive
-
-			// 200/204: ideal - target fully reachable
 			if code == 200 || code == 204 {
 				return true, latency, ""
 			}
-			// 3xx redirects: target responded, proxy works
 			if code == 301 || code == 302 || code == 307 || code == 308 {
 				return true, latency, ""
 			}
-			// 400/403/404/429: target rejected our IP/request but proxy tunnel works
 			if code == 400 || code == 403 || code == 404 || code == 429 {
 				return true, latency, ""
 			}
-			// 5xx and anything else: ambiguous (could be proxy-level error), treat as fail
 			lastErr = fmt.Sprintf("HTTP_%d", code)
 		}
 	}
@@ -2145,30 +2152,63 @@ func toSingBoxOutbound(configURL, protocol string) (string, string) {
 	return "", "unsupported protocol: " + protocol
 }
 
+// sanitizeProxyURL cleans HTML entities, control chars, and resolves
+// recursively percent-encoded sequences (e.g. %25252525...XX → actual char).
+// This handles configs from Telegram/HTML sources that have been double- or
+// triple-encoded, such as UUIDs containing %252525...F0%25...9F...
 func sanitizeProxyURL(raw string) string {
 	// ── HTML entity decode ──────────────────────────────────────────────
-	// Config sources (Telegram web, HTML pages) often HTML-encode ampersands:
-	// ?security=reality&amp;pbk=KEY → url.Parse reads "amp;pbk" not "pbk"
-	// so q.Get("pbk") returns "" → "reality missing public key" error on ~420 configs.
 	raw = strings.ReplaceAll(raw, "&amp;", "&")
 	raw = strings.ReplaceAll(raw, "&lt;", "<")
 	raw = strings.ReplaceAll(raw, "&gt;", ">")
 	raw = strings.ReplaceAll(raw, "&quot;", `"`)
 	raw = strings.ReplaceAll(raw, "&#39;", "'")
 
-	// Strip spaces and control characters that break URL parsing
+	// Strip spaces and control characters
 	raw = strings.Map(func(r rune) rune {
 		if r == ' ' || r == '\t' || r == '\r' || r == '\n' {
 			return -1
 		}
 		return r
 	}, raw)
+
+	// ── Recursive percent-decode ────────────────────────────────────────
+	// Split at "://" to preserve the scheme, then decode only the rest.
+	// We iterate until stable (no more %25 sequences to unwrap).
 	schemeIdx := strings.Index(raw, "://")
 	if schemeIdx == -1 {
 		return raw
 	}
 	scheme := raw[:schemeIdx+3]
 	rest := raw[schemeIdx+3:]
+
+	// Iteratively unescape until no more %25 remain or value stops changing
+	const maxIter = 20
+	for i := 0; i < maxIter; i++ {
+		// Only continue decoding if there are still percent-encoded sequences
+		if !strings.Contains(rest, "%") {
+			break
+		}
+		decoded, err := url.QueryUnescape(rest)
+		if err != nil {
+			// If full unescape fails try PathUnescape (more lenient)
+			decoded, err = url.PathUnescape(rest)
+			if err != nil || decoded == rest {
+				break
+			}
+		}
+		if decoded == rest {
+			break
+		}
+		// Safety: if after decoding we no longer have a valid host portion, stop
+		// (prevents over-decoding that destroys the URL structure)
+		if strings.ContainsAny(decoded, "\x00\x01\x02\x03\x04\x05\x06\x07\x08\x0b\x0c\x0e\x0f") {
+			break
+		}
+		rest = decoded
+	}
+
+	// Re-assemble: separate fragment/query so we don't re-encode them
 	frag := ""
 	if fragIdx := strings.LastIndex(rest, "#"); fragIdx != -1 {
 		frag = rest[fragIdx:]
@@ -2187,9 +2227,6 @@ func sanitizeProxyURL(raw string) string {
 }
 
 func normalizeUUID(u string) string {
-	// Standard UUID: 8-4-4-4-12 hex chars with dashes
-	// Some configs provide a UUID as 32 hex chars without dashes.
-	// sing-box requires the dashed format.
 	if len(u) == 32 {
 		allHex := true
 		for _, c := range u {
@@ -2221,8 +2258,6 @@ func encodeUserInfo(s string) string {
 	return buf.String()
 }
 
-// parseVMessURItoD parses vmess://uuid@host:port?params into a map
-// compatible with the base64-JSON path so the rendering code is shared.
 func parseVMessURItoD(data string) (map[string]interface{}, string) {
 	u, err := url.Parse("vmess://" + data)
 	if err != nil {
@@ -2263,36 +2298,23 @@ func parseVMessURItoD(data string) (map[string]interface{}, string) {
 
 func parseVMess(raw string) (string, string) {
 	data := strings.TrimPrefix(raw, "vmess://")
-	// Strip fragment
 	if idx := strings.LastIndex(data, "#"); idx != -1 {
 		data = data[:idx]
 	}
 	data = strings.TrimSpace(data)
 
-	// Detection order:
-	//  1. Raw JSON  (vmess://{...})
-	//  2. Base64 JSON  (most common: vmess://eyJ...)
-	//  3. URI format  (vmess://uuid@host:port?...) - only if above fail
-
 	var d map[string]interface{}
 
 	if strings.HasPrefix(data, "{") {
-		// Raw JSON
 		if err := json.Unmarshal([]byte(data), &d); err != nil {
 			return "", "json: " + err.Error()
 		}
 	} else {
-		// Try base64 candidates in order:
-		//  1. Full data          (normal: vmess://eyJ...)
-		//  2. data[:lastAtIdx]   (channel-suffix: vmess://eyJ...==@ChannelName)
-		// For each candidate, try base64 → JSON. If both fail, fall to URI.
 		var tryB64 []string
 		tryB64 = append(tryB64, data)
 		if lastAt := strings.LastIndex(data, "@"); lastAt > 0 {
 			tryB64 = append(tryB64, data[:lastAt])
 		}
-		// Also try stripping from the first non-base64 character
-		// (handles: eyJ...==@name, eyJ...== name, etc.)
 		{
 			clean := data
 			for i, c := range data {
@@ -2326,7 +2348,6 @@ func parseVMess(raw string) (string, string) {
 			}
 		}
 		if !parsed {
-			// Fall back to URI format (vmess://uuid@host:port?params)
 			atIdx := strings.Index(data, "@")
 			qIdx := strings.Index(data, "?")
 			if atIdx != -1 && (qIdx == -1 || atIdx < qIdx) {
@@ -2336,7 +2357,6 @@ func parseVMess(raw string) (string, string) {
 					return "", parseErr
 				}
 			} else {
-				// Report root cause
 				if b64Err != nil {
 					return "", "base64: " + b64Err.Error()
 				}
@@ -2398,12 +2418,10 @@ func vmessTransport(d map[string]interface{}, network string) string {
 	return buildTransportJSON(network, path, host, svcName)
 }
 
-// singboxSupportedFlows contains vless flow values supported by sing-box.
-// Others (xtls-rprx-direct, xtls-rprx-splice, etc.) cause FATAL JSON decode errors.
 var singboxSupportedFlows = map[string]bool{
-	"":                    true,
-	"xtls-rprx-vision":   true,
-	"xtls-rprx-vision-udp443": true,
+	"":                         true,
+	"xtls-rprx-vision":         true,
+	"xtls-rprx-vision-udp443":  true,
 }
 
 func parseVLess(raw string) (string, string) {
@@ -2424,21 +2442,16 @@ func parseVLess(raw string) (string, string) {
 		return "", "port: " + err.Error()
 	}
 	q := u.Query()
-	// TrimSpace: handles configs where the security value has trailing whitespace
 	security := strings.TrimSpace(strings.ToLower(q.Get("security")))
 	network := strings.ToLower(q.Get("type"))
 	if network == "" {
 		network = "tcp"
 	}
-	// Reject transports not supported by installed sing-box:
-	// xhttp/splithttp causes ~5000 START failures → filter at PARSE
-	// kcp/mkcp/quic are Xray-only → never supported by sing-box
 	switch network {
 	case "xhttp", "splithttp", "kcp", "mkcp", "quic":
 		return "", "unsupported transport: " + network
 	}
 	sni := first(q.Get("sni"), q.Get("peer"), server)
-	// Filter flow: sing-box only supports xtls-rprx-vision; others cause FATAL config errors
 	flow := q.Get("flow")
 	if !singboxSupportedFlows[flow] {
 		flow = ""
@@ -2460,8 +2473,6 @@ func vlessTLS(security, sni, flow string, q url.Values) (string, string) {
 	}
 	switch security {
 	case "tls", "xtls":
-		// Do NOT include flowJSON: sing-box only accepts xtls-rprx-vision flow
-		// with reality TLS. Adding it to plain TLS causes START failures.
 		s := fmt.Sprintf(`,"tls":{"enabled":true,"insecure":true,"server_name":%q`, sni)
 		if fp := q.Get("fp"); fp != "" {
 			s += fmt.Sprintf(`,"utls":{"enabled":true,"fingerprint":%q}`, fp)
@@ -2479,7 +2490,6 @@ func vlessTLS(security, sni, flow string, q url.Values) (string, string) {
 		return flowJSON + fmt.Sprintf(`,"tls":{"enabled":true,"server_name":%q,"utls":{"enabled":true,"fingerprint":%q},"reality":{"enabled":true,"public_key":%q,"short_id":%q}}`,
 			sni, first(q.Get("fp"), "chrome"), pbk, q.Get("sid")), ""
 	case "none", "":
-		// flow requires TLS - don't include it for plaintext connections
 		return "", ""
 	}
 	return "", "unknown security: " + security
@@ -2553,8 +2563,6 @@ func parseTrojan(raw string) (string, string) {
 		server, port, password, tls, transport), ""
 }
 
-// singboxSupportedSSCiphers lists ciphers supported by sing-box.
-// Unsupported ciphers (rc4, rc4-md5, chacha20, bf-cfb, etc.) cause SINGBOX_START failures.
 var singboxSupportedSSCiphers = map[string]bool{
 	"aes-128-gcm": true, "aes-192-gcm": true, "aes-256-gcm": true,
 	"aes-128-cfb": true, "aes-192-cfb": true, "aes-256-cfb": true,
@@ -2569,7 +2577,6 @@ var singboxSupportedSSCiphers = map[string]bool{
 
 func parseShadowsocks(raw string) (string, string) {
 	trimmed := strings.TrimPrefix(raw, "ss://")
-	// Strip fragment
 	if idx := strings.LastIndex(trimmed, "#"); idx != -1 {
 		trimmed = trimmed[:idx]
 	}
@@ -2578,8 +2585,6 @@ func parseShadowsocks(raw string) (string, string) {
 	var method, password, server string
 	var port int
 
-	// Fast path: try url.Parse for standard ss://method:pass@host:port format.
-	// This handles the case where userinfo contains `:` and is NOT base64.
 	fastPathOK := false
 	if fastU, err := url.Parse("ss://" + trimmed); err == nil &&
 		fastU.User != nil && fastU.Hostname() != "" {
@@ -2594,7 +2599,6 @@ func parseShadowsocks(raw string) (string, string) {
 		if hasPwd {
 			m, p = uname, pwd
 		} else {
-			// uname might be base64(method:pass)
 			if d, derr := decodeBase64([]byte(uname)); derr == nil && strings.Contains(d, ":") {
 				parts := strings.SplitN(d, ":", 2)
 				m, p = parts[0], parts[1]
@@ -2611,9 +2615,10 @@ func parseShadowsocks(raw string) (string, string) {
 	if !fastPathOK {
 		atIdx := strings.LastIndex(trimmed, "@")
 		if atIdx == -1 {
-			// Strip query string before b64 decode: ss://BASE64?plugin=obfs
 			b64Src := trimmed
-			if qi := strings.Index(b64Src, "?"); qi != -1 { b64Src = b64Src[:qi] }
+			if qi := strings.Index(b64Src, "?"); qi != -1 {
+				b64Src = b64Src[:qi]
+			}
 			decoded, err := decodeBase64([]byte(b64Src))
 			if err != nil {
 				decoded = trimmed
@@ -2657,20 +2662,11 @@ func parseShadowsocks(raw string) (string, string) {
 		server, port, method, password), ""
 }
 
-// ssParseUserAndHost extracts method, password, server, port from the two halves of an SS URL.
 func ssParseUserAndHost(userPart, hostPart string) (method, password, server string, port int, errMsg string) {
-	// Decode userPart: may be:
-	//   1. plain "method:password"
-	//   2. base64("method:password")
-	//   3. URL-encoded plain or base64
-	//   4. "base64method:password" (rare split format)
-
 	decodeUser := func(s string) string {
-		// Try base64 decode of whole string (common SIP002 format)
 		if d, err := decodeBase64([]byte(s)); err == nil && strings.Contains(d, ":") {
 			return d
 		}
-		// Try URL-unescape first, then base64
 		if unescaped, err := url.PathUnescape(s); err == nil && unescaped != s {
 			if d, err2 := decodeBase64([]byte(unescaped)); err2 == nil && strings.Contains(d, ":") {
 				return d
@@ -2679,12 +2675,10 @@ func ssParseUserAndHost(userPart, hostPart string) (method, password, server str
 				return unescaped
 			}
 		}
-		// Try base64 decode of only the part before ":" if present
 		if colonIdx := strings.Index(s, ":"); colonIdx != -1 {
 			prefix := s[:colonIdx]
 			suffix := s[colonIdx+1:]
 			if d, err := decodeBase64([]byte(prefix)); err == nil && !strings.Contains(d, ":") {
-				// prefix was base64-encoded method, suffix is password
 				return d + ":" + suffix
 			}
 		}
@@ -2700,12 +2694,9 @@ func ssParseUserAndHost(userPart, hostPart string) (method, password, server str
 	method = strings.TrimSpace(parts[0])
 	password = parts[1]
 
-	// Parse host:port
-	// Handle IPv6 in brackets
 	hostPart = strings.TrimSpace(hostPart)
 	var portStr string
 	if strings.HasPrefix(hostPart, "[") {
-		// IPv6
 		closeBracket := strings.Index(hostPart, "]")
 		if closeBracket == -1 {
 			return "", "", "", 0, "invalid IPv6 host"
@@ -2726,7 +2717,6 @@ func ssParseUserAndHost(userPart, hostPart string) (method, password, server str
 		portStr = hostPart[lastColon+1:]
 	}
 
-	// Clean portStr: strip non-digit chars (e.g., '\2}', newlines)
 	if idx := strings.IndexFunc(portStr, func(r rune) bool { return r < '0' || r > '9' }); idx != -1 {
 		portStr = portStr[:idx]
 	}
@@ -2764,17 +2754,14 @@ func parseHysteria2(raw string) (string, string) {
 	var server string
 	var port int
 	if lastColon == -1 {
-		// No port specified - use default 443
 		server = hostPort
 		port = 443
 	} else {
 		portCandidate := hostPort[lastColon+1:]
-		// Verify it's actually a port number (not part of IPv6)
 		if _, perr := toPort(portCandidate); perr == nil {
 			server = hostPort[:lastColon]
 			port, _ = toPort(portCandidate)
 		} else if strings.HasPrefix(hostPort, "[") {
-			// Pure IPv6 without port
 			server = hostPort
 			port = 443
 		} else {
@@ -2861,8 +2848,6 @@ func parseTUIC(raw string) (string, string) {
 }
 
 func parseSSR(raw string) (string, string) {
-	// SSR format: ssr://BASE64(host:port:protocol:method:obfs:base64pass[/?params])
-	// sing-box does not support SSR natively — config is collected but not validated.
 	trimmed := strings.TrimPrefix(raw, "ssr://")
 	if trimmed == "" {
 		return "", "empty ssr url"
@@ -2871,7 +2856,6 @@ func parseSSR(raw string) (string, string) {
 	if err != nil {
 		return "", "base64: " + err.Error()
 	}
-	// Split off query string
 	params := ""
 	if i := strings.Index(decoded, "/?"); i != -1 {
 		params = decoded[i+2:]
@@ -2899,7 +2883,6 @@ func parseSSR(raw string) (string, string) {
 	_ = method
 	_ = params
 	_ = passDecoded
-	// sing-box does not support ShadowsocksR — return error so it is skipped in validation
 	return "", "SSR not supported by sing-box (collect-only protocol)"
 }
 
@@ -2951,6 +2934,194 @@ func coreIdentity(line, protocol string) string {
 	}
 }
 
+// ── SNI Config Conversion ────────────────────────────────────────────────────
+//
+// toSNIConfig replaces the server address and port in a proxy URI with
+// sniHost (127.0.0.1) and sniPort (40443), preserving all other parameters
+// (TLS, transport, SNI, etc.) intact.
+// The SNI field (server_name/sni/peer) is kept as-is so the client still
+// sends the correct TLS SNI during handshake.
+// Returns "" if the config cannot be transformed.
+func toSNIConfig(line, proto string) string {
+	switch proto {
+	case "vmess":
+		return toSNIVMess(line)
+	case "vless", "trojan", "hy2", "hy", "tuic", "ss":
+		return toSNIGeneric(line, proto)
+	case "ssr":
+		return toSNISSR(line)
+	}
+	return ""
+}
+
+// toSNIVMess handles the base64-JSON vmess format.
+func toSNIVMess(line string) string {
+	data := strings.TrimPrefix(line, "vmess://")
+	fragSuffix := ""
+	if idx := strings.LastIndex(data, "#"); idx != -1 {
+		fragSuffix = data[idx:]
+		data = data[:idx]
+	}
+	data = strings.TrimSpace(data)
+
+	var d map[string]interface{}
+	var isURI bool
+
+	if strings.HasPrefix(data, "{") {
+		if err := json.Unmarshal([]byte(data), &d); err != nil {
+			return ""
+		}
+	} else {
+		decoded, err := decodeBase64([]byte(data))
+		if err == nil {
+			if json.Unmarshal([]byte(decoded), &d) == nil {
+				// base64 JSON path
+			} else {
+				d = nil
+			}
+		}
+		if d == nil {
+			if atIdx := strings.Index(data, "@"); atIdx != -1 {
+				isURI = true
+			}
+		}
+	}
+
+	if isURI {
+		// URI format: replace host:port
+		atIdx := strings.LastIndex(data, "@")
+		if atIdx == -1 {
+			return ""
+		}
+		userPart := data[:atIdx]
+		rest := data[atIdx+1:]
+		// rest = host:port[?query]
+		qIdx := strings.Index(rest, "?")
+		hostPort := rest
+		querySuffix := ""
+		if qIdx != -1 {
+			hostPort = rest[:qIdx]
+			querySuffix = rest[qIdx:]
+		}
+		// Extract original host for SNI (keep in query if not already there)
+		_ = hostPort
+		return fmt.Sprintf("vmess://%s@%s:%d%s%s",
+			userPart, sniHost, sniPort, querySuffix, fragSuffix)
+	}
+
+	if d == nil {
+		return ""
+	}
+
+	// Replace add and port
+	d["add"] = sniHost
+	d["port"] = strconv.Itoa(sniPort)
+
+	// Rebuild base64 JSON
+	keys := make([]string, 0, len(d))
+	for k := range d {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	var buf bytes.Buffer
+	buf.WriteByte('{')
+	for i, k := range keys {
+		if i > 0 {
+			buf.WriteByte(',')
+		}
+		kj, _ := json.Marshal(k)
+		vj, _ := json.Marshal(d[k])
+		buf.Write(kj)
+		buf.WriteByte(':')
+		buf.Write(vj)
+	}
+	buf.WriteByte('}')
+	return "vmess://" + base64.StdEncoding.EncodeToString(buf.Bytes()) + fragSuffix
+}
+
+// toSNIGeneric handles URI-based protocols: vless, trojan, hy2, hy, tuic, ss.
+// It replaces host:port in the authority section while keeping query/fragment.
+func toSNIGeneric(line, proto string) string {
+	// Find scheme://
+	schemeEnd := strings.Index(line, "://")
+	if schemeEnd == -1 {
+		return ""
+	}
+	scheme := line[:schemeEnd+3]
+	rest := line[schemeEnd+3:]
+
+	// Split off fragment
+	frag := ""
+	if idx := strings.LastIndex(rest, "#"); idx != -1 {
+		frag = rest[idx:]
+		rest = rest[:idx]
+	}
+	// Split off query
+	query := ""
+	if idx := strings.Index(rest, "?"); idx != -1 {
+		query = rest[idx:]
+		rest = rest[:idx]
+	}
+	// rest is now: [userinfo@]host:port[/path]
+	// Split off path
+	path := ""
+	if idx := strings.Index(rest, "/"); idx != -1 {
+		path = rest[idx:]
+		rest = rest[:idx]
+	}
+
+	// Find last @ to separate userinfo from host:port
+	atIdx := strings.LastIndex(rest, "@")
+	var userInfo, hostPort string
+	if atIdx != -1 {
+		userInfo = rest[:atIdx+1] // includes "@"
+		hostPort = rest[atIdx+1:]
+	} else {
+		hostPort = rest
+	}
+
+	// Replace host:port — handle IPv6 brackets
+	newHostPort := fmt.Sprintf("%s:%d", sniHost, sniPort)
+	if strings.HasPrefix(hostPort, "[") {
+		// IPv6: [addr]:port — replace whole thing
+		newHostPort = fmt.Sprintf("%s:%d", sniHost, sniPort)
+	}
+	_ = hostPort // original value not needed further
+
+	return scheme + userInfo + newHostPort + path + query + frag
+}
+
+// toSNISSR handles the base64-encoded SSR format.
+func toSNISSR(line string) string {
+	trimmed := strings.TrimPrefix(line, "ssr://")
+	decoded, err := decodeBase64([]byte(trimmed))
+	if err != nil {
+		return ""
+	}
+	// Format: host:port:protocol:method:obfs:b64pass[/?params]
+	params := ""
+	body := decoded
+	if i := strings.Index(decoded, "/?"); i != -1 {
+		params = decoded[i:]
+		body = decoded[:i]
+	} else if i := strings.Index(decoded, "?"); i != -1 {
+		params = decoded[i:]
+		body = decoded[:i]
+	}
+	parts := strings.SplitN(body, ":", 6)
+	if len(parts) < 6 {
+		return ""
+	}
+	// Replace host (parts[0]) and port (parts[1])
+	parts[0] = sniHost
+	parts[1] = strconv.Itoa(sniPort)
+	newBody := strings.Join(parts, ":")
+	newFull := newBody + params
+	return "ssr://" + base64.RawURLEncoding.EncodeToString([]byte(newFull))
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+
 func writeOutputFiles(results []configResult) {
 	byProto := make(map[string][]string)
 	byProtoClash := make(map[string][]string)
@@ -2958,20 +3129,47 @@ func writeOutputFiles(results []configResult) {
 	var all []string
 	var allClash []string
 	var allClashNames []string
+
+	// SNI variants
+	bySNIProto := make(map[string][]string)
+	bySNIProtoClash := make(map[string][]string)
+	bySNIProtoClashNames := make(map[string][]string)
+	var allSNI []string
+	var allSNIClash []string
+	var allSNIClashNames []string
+
+	const ownerName = "@DeltaKroneckerGithub"
+
 	for _, r := range results {
-		named := renameTo(r.line, r.proto, "@DeltaKroneckerGithub")
+		named := renameTo(r.line, r.proto, ownerName)
 		all = append(all, named)
 		byProto[r.proto] = append(byProto[r.proto], named)
 
-		cname := "@DeltaKroneckerGithub"
+		cname := ownerName
 		if entry, ok := configToClashYAML(r.line, r.proto, cname); ok {
 			allClash = append(allClash, entry)
 			allClashNames = append(allClashNames, cname)
 			byProtoClash[r.proto] = append(byProtoClash[r.proto], entry)
 			byProtoClashNames[r.proto] = append(byProtoClashNames[r.proto], cname)
 		}
+
+		// Build SNI variant
+		sniLine := toSNIConfig(r.line, r.proto)
+		if sniLine != "" {
+			sniNamed := renameTo(sniLine, r.proto, ownerName)
+			allSNI = append(allSNI, sniNamed)
+			bySNIProto[r.proto] = append(bySNIProto[r.proto], sniNamed)
+
+			if sniEntry, ok := configToClashYAML(sniLine, r.proto, cname); ok {
+				allSNIClash = append(allSNIClash, sniEntry)
+				allSNIClashNames = append(allSNIClashNames, cname)
+				bySNIProtoClash[r.proto] = append(bySNIProtoClash[r.proto], sniEntry)
+				bySNIProtoClashNames[r.proto] = append(bySNIProtoClashNames[r.proto], cname)
+			}
+		}
 	}
 
+	// ── Write original output files ──────────────────────────────────────────
 	writeFile(cfg.Output.MainFile, all)
 	for proto, lines := range byProto {
 		writeFile(filepath.Join(cfg.Output.ProtocolsDir, proto+".txt"), lines)
@@ -2990,14 +3188,40 @@ func writeOutputFiles(results []configResult) {
 		}
 	}
 
-	writeBatchFiles(all, allClash, allClashNames)
+	// ── Write SNI output files ───────────────────────────────────────────────
+	sniDir := "config/sni"
+	sniProtosDir := "config/sni/protocols"
+
+	writeFile(filepath.Join(sniDir, "all_configs_sni.txt"), allSNI)
+	for proto, lines := range bySNIProto {
+		writeFile(filepath.Join(sniProtosDir, proto+"_sni.txt"), lines)
+	}
+
+	if gClash.simple != "" {
+		writeClashConfigSimple(filepath.Join(sniDir, "clash_sni.yaml"), allSNIClash, allSNIClashNames)
+		for proto, entries := range bySNIProtoClash {
+			writeClashConfigSimple(filepath.Join(sniProtosDir, proto+"_clash_sni.yaml"), entries, bySNIProtoClashNames[proto])
+		}
+	}
+	if gClash.advanced != "" {
+		writeClashConfigAdvanced(filepath.Join(sniDir, "clash_advanced_sni.yaml"), allSNIClash, allSNIClashNames)
+		for proto, entries := range bySNIProtoClash {
+			writeClashConfigAdvanced(filepath.Join(sniProtosDir, proto+"_clash_advanced_sni.yaml"), entries, bySNIProtoClashNames[proto])
+		}
+	}
+
+	writeBatchFiles(all, allClash, allClashNames, allSNI, allSNIClash, allSNIClashNames)
 }
 
-func writeBatchFiles(allV2ray []string, allClash []string, allClashNames []string) {
+func writeBatchFiles(
+	allV2ray []string, allClash []string, allClashNames []string,
+	allSNIV2ray []string, allSNIClash []string, allSNIClashNames []string,
+) {
 	const batchSize = 500
 
 	rng := rand.New(rand.NewSource(time.Now().UnixNano()))
 
+	// ── Original V2ray batches ────────────────────────────────────────────────
 	shuffledV2ray := make([]string, len(allV2ray))
 	copy(shuffledV2ray, allV2ray)
 	rng.Shuffle(len(shuffledV2ray), func(i, j int) { shuffledV2ray[i], shuffledV2ray[j] = shuffledV2ray[j], shuffledV2ray[i] })
@@ -3018,9 +3242,7 @@ func writeBatchFiles(allV2ray []string, allClash []string, allClashNames []strin
 		if end > len(shuffledV2ray) {
 			end = len(shuffledV2ray)
 		}
-		batch := shuffledV2ray[start:end]
-		path := fmt.Sprintf("config/batches/v2ray/batch_%03d.txt", batchIdx+1)
-		writeFile(path, batch)
+		writeFile(fmt.Sprintf("config/batches/v2ray/batch_%03d.txt", batchIdx+1), shuffledV2ray[start:end])
 	}
 
 	if len(shuffledClash) > 0 {
@@ -3038,12 +3260,53 @@ func writeBatchFiles(allV2ray []string, allClash []string, allClashNames []strin
 				names[i] = p.name
 			}
 			if gClash.simple != "" {
-				pathSimple := fmt.Sprintf("config/batches/clash/batch_%03d.yaml", batchIdx+1)
-				writeClashConfigSimple(pathSimple, entries, names)
+				writeClashConfigSimple(fmt.Sprintf("config/batches/clash/batch_%03d.yaml", batchIdx+1), entries, names)
 			}
 			if gClash.advanced != "" {
-				pathAdvanced := fmt.Sprintf("config/batches/clash_advanced/batch_%03d.yaml", batchIdx+1)
-				writeClashConfigAdvanced(pathAdvanced, entries, names)
+				writeClashConfigAdvanced(fmt.Sprintf("config/batches/clash_advanced/batch_%03d.yaml", batchIdx+1), entries, names)
+			}
+		}
+	}
+
+	// ── SNI V2ray batches ─────────────────────────────────────────────────────
+	shuffledSNIV2ray := make([]string, len(allSNIV2ray))
+	copy(shuffledSNIV2ray, allSNIV2ray)
+	rng.Shuffle(len(shuffledSNIV2ray), func(i, j int) { shuffledSNIV2ray[i], shuffledSNIV2ray[j] = shuffledSNIV2ray[j], shuffledSNIV2ray[i] })
+
+	shuffledSNIClash := make([]clashPair, len(allSNIClash))
+	for i := range allSNIClash {
+		shuffledSNIClash[i] = clashPair{entry: allSNIClash[i], name: allSNIClashNames[i]}
+	}
+	rng.Shuffle(len(shuffledSNIClash), func(i, j int) { shuffledSNIClash[i], shuffledSNIClash[j] = shuffledSNIClash[j], shuffledSNIClash[i] })
+
+	for batchIdx := 0; batchIdx*batchSize < len(shuffledSNIV2ray); batchIdx++ {
+		start := batchIdx * batchSize
+		end := start + batchSize
+		if end > len(shuffledSNIV2ray) {
+			end = len(shuffledSNIV2ray)
+		}
+		writeFile(fmt.Sprintf("config/batches/sni_v2ray/batch_%03d.txt", batchIdx+1), shuffledSNIV2ray[start:end])
+	}
+
+	if len(shuffledSNIClash) > 0 {
+		for batchIdx := 0; batchIdx*batchSize < len(shuffledSNIClash); batchIdx++ {
+			start := batchIdx * batchSize
+			end := start + batchSize
+			if end > len(shuffledSNIClash) {
+				end = len(shuffledSNIClash)
+			}
+			batch := shuffledSNIClash[start:end]
+			entries := make([]string, len(batch))
+			names := make([]string, len(batch))
+			for i, p := range batch {
+				entries[i] = p.entry
+				names[i] = p.name
+			}
+			if gClash.simple != "" {
+				writeClashConfigSimple(fmt.Sprintf("config/batches/sni_clash/batch_%03d.yaml", batchIdx+1), entries, names)
+			}
+			if gClash.advanced != "" {
+				writeClashConfigAdvanced(fmt.Sprintf("config/batches/sni_clash_advanced/batch_%03d.yaml", batchIdx+1), entries, names)
 			}
 		}
 	}
@@ -3112,7 +3375,7 @@ func configToClashYAML(line, proto, name string) (string, bool) {
 	case "tuic":
 		return tuicClashYAML(line, name)
 	case "ssr":
-		return "", false // SSR not supported in Clash YAML
+		return "", false
 	}
 	return "", false
 }
@@ -3127,19 +3390,16 @@ func vmessClashYAML(raw, name string) (string, bool) {
 	var d map[string]interface{}
 
 	if strings.HasPrefix(data, "{") {
-		// Raw JSON
 		if err := json.Unmarshal([]byte(data), &d); err != nil {
 			return "", false
 		}
 	} else {
-		// Try base64 decode first
 		decoded, err := decodeBase64([]byte(data))
 		if err == nil {
 			if json.Unmarshal([]byte(decoded), &d) != nil {
 				d = nil
 			}
 		}
-		// Fall back to URI format (uuid@host:port?params)
 		if d == nil {
 			pd, parseErr := parseVMessURItoD(data)
 			if parseErr != "" {
@@ -3282,7 +3542,6 @@ func trojanClashYAML(raw, name string) (string, bool) {
 
 func ssClashYAML(raw, name string) (string, bool) {
 	trimmed := strings.TrimPrefix(raw, "ss://")
-	// Capture query string before stripping fragment
 	queryStr := ""
 	if idx := strings.Index(trimmed, "?"); idx != -1 {
 		qEnd := len(trimmed)
@@ -3340,14 +3599,11 @@ func ssClashYAML(raw, name string) (string, bool) {
 	fmt.Fprintf(&sb, "  - name: %s\n    type: ss\n    server: %s\n    port: %d\n    cipher: %s\n    password: %s\n    udp: true\n",
 		yamlQuote(name), yamlQuote(server), port, yamlQuote(parts[0]), yamlQuote(parts[1]))
 
-	// Parse plugin info from query string
 	if queryStr != "" {
 		q, _ := url.ParseQuery(queryStr)
 		if pluginParam := q.Get("plugin"); pluginParam != "" {
-			// pluginParam format: "pluginName;opt1=val1;opt2=val2"
 			pluginParts := strings.SplitN(pluginParam, ";", 2)
 			pluginName := pluginParts[0]
-			// Map URI plugin names to Clash plugin names
 			switch {
 			case pluginName == "obfs-local" || pluginName == "obfs":
 				fmt.Fprintf(&sb, "    plugin: obfs\n    plugin-opts:\n")
@@ -3382,7 +3638,6 @@ func ssClashYAML(raw, name string) (string, bool) {
 	return sb.String(), true
 }
 
-// parsePluginOpts parses "key=val;key2=val2;flag" into a map.
 func parsePluginOpts(s string) map[string]string {
 	opts := make(map[string]string)
 	for _, part := range strings.Split(s, ";") {
@@ -3393,7 +3648,7 @@ func parsePluginOpts(s string) map[string]string {
 		if idx := strings.Index(part, "="); idx != -1 {
 			opts[part[:idx]] = part[idx+1:]
 		} else {
-			opts[part] = "" // flag without value (e.g. "tls")
+			opts[part] = ""
 		}
 	}
 	return opts
@@ -3559,26 +3814,20 @@ func renameTo(config, protocol, newName string) string {
 	switch protocol {
 	case "vmess":
 		data := strings.TrimPrefix(config, "vmess://")
-		// Strip fragment first
 		fragIdx := strings.LastIndex(data, "#")
 		if fragIdx != -1 {
 			data = data[:fragIdx]
 		}
 		data = strings.TrimSpace(data)
 
-		// Detect URI format: contains @ before any base64 chars would be exhausted
-		// URI format looks like: uuid@host:port?params
-		// Base64/JSON format: eyJ... or {...
 		isURI := false
 		if strings.HasPrefix(data, "{") {
 			isURI = false
 		} else {
-			// Try base64 decode; if it yields valid JSON, it's base64 format
 			decoded, err := decodeBase64([]byte(data))
 			if err == nil {
 				var tmp map[string]interface{}
 				if json.Unmarshal([]byte(decoded), &tmp) == nil {
-					// Successfully decoded as base64 JSON
 					tmp["ps"] = newName
 					keys := make([]string, 0, len(tmp))
 					for k := range tmp {
@@ -3601,14 +3850,12 @@ func renameTo(config, protocol, newName string) string {
 					return "vmess://" + base64.StdEncoding.EncodeToString(buf.Bytes())
 				}
 			}
-			// Check for URI format: uuid@host
 			if atIdx := strings.Index(data, "@"); atIdx != -1 {
 				isURI = true
 			}
 		}
 
 		if !isURI {
-			// Raw JSON format
 			var d map[string]interface{}
 			if err := json.Unmarshal([]byte(data), &d); err != nil {
 				return config
@@ -3635,7 +3882,6 @@ func renameTo(config, protocol, newName string) string {
 			return "vmess://" + base64.StdEncoding.EncodeToString(buf.Bytes())
 		}
 
-		// URI format: vmess://uuid@host:port?params  → just set/replace fragment
 		return "vmess://" + data + "#" + url.PathEscape(newName)
 
 	default:
@@ -3716,12 +3962,38 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	}
 	w.WriteString("\n")
 
+	// ── SNI Files table ───────────────────────────────────────────────────────
+	w.WriteString("### SNI Configs (server=127.0.0.1, port=40443)\n\n")
+	w.WriteString("> These configs have the server address replaced with `127.0.0.1:40443`.\n")
+	w.WriteString("> Use them with a local tunnel or gateway that forwards to the real server.\n")
+	w.WriteString("> All TLS SNI/peer fields are preserved so TLS handshake still works correctly.\n\n")
+	fmt.Fprintf(w, "| File | Link |\n|---|---|\n")
+	fmt.Fprintf(w, "| All SNI configs (txt) | [all_configs_sni.txt](%s/config/sni/all_configs_sni.txt) |\n", repoBase)
+	fmt.Fprintf(w, "| clash_sni.yaml (all protocols) | [clash_sni.yaml](%s/config/sni/clash_sni.yaml) |\n", repoBase)
+	fmt.Fprintf(w, "| clash_advanced_sni.yaml | [clash_advanced_sni.yaml](%s/config/sni/clash_advanced_sni.yaml) |\n", repoBase)
+	w.WriteString("\n")
+
+	w.WriteString("#### SNI — By Protocol\n\n")
+	fmt.Fprintf(w, "| Protocol | Count | V2ray | Clash | Clash Advanced |\n|---|---|---|---|---|\n")
+	for _, p := range cfg.ProtocolOrder {
+		if n := byProtoOut[p]; n > 0 {
+			fmt.Fprintf(w, "| %s | %d | [%s_sni.txt](%s/config/sni/protocols/%s_sni.txt) | [%s_clash_sni.yaml](%s/config/sni/protocols/%s_clash_sni.yaml) | [%s_clash_advanced_sni.yaml](%s/config/sni/protocols/%s_clash_advanced_sni.yaml) |\n",
+				strings.ToUpper(p), n,
+				p, repoBase, p,
+				p, repoBase, p,
+				p, repoBase, p)
+		}
+	}
+	w.WriteString("\n")
+
 	w.WriteString("---\n\n")
 	w.WriteString("## Batch Files — Random 500-Config Groups\n\n")
 	w.WriteString("> Each file contains 500 randomly selected configs from all protocols.\n\n")
 
 	v2rayBatches := countBatchFiles("config/batches/v2ray")
 	clashBatches := countBatchFiles("config/batches/clash")
+	sniV2rayBatches := countBatchFiles("config/batches/sni_v2ray")
+	sniClashBatches := countBatchFiles("config/batches/sni_clash")
 
 	w.WriteString("### V2ray Batches\n\n")
 	fmt.Fprintf(w, "| Batch | Count | Link |\n|---|---|---|\n")
@@ -3736,6 +4008,23 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	fmt.Fprintf(w, "| Batch | Link |\n|---|---|\n")
 	for i := 1; i <= clashBatches; i++ {
 		fmt.Fprintf(w, "| Batch %03d | [batch_%03d.yaml](%s/config/batches/clash/batch_%03d.yaml) |\n",
+			i, i, repoBase, i)
+	}
+	w.WriteString("\n")
+
+	w.WriteString("### SNI V2ray Batches\n\n")
+	fmt.Fprintf(w, "| Batch | Count | Link |\n|---|---|---|\n")
+	for i := 1; i <= sniV2rayBatches; i++ {
+		cnt := min500(i, len(results))
+		fmt.Fprintf(w, "| Batch %03d | %d | [batch_%03d.txt](%s/config/batches/sni_v2ray/batch_%03d.txt) |\n",
+			i, cnt, i, repoBase, i)
+	}
+	w.WriteString("\n")
+
+	w.WriteString("### SNI Clash Batches\n\n")
+	fmt.Fprintf(w, "| Batch | Link |\n|---|---|\n")
+	for i := 1; i <= sniClashBatches; i++ {
+		fmt.Fprintf(w, "| Batch %03d | [batch_%03d.yaml](%s/config/batches/sni_clash/batch_%03d.yaml) |\n",
 			i, i, repoBase, i)
 	}
 	w.WriteString("\n")
@@ -3779,7 +4068,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 }
 
 func decodeBase64(encoded []byte) (string, error) {
-	// Strip all whitespace variants (space, tab, CR, LF)
 	s := strings.Map(func(r rune) rune {
 		if r == ' ' || r == '\t' || r == '\r' || r == '\n' {
 			return -1
@@ -3787,22 +4075,18 @@ func decodeBase64(encoded []byte) (string, error) {
 		return r
 	}, string(encoded))
 
-	// Normalize: strip existing padding to get clean raw string
 	stripped := strings.TrimRight(s, "=")
 
-	// Build padded version (multiple of 4)
 	padded := stripped
 	if r := len(padded) % 4; r != 0 {
 		padded += strings.Repeat("=", 4-r)
 	}
 
-	// Try with padding: StdEncoding (+/) then URLEncoding (-_)
 	for _, enc := range []*base64.Encoding{base64.StdEncoding, base64.URLEncoding} {
 		if b, err := enc.DecodeString(padded); err == nil {
 			return string(b), nil
 		}
 	}
-	// Try without padding: RawStdEncoding (+/) then RawURLEncoding (-_)
 	for _, enc := range []*base64.Encoding{base64.RawStdEncoding, base64.RawURLEncoding} {
 		if b, err := enc.DecodeString(stripped); err == nil {
 			return string(b), nil
@@ -3956,7 +4240,6 @@ func extractErr(stderr string) string {
 			continue
 		}
 		lower := strings.ToLower(line)
-		// Skip warn/info/debug lines
 		if strings.Contains(lower, "warn") || strings.Contains(lower, "deprecated") {
 			continue
 		}
@@ -3976,43 +4259,55 @@ func extractErr(stderr string) string {
 }
 
 func extractErrVerbose(stderr string) string {
-	// Picks the most informative sing-box error line.
-	// Extracts the "msg" field from JSON-format sing-box log lines.
 	var first, best string
 	priority := []string{"invalid", "failed", "decode", "unsupported", "error"}
 	for _, line := range strings.Split(stderr, "\n") {
 		line = strings.TrimSpace(line)
-		if line == "" { continue }
+		if line == "" {
+			continue
+		}
 		lower := strings.ToLower(line)
-		if strings.Contains(lower, "warn") || strings.Contains(lower, "deprecated") { continue }
+		if strings.Contains(lower, "warn") || strings.Contains(lower, "deprecated") {
+			continue
+		}
 		if strings.Contains(lower, `"level":"info"`) || strings.Contains(lower, `"level":"debug"`) ||
-			strings.Contains(lower, "level=info") || strings.Contains(lower, "level=debug") { continue }
-		// Extract msg field from JSON log: {"level":"error","msg":"decode failed: ..."}
+			strings.Contains(lower, "level=info") || strings.Contains(lower, "level=debug") {
+			continue
+		}
 		if idx := strings.Index(line, `"msg":"`); idx != -1 {
 			end := strings.Index(line[idx+7:], `"`)
-			if end != -1 { line = line[idx+7 : idx+7+end]; lower = strings.ToLower(line) }
+			if end != -1 {
+				line = line[idx+7 : idx+7+end]
+				lower = strings.ToLower(line)
+			}
 		}
-		if first == "" { first = line }
+		if first == "" {
+			first = line
+		}
 		if best == "" {
 			for _, kw := range priority {
-				if strings.Contains(lower, kw) { best = line; break }
+				if strings.Contains(lower, kw) {
+					best = line
+					break
+				}
 			}
 		}
 	}
 	r := best
-	if r == "" { r = first }
-	if len(r) > 180 { r = r[:180] + "..." }
+	if r == "" {
+		r = first
+	}
+	if len(r) > 180 {
+		r = r[:180] + "..."
+	}
 	return r
 }
 
 func shortenErr(s string) string {
 	s = strings.ReplaceAll(s, `"`, "")
-	// Strip "Get https://host/path: " prefix so the real cause isn't truncated away
 	if strings.HasPrefix(s, "Get ") {
 		if i := strings.Index(s, ": "); i != -1 && i > 10 {
 			real := s[i+2:]
-			// real may be "dial tcp x.x.x.x:443: connect: connection refused"
-			// keep it, it's more useful than the URL prefix
 			s = real
 		}
 	}
