@@ -76,29 +76,42 @@ proxies:
     type: trojan
     server: "127.0.0.1"
     port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
     password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     sni: "sni.111000.dynv6.net"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
+      path: "/"
       headers:
         Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "r137979f"
-    sni: "sheleqaz.emotionreza.workers.dev"
+    password: "humanity"
+    sni: "www.calmloud.com"
     skip-cert-verify: true
     udp: true
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/assignment"
       headers:
-        Host: "sheleqaz.emotionreza.workers.dev"
+        Host: "www.calmloud.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -112,6 +125,479 @@ proxies:
       path: "/assignment"
       headers:
         Host: "www.multiplydose.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳@WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳@WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net:443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "Nova-Proxy"
+    sni: "127.0.0.1"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "67f4b8ff-15cf-3ec9-b09d-c31a4728c652"
+    sni: "windows11.dpdns.org"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tr"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "7aXwJPnpAJ"
+    sni: "127.0.0.1"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "gcuCpQfaiVeDBdWG"
+    sni: "yazhou10.dynu.net"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳@WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "127.0.0.1"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "telegram-id-privatevpns"
+    sni: "trojan.burgerip.co.uk"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.multiplydose.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.multiplydose.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/tr"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "7aXwJPnpAJ"
+    sni: "yespaintstudio.rav-kraski.ru"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "127.0.0.1"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net:443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net:443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "67f4b8ff-15cf-3ec9-b09d-c31a4728c652"
+    sni: "windows11.dpdns.org"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net:443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -136,6 +622,19 @@ proxies:
     udp: true
     network: ws
     ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
       path: "/trTelegram🇨🇳@WangCai2"
       headers:
         Host: "Koma-YT.PAGeS.Dev"
@@ -143,13 +642,32 @@ proxies:
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "humanity"
-    sni: "127.0.0.1"
+    password: "BxceQaOe"
+    sni: "t.me/ripaojiedian"
     skip-cert-verify: true
     udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "7c9fea7c-8def-3dd5-853a-5844f9b04146"
+    sni: "windows11.dpdns.org"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "r137979f"
+    sni: "sheleqaz.emotionreza.workers.dev"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/assignment"
+      path: "/"
+      headers:
+        Host: "sheleqaz.emotionreza.workers.dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -173,9 +691,22 @@ proxies:
     udp: true
     network: ws
     ws-opts:
-      path: "/trTelegram🇨🇳"
+      path: "/tr"
       headers:
         Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.ignitelimit.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.ignitelimit.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -197,43 +728,10 @@ proxies:
     sni: "www.creationlong.org"
     skip-cert-verify: true
     udp: true
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/assignment"
-      headers:
-        Host: "www.creationlong.org"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "03mpolj39zyewzufal2r"
-    sni: "127.0.0.1"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "127.0.0.1"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.multiplydose.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.multiplydose.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -260,97 +758,6 @@ proxies:
       path: "/?proxyip=ip.111000.de5.net:443"
       headers:
         Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -395,7 +802,7 @@ proxies:
     udp: true
     network: ws
     ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
+      path: "/trTelegram🇨🇳@WangCai2"
       headers:
         Host: "Koma-YT.PAGeS.Dev"
   - name: "@DeltaKroneckerGithub"
@@ -406,12 +813,193 @@ proxies:
     sni: "sni.111000.dynv6.net"
     skip-cert-verify: true
     udp: true
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/?proxyip=ip.111000.de5.net:443"
       headers:
         Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "telegram-id-directvpn"
+    sni: "trojan.burgerip.co.uk"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "67f4b8ff-15cf-3ec9-b09d-c31a4728c652"
+    sni: "windows11.dpdns.org"
+    skip-cert-verify: true
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.gossipglove.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.calmloud.com"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmloud.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳@WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "A4u^p(_UR*F6"
+    sni: "027.eLECTROcelLCO-cf-027.WorKerS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/eyJqdW5rIjoidDJ0UDljR2ZIaVBQakg2byIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
+      headers:
+        Host: "027.electrocellco-cf-027.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "03mpolj39zyewzufal2r"
+    sni: "127.0.0.1"
+    skip-cert-verify: true
+    udp: true
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -443,36 +1031,27 @@ proxies:
     server: "127.0.0.1"
     port: 40443
     password: "humanity"
-    sni: "www.gossipglove.com"
+    sni: "www.multiplydose.com"
     skip-cert-verify: true
     udp: true
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/assignment"
       headers:
-        Host: "www.gossipglove.com"
+        Host: "www.multiplydose.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
+      path: "/trTelegram🇨🇳@WangCai2"
       headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "67f4b8ff-15cf-3ec9-b09d-c31a4728c652"
-    sni: "windows11.dpdns.org"
-    skip-cert-verify: true
-    udp: true
+        Host: "Koma-YT.PAGeS.Dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -516,265 +1095,6 @@ proxies:
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "A4u^p(_UR*F6"
-    sni: "027.eLECTROcelLCO-cf-027.WorKerS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/eyJqdW5rIjoidDJ0UDljR2ZIaVBQakg2byIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0="
-      headers:
-        Host: "027.electrocellco-cf-027.workers.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "BxceQaOe"
-    sni: "t.me/ripaojiedian"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.gossipglove.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.gossipglove.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳@WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.ignitelimit.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.ignitelimit.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
     password: "humanity"
     sni: "www.multiplydose.com"
     skip-cert-verify: true
@@ -789,49 +1109,28 @@ proxies:
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "7aXwJPnpAJ"
+    password: "humanity"
     sni: "127.0.0.1"
     skip-cert-verify: true
     udp: true
-    client-fingerprint: "chrome"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.creationlong.org"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/tr"
+      path: "/?proxyip=ip.111000.de5.net:443"
       headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
+        Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -845,6 +1144,20 @@ proxies:
       path: "/trTelegram🇨🇳 @WangCai2"
       headers:
         Host: "Koma-YT.PAGeS.Dev"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net:443"
+      headers:
+        Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -888,33 +1201,6 @@ proxies:
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
     password: "8r<[9'l6hAO#8ZQi"
     sni: "Koma-YT.PAGeS.Dev"
     skip-cert-verify: true
@@ -935,41 +1221,6 @@ proxies:
     network: ws
     ws-opts:
       path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "7aXwJPnpAJ"
-    sni: "yespaintstudio.rav-kraski.ru"
-    skip-cert-verify: true
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.calmlunch.com"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmlunch.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳@WangCai2"
       headers:
         Host: "Koma-YT.PAGeS.Dev"
   - name: "@DeltaKroneckerGithub"
@@ -1006,6 +1257,7 @@ proxies:
     sni: "Koma-YT.PAGeS.Dev"
     skip-cert-verify: true
     udp: true
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/trTelegram🇨🇳 @WangCai2"
@@ -1015,15 +1267,15 @@ proxies:
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
+    password: "humanity"
+    sni: "www.creationlong.org"
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
+      path: "/assignment"
       headers:
-        Host: "Koma-YT.PAGeS.Dev"
+        Host: "www.creationlong.org"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -1054,92 +1306,14 @@ proxies:
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳@WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳@WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.calmloud.com"
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
     skip-cert-verify: true
     udp: true
     client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
+      path: "/?proxyip=ip.111000.de5.net:443"
       headers:
         Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
@@ -1150,6 +1324,7 @@ proxies:
     sni: "Koma-YT.PAGeS.Dev"
     skip-cert-verify: true
     udp: true
+    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/trTelegram🇨🇳 @WangCai2"
@@ -1159,10 +1334,55 @@ proxies:
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "7c9fea7c-8def-3dd5-853a-5844f9b04146"
-    sni: "windows11.dpdns.org"
+    password: "humanity"
+    sni: "www.gossipglove.com"
     skip-cert-verify: true
     udp: true
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.gossipglove.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    sni: "sni.111000.dynv6.net"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/?proxyip=ip.111000.de5.net:443"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "humanity"
+    sni: "www.calmlunch.com"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/assignment"
+      headers:
+        Host: "www.calmlunch.com"
+  - name: "@DeltaKroneckerGithub"
+    type: trojan
+    server: "127.0.0.1"
+    port: 40443
+    password: "8r<[9'l6hAO#8ZQi"
+    sni: "Koma-YT.PAGeS.Dev"
+    skip-cert-verify: true
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/trTelegram🇨🇳 @WangCai2"
+      headers:
+        Host: "Koma-YT.PAGeS.Dev"
   - name: "@DeltaKroneckerGithub"
     type: trojan
     server: "127.0.0.1"
@@ -1193,210 +1413,10 @@ proxies:
     type: trojan
     server: "127.0.0.1"
     port: 40443
-    password: "Nova-Proxy"
+    password: "tsuchiya"
     sni: "127.0.0.1"
     skip-cert-verify: true
     udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "humanity"
-    sni: "www.calmloud.com"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/assignment"
-      headers:
-        Host: "www.calmloud.com"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/tr"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳@WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/trTelegram🇨🇳@WangCai2"
-      headers:
-        Host: "Koma-YT.PAGeS.Dev"
 
 proxy-groups:
   # ── Top-level selector ────────────────────────────────────────────────────
@@ -1439,6 +1459,10 @@ proxy-groups:
     tolerance: 150
     lazy: true
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
@@ -1658,6 +1682,10 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   # ── Fastest-proxy groups ──────────────────────────────────────────────────
   - name: "FAST-ALL"
@@ -1772,6 +1800,10 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   - name: "FAST-CDN"
     type: url-test
@@ -1780,6 +1812,10 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
@@ -1999,11 +2035,19 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   # ── Manual selector ───────────────────────────────────────────────────────
   - name: "MANUAL"
     type: select
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
