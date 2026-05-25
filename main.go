@@ -3921,8 +3921,6 @@ func min500(batchIdx, total int) int {
 
 
 
-
-
 func writeSummary(results []configResult, failedLinks []string, duration float64, originalTotal int) {
 	byProtoOut := make(map[string]int)
 	for _, r := range results {
@@ -3939,29 +3937,36 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 
 	repoBase := "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main"
 
-	// ── SNI Files table (FIRST) ───────────────────────────────────────────────────────
+	// ── SINGLE SNI TABLE (everything together) ────────────────────────────────────
 	w.WriteString("## SNI Configs (server=127.0.0.1, port=40443)\n\n")
 	w.WriteString("> These configs have the server address replaced with `127.0.0.1:40443`.\n")
 	w.WriteString("> Use them with a local tunnel or gateway that forwards to the real server.\n")
 	w.WriteString("> All TLS SNI/peer fields are preserved so TLS handshake still works correctly.\n\n")
-	fmt.Fprintf(w, "| File | Link |\n|---|---|\n")
-	fmt.Fprintf(w, "| All SNI configs (txt) | [all_configs_sni.txt](%s/config/sni/all_configs_sni.txt) |\n", repoBase)
-	w.WriteString("\n")
-
-	w.WriteString("#### SNI — By Protocol\n\n")
-	fmt.Fprintf(w, "| Protocol | Count | V2ray SNI Config |\n|---|---|---|\n")
+	
+	fmt.Fprintf(w, "| Type | Count | Link |\n|---|---|---|\n")
+	
+	// Main SNI file
+	fmt.Fprintf(w, "| All SNI configs | — | [all_configs_sni.txt](%s/config/sni/all_configs_sni.txt) |\n", repoBase)
+	
+	// SNI by protocol
 	for _, p := range cfg.ProtocolOrder {
 		if n := byProtoOut[p]; n > 0 {
-			fmt.Fprintf(w, "| %s | %d | [%s_sni.txt](%s/config/sni/protocols/%s_sni.txt) |\n",
-				strings.ToUpper(p), n,
-				p, repoBase, p)
+			fmt.Fprintf(w, "| Protocol: %s | %d | [%s_sni.txt](%s/config/sni/protocols/%s_sni.txt) |\n",
+				strings.ToUpper(p), n, p, repoBase, p)
 		}
 	}
-	w.WriteString("\n")
-
-	w.WriteString("---\n\n")
 	
-	// ── Main Files (without Clash SNI) ─────────────────────────────────────────────
+	// SNI V2ray Batches
+	sniV2rayBatches := countBatchFiles("config/batches/sni_v2ray")
+	for i := 1; i <= sniV2rayBatches; i++ {
+		cnt := min500(i, len(results))
+		fmt.Fprintf(w, "| Batch %03d | %d | [batch_%03d.txt](%s/config/batches/sni_v2ray/batch_%03d.txt) |\n",
+			i, cnt, i, repoBase, i)
+	}
+	
+	w.WriteString("\n---\n\n")
+	
+	// ── Main Files (V2ray + Clash, no SNI) ────────────────────────────────────────
 	w.WriteString("## Main Files\n\n")
 
 	w.WriteString("### V2ray — All Configs\n\n")
@@ -3992,13 +3997,12 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 
 	w.WriteString("---\n\n")
 	
-	// ── Batch Files (without SNI Clash batches) ──────────────────────────────────────
+	// ── Batch Files (only regular V2ray and Clash, NO SNI batches) ────────────────
 	w.WriteString("## Batch Files — Random 500-Config Groups\n\n")
 	w.WriteString("> Each file contains 500 randomly selected configs from all protocols.\n\n")
 
 	v2rayBatches := countBatchFiles("config/batches/v2ray")
 	clashBatches := countBatchFiles("config/batches/clash")
-	sniV2rayBatches := countBatchFiles("config/batches/sni_v2ray")
 
 	w.WriteString("### V2ray Batches\n\n")
 	fmt.Fprintf(w, "| Batch | Count | Link |\n|---|---|---|\n")
@@ -4014,15 +4018,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	for i := 1; i <= clashBatches; i++ {
 		fmt.Fprintf(w, "| Batch %03d | [batch_%03d.yaml](%s/config/batches/clash/batch_%03d.yaml) |\n",
 			i, i, repoBase, i)
-	}
-	w.WriteString("\n")
-
-	w.WriteString("### SNI V2ray Batches\n\n")
-	fmt.Fprintf(w, "| Batch | Count | Link |\n|---|---|---|\n")
-	for i := 1; i <= sniV2rayBatches; i++ {
-		cnt := min500(i, len(results))
-		fmt.Fprintf(w, "| Batch %03d | %d | [batch_%03d.txt](%s/config/batches/sni_v2ray/batch_%03d.txt) |\n",
-			i, cnt, i, repoBase, i)
 	}
 	w.WriteString("\n")
 
@@ -4065,7 +4060,6 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	w.WriteString("⭐ **Star our [Telegram posts](https://t.me/DeltaKroneckerGithub)** \n\n")
 	w.WriteString("Your stars fuel our motivation to keep improving!\n")
 }
-
 
 
 
