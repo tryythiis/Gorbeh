@@ -3938,11 +3938,10 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	repoBase := "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main"
 
 	// ── SINGLE SNI TABLE (everything together) ────────────────────────────────────
-	w.WriteString("## SNI Configs (server=127.0.0.1, port=40443)\n\n")
-	w.WriteString("> These configs have the server address replaced with `127.0.0.1:40443`.\n")
-	w.WriteString("> Use them with a local tunnel or gateway that forwards to the real server.\n")
-	w.WriteString("> All TLS SNI/peer fields are preserved so TLS handshake still works correctly.\n\n")
-	
+	w.WriteString("## SNI-Spoofing Configs (server=127.0.0.1, port=40443)\n\n")
+	w.WriteString("> https://t.me/DeltaSNI برای اموزش و گفت و گو درباره روش های مبتنی بر این روش در گروه تلگرامی ما عضو بشید \n")
+	w.WriteString("> لطفا هر پروژه ای براتون مفید بود حتما استار بدید، با این کار انگیزه توسعه دهنده برای ادامه رو تامین می کنید🫀 \n")
+
 	fmt.Fprintf(w, "| Type | Count | Link |\n|---|---|---|\n")
 	
 	// Main SNI file
@@ -4055,9 +4054,8 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 
 	w.WriteString("---\n\n")
 	w.WriteString("## 🔥 Keep This Project Going!\n\n")
-	w.WriteString("If you're finding this useful, please show your support:\n\n")
-	w.WriteString("⭐ **Star the repository on GitHub**\n\n")
-	w.WriteString("⭐ **Star our [Telegram posts](https://t.me/DeltaKroneckerGithub)** \n\n")
+	w.WriteString("If you're finding this useful, please show your support with:\n\n")
+	w.WriteString("⭐ **Star the repository **\n\n")
 	w.WriteString("Your stars fuel our motivation to keep improving!\n")
 }
 
