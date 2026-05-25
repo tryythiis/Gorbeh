@@ -128,270 +128,12 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.111000.dns.army"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dns.army"
-  - name: "@DeltaKroneckerGithub"
-    type: ss
-    server: "127.0.0.1"
-    port: 40443
-    cipher: "chacha20-ietf-poly1305"
-    password: "QFWzCw2uX9B9i6qAYeFBIE"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.jpmj.dev"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.jpmj.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
     servername: "sni.111000.v6.navy"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/?telegram"
       headers:
         Host: "sni.111000.v6.navy"
-  - name: "@DeltaKroneckerGithub"
-    type: ss
-    server: "127.0.0.1"
-    port: 40443
-    cipher: "chacha20-ietf-poly1305"
-    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "8c4604ef-749c-4b56-adf1-7da405002a21"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "qyi.fqjd663.ggff.net"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "qyi.fqjd663.ggff.net"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.indevs.in"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.indevs.in"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.v6.navy"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.v6.navy"
-  - name: "@DeltaKroneckerGithub"
-    type: ss
-    server: "127.0.0.1"
-    port: 40443
-    cipher: "aes-256-cfb"
-    password: "f8f7aCzcPKbsF8p3"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.v6.navy"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.v6.navy"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe"
-    alterId: 0
-    cipher: "aes-128-gcm"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.v6.rocks"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.v6.rocks"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.dns.army"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dns.army"
-  - name: "@DeltaKroneckerGithub"
-    type: trojan
-    server: "127.0.0.1"
-    port: 40443
-    password: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    sni: "sni.111000.dynv6.net"
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/?proxyip=ip.111000.de5.net:443"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.v6.navy"
-    network: ws
-    ws-opts:
-      path: "/?Telegram🇨🇳 @WangCai2="
-      headers:
-        Host: "sni.111000.v6.navy"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.v6.rocks"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.v6.rocks"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "478cc26d-16b3-4fdd-be64-60d5a58c1622"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "tt.andishehparenting.com"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "juzi.qea.ccwu.cc"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "juzi.qea.ccwu.cc"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "f667a096-5231-4cfb-8759-92bb32473139"
-    udp: true
-    tls: true
-    skip-cert-verify: false
-    servername: "yahoo.com"
-    client-fingerprint: "chrome"
-    reality-opts:
-      public-key: "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg"
-      short-id: "0e"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "bafacd98-136a-4530-838d-4e5c51838dac"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "juzi8186.qea.ccwu.cc"
-    client-fingerprint: "firefox"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "juzi8186.qea.ccwu.cc"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -411,12 +153,26 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.111000.indevs.in"
+    servername: "sni.jpmj.dev"
     network: ws
     ws-opts:
-      path: "/?Telegram🇨🇳@WangCai2="
+      path: "/"
       headers:
-        Host: "sni.111000.indevs.in"
+        Host: "sni.jpmj.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -439,27 +195,41 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.111000.indevs.in"
-    client-fingerprint: "chrome"
+    servername: "sant.atira-40.workers.dev"
+    alpn: ["http/1.1"]
     network: ws
     ws-opts:
-      path: "/"
+      path: "/sni.111000.dynv6.net/"
       headers:
-        Host: "sni.111000.indevs.in"
+        Host: "sant.atira-40.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "aes-256-cfb"
+    password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    udp: true
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    uuid: "8b5acf77-2c2e-4eed-9ad1-be81851b99ea"
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.111000.v6.navy"
+    servername: "e1-f55.pages.dev"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "sni.111000.v6.navy"
+        Host: "e1-f55.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "aes-256-cfb"
+    password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    udp: true
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -469,26 +239,11 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "sni.jpmj.dev"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
-      path: "/"
+      path: "/?Telegram@WangCai2="
       headers:
         Host: "sni.jpmj.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: ss
-    server: "127.0.0.1"
-    port: 40443
-    cipher: "chacha20-ietf-poly1305"
-    password: "4a2rfixophdjffa8KVA4Aa"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: ss
-    server: "127.0.0.1"
-    port: 40443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -497,12 +252,12 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.111000.indevs.in"
+    servername: "sni.111000.dynv6.net"
     network: ws
     ws-opts:
-      path: "/?Telegram🇨🇳@WangCai2="
+      path: "/?Telegram馃嚚馃嚦 @WangCai2="
       headers:
-        Host: "sni.111000.indevs.in"
+        Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -512,7 +267,6 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "sni.111000.v6.navy"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
@@ -522,20 +276,83 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "78c5b6bd-1cb6-463c-bcba-9f17ef70c85b"
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.v6.navy"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "square-frost-8d11.9660004.workers.dev"
+        Host: "sni.111000.v6.navy"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "n1761296889.4u9ma.icu"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "n1761296889.4u9ma.icu"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    client-fingerprint: "chrome"
+    alpn: ["http/1.1"]
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
     type: ss
     server: "127.0.0.1"
     port: 40443
     cipher: "aes-256-cfb"
-    password: "f8f7aCzcPKbsF8p3"
+    password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
     udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.v6.navy"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.v6.navy"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a67e3045-626c-42c9-8cc0-a5afa6b18b05"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "io.ozone.ru"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM"
+      short-id: "92d0c4089b6c1da3"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -547,7 +364,7 @@ proxies:
     servername: "sni.latonyamadeline.ndjp.net"
     network: ws
     ws-opts:
-      path: "/?https://t.me/wangcai2🇨🇳="
+      path: "/"
       headers:
         Host: "sni.latonyamadeline.ndjp.net"
   - name: "@DeltaKroneckerGithub"
@@ -565,11 +382,41 @@ proxies:
       headers:
         Host: "sni.111000.v6.navy"
   - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "10e82fcc-94ec-4d09-8855-579bb55b77e4"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "eh.vk.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "NDe_UBPG-k6TqnheVYUxNxlXtmgy975eDsdqK35sJhA"
+      short-id: "6ba85179e30d4fc2"
+    network: grpc
+    grpc-opts:
+      grpc-service-name: "xyz"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.v6.navy"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.v6.navy"
+  - name: "@DeltaKroneckerGithub"
     type: ss
     server: "127.0.0.1"
     port: 40443
-    cipher: "aes-256-cfb"
-    password: "f8f7aCzcPKbsF8p3"
+    cipher: "chacha20-ietf-poly1305"
+    password: "k1dBOmOB4oqi7Ump37a1bQ"
     udp: true
   - name: "@DeltaKroneckerGithub"
     type: vless
@@ -579,51 +426,12 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.111000.dns.army"
+    servername: "sni.latonyamadeline.ndjp.net"
     network: ws
     ws-opts:
-      path: "/?https://t.me/WangCai2🇨🇳="
+      path: "/?https://t.me/youtube@ZYFXS🇨🇳="
       headers:
-        Host: "sni.111000.dns.army"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.cc.cd"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.cc.cd"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "2ac6e527-6410-48ce-b9ba-cc8135ee2a3b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "fragrant-recipe-09f4.wopecuyubak61.workers.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.my111000.tech"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.my111000.tech"
+        Host: "sni.latonyamadeline.ndjp.net"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -646,12 +454,422 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
+    servername: "sni.111000.indevs.in"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.indevs.in"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
     servername: "sni.111000.v6.navy"
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: "sni.111000.v6.navy"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.indevs.in"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.indevs.in"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "388a6c57-87e7-420b-afe2-b3eb670fd7da"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "vip.yaml7.ggff.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dns.army"
+    network: ws
+    ws-opts:
+      path: "/?https://t.me/WangCai2🇨🇳="
+      headers:
+        Host: "sni.111000.dns.army"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "aes-256-cfb"
+    password: "f8f7aCzcPKbsF8p3"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "chacha20-ietf-poly1305"
+    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "bafacd98-136a-4530-838d-4e5c51838dac"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi8186.qea.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/lib/collection/jp/juzibaipiao"
+      headers:
+        Host: "juzi8186.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "chacha20-ietf-poly1305"
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "c9424b66-67dd-4dbf-ddbc-752514cc04a5"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.indevs.in"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.indevs.in"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "chacha20-ietf-poly1305"
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "8b575b35-3c7c-42b0-ac80-2aa6b0d7717c"
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    servername: "yahoo.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "lf7NJGZAcj3b-YdbsmD6oEISr0dZRjp_gM8ZhLHwb0U"
+      short-id: "772e"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "aes-256-cfb"
+    password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "chacha20-ietf-poly1305"
+    password: "QCXDxuDlTTMD7jtgHUjIoj"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "06ef598c-1555-4887-b3f9-08214a2f6792"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "2026.hhhhh.eu.org"
+    network: ws
+    ws-opts:
+      path: "/222.167.202.31:7443"
+      headers:
+        Host: "2026.hhhhh.eu.org"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "e033ef6e-ab4b-47d4-a523-ff568d2c8dbb"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "tradingview.com"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/?Telegram🇨🇳@WangCai2"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "aes-256-cfb"
+    password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "chacha20-ietf-poly1305"
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "04621bae-ab36-11ec-b909-0242ac120002"
+    alterId: 0
+    cipher: "auto"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.indevs.in"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.indevs.in"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.indevs.in"
+    network: ws
+    ws-opts:
+      path: "/?Telegram🇨🇳 @WangCai2="
+      headers:
+        Host: "sni.111000.indevs.in"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "bafacd98-136a-4530-838d-4e5c51838dac"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi8186.qea.ccwu.cc"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/thread/test/blogs/juzibaipiao?ed=2560"
+      headers:
+        Host: "juzi8186.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a01daac7-1e65-4645-854d-b47d226f6b08"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "y6-3cj.PAgES.DEV"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "y6-3cj.PAgES.DEV"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.v6.navy"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.v6.navy"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi.qea.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "chacha20-ietf-poly1305"
+    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a6f1755f-0140-4bea-8727-0db1bed7c4df"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi.qea.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "juzi.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "ce069292-c8bf-40dd-a6b1-87818a1e64e9"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "3-2h8.pages.dev"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "3-2h8.pages.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -674,51 +892,12 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.111000.dynv6.net"
-    network: ws
-    ws-opts:
-      path: "/?Telegram🇨🇳@WangCai2="
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.dynv6.net"
+    servername: "sni.jpmj.dev"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "78c5b6bd-1cb6-463c-bcba-9f17ef70c85b"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "square-frost-8d11.9660004.workers.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.dynv6.net"
-    network: ws
-    ws-opts:
-      path: "/?Telegram🇨🇳@WangCai2"
-      headers:
-        Host: "sni.111000.dynv6.net"
+        Host: "sni.jpmj.dev"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -730,7 +909,7 @@ proxies:
     servername: "sni.my111000.tech"
     network: ws
     ws-opts:
-      path: "/"
+      path: "Telegram🇨🇳@WangCai2/"
       headers:
         Host: "sni.my111000.tech"
   - name: "@DeltaKroneckerGithub"
@@ -741,83 +920,61 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.111000.v6.navy"
+    servername: "sni.111000.indevs.in"
     network: ws
     ws-opts:
-      path: "/?Telegram🇨🇳 @WangCai2="
+      path: "/?Telegram🇨🇳@WangCai2="
       headers:
-        Host: "sni.111000.v6.navy"
+        Host: "sni.111000.indevs.in"
   - name: "@DeltaKroneckerGithub"
-    type: vless
+    type: ss
     server: "127.0.0.1"
     port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    cipher: "aes-256-cfb"
+    password: "Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV"
     udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.v6.rocks"
-    network: ws
-    ws-opts:
-      path: "/?https://t.me/WangCai2🇨🇳="
-      headers:
-        Host: "sni.111000.v6.rocks"
   - name: "@DeltaKroneckerGithub"
     type: ss
     server: "127.0.0.1"
     port: 40443
     cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
+    password: "WC0GbiCk67K8nHDaDHmYIX"
     udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.indevs.in"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.indevs.in"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.indevs.in"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.indevs.in"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "7506fe3e-7e78-497c-bd01-db9d0be4d7e3"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "filter.elitesilver002.workers.dev"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "filter.elitesilver002.workers.dev"
   - name: "@DeltaKroneckerGithub"
     type: ss
     server: "127.0.0.1"
     port: 40443
-    cipher: "chacha20-ietf-poly1305"
-    password: "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    cipher: "aes-128-gcm"
+    password: "shadowsocks"
     udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "d555dac9-27cb-4ddb-89f5-6a1d8d1e4798"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "momi.timoreyhaneh.workers.dev"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "momi.timoreyhaneh.workers.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.jpmj.dev"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.jpmj.dev"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -833,20 +990,6 @@ proxies:
       headers:
         Host: "sni.111000.v6.navy"
   - name: "@DeltaKroneckerGithub"
-    type: ss
-    server: "127.0.0.1"
-    port: 40443
-    cipher: "chacha20-ietf-poly1305"
-    password: "W74XFALLLuw6m5IA"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
-    type: ss
-    server: "127.0.0.1"
-    port: 40443
-    cipher: "chacha20-ietf-poly1305"
-    password: "oZIoA69Q8yhcQV8ka3Pa3A"
-    udp: true
-  - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
     port: 40443
@@ -854,66 +997,12 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.latonyamadeline.ndjp.net"
+    servername: "sni.111000.v6.navy"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "sni.latonyamadeline.ndjp.net"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.dynv6.net"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dynv6.net"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.indevs.in"
-    client-fingerprint: "chrome"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.indevs.in"
-  - name: "@DeltaKroneckerGithub"
-    type: vmess
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "1375985e-334a-4c25-8f64-52a182bc8037"
-    alterId: 0
-    cipher: "auto"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/Notif_Chat"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.111000.dns.army"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.111000.dns.army"
+        Host: "sni.111000.v6.navy"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -936,6 +1025,20 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
+    servername: "sni.111000.dns.army"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dns.army"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
     servername: "sni.jpmj.dev"
     network: ws
     ws-opts:
@@ -943,18 +1046,26 @@ proxies:
       headers:
         Host: "sni.jpmj.dev"
   - name: "@DeltaKroneckerGithub"
-    type: trojan
+    type: ss
     server: "127.0.0.1"
     port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
+    cipher: "aes-256-cfb"
+    password: "qwerREWQ@@"
     udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.my111000.tech"
     network: ws
     ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
+      path: "Telegram🇨🇳@WangCai2/"
       headers:
-        Host: "Koma-YT.PAGeS.Dev"
+        Host: "sni.my111000.tech"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -964,12 +1075,226 @@ proxies:
     tls: true
     skip-cert-verify: true
     servername: "sni.111000.v6.navy"
-    client-fingerprint: "chrome"
     network: ws
     ws-opts:
       path: "/"
       headers:
         Host: "sni.111000.v6.navy"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "aes-256-gcm"
+    password: "5mCH4624QflO1cFR"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.latonyamadeline.ndjp.net"
+    network: ws
+    ws-opts:
+      path: "/?https://t.me/wangcai2🇨🇳="
+      headers:
+        Host: "sni.latonyamadeline.ndjp.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "48ff2b70-e180-582f-8866-d9a2edeed5f5"
+    udp: true
+    flow: "xtls-rprx-vision"
+    tls: true
+    skip-cert-verify: false
+    servername: "fuck.rkn"
+    client-fingerprint: "chrome"
+    reality-opts:
+      public-key: "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+      short-id: "01"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "388a6c57-87e7-420b-afe2-b3eb670fd7da"
+    udp: true
+    network: ws
+    ws-opts:
+      path: "/@ProxyVPN11"
+      headers:
+        Host: "vip.yaml7.ggff.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.v6.navy"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.v6.navy"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "chacha20-ietf-poly1305"
+    password: "CJmTCCx7Ltud"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "chacha20-ietf-poly1305"
+    password: "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.v6.navy"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.v6.navy"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.my111000.tech"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.my111000.tech"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.v6.rocks"
+    network: ws
+    ws-opts:
+      path: "/?ed=2560"
+      headers:
+        Host: "sni.111000.v6.rocks"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "bafacd98-136a-4530-838d-4e5c51838dac"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi8186.qea.ccwu.cc"
+    client-fingerprint: "firefox"
+    network: ws
+    ws-opts:
+      path: "/show/about/juzibaipiao?ed=2560"
+      headers:
+        Host: "juzi8186.qea.ccwu.cc"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "aes-256-cfb"
+    password: "f8f7aCzcPKbsF8p3"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.jpmj.dev"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.jpmj.dev"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/?Telegram🇨🇳@WangCai2="
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: ss
+    server: "127.0.0.1"
+    port: 40443
+    cipher: "aes-256-gcm"
+    password: "umWwoQJEJGf74SLe"
+    udp: true
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "bafacd98-136a-4530-838d-4e5c51838dac"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi8186.qea.ccwu.cc"
+    network: ws
+    ws-opts:
+      path: "/travel/juzibaipiao"
+      headers:
+        Host: "juzi8186.qea.ccwu.cc"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -988,13 +1313,16 @@ proxies:
     type: vless
     server: "127.0.0.1"
     port: 40443
-    uuid: "388a6c57-87e7-420b-afe2-b3eb670fd7da"
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.cc.cd"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "vip.yaml7.ggff.net"
+        Host: "sni.111000.cc.cd"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -1003,26 +1331,12 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.jpmj.dev"
+    servername: "sni.111000.v6.navy"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "sni.jpmj.dev"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.jpmj.dev"
-    network: ws
-    ws-opts:
-      path: "/"
-      headers:
-        Host: "sni.jpmj.dev"
+        Host: "sni.111000.v6.navy"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -1038,18 +1352,20 @@ proxies:
       headers:
         Host: "qyi.fqjd663.ggff.net"
   - name: "@DeltaKroneckerGithub"
-    type: trojan
+    type: vless
     server: "127.0.0.1"
     port: 40443
-    password: "8r<[9'l6hAO#8ZQi"
-    sni: "Koma-YT.PAGeS.Dev"
-    skip-cert-verify: true
+    uuid: "bafacd98-136a-4530-838d-4e5c51838dac"
     udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "juzi8186.qea.ccwu.cc"
+    client-fingerprint: "firefox"
     network: ws
     ws-opts:
-      path: "/trTelegram🇨🇳 @WangCai2"
+      path: "/ad/juzibaipiao?ed=2560"
       headers:
-        Host: "Koma-YT.PAGeS.Dev"
+        Host: "juzi8186.qea.ccwu.cc"
   - name: "@DeltaKroneckerGithub"
     type: vless
     server: "127.0.0.1"
@@ -1058,26 +1374,137 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: "sni.111000.v6.army"
-    network: ws
-    ws-opts:
-      path: "/?https://t.me/wangcai2🇨🇳="
-      headers:
-        Host: "sni.111000.v6.army"
-  - name: "@DeltaKroneckerGithub"
-    type: vless
-    server: "127.0.0.1"
-    port: 40443
-    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: "sni.jpmj.dev"
+    servername: "sni.111000.dynv6.net"
     network: ws
     ws-opts:
       path: "/"
       headers:
-        Host: "sni.jpmj.dev"
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.indevs.in"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.indevs.in"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.v6.navy"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.v6.navy"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.dynv6.net"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.dynv6.net"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.v6.navy"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.v6.navy"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "a01daac7-1e65-4645-854d-b47d226f6b08"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "y6-3cj.PAgES.DEV"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "y6-3cj.PAgES.DEV"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.indevs.in"
+    client-fingerprint: "chrome"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.indevs.in"
+  - name: "@DeltaKroneckerGithub"
+    type: vless
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "6202b230-417c-4d8e-b624-0f71afa9c75d"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "sni.111000.indevs.in"
+    network: ws
+    ws-opts:
+      path: "/"
+      headers:
+        Host: "sni.111000.indevs.in"
+  - name: "@DeltaKroneckerGithub"
+    type: vmess
+    server: "127.0.0.1"
+    port: 40443
+    uuid: "5c040f1d-45db-43bd-8d46-e4950e433735"
+    alterId: 0
+    cipher: "aes-128-gcm"
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: "supervpn.super.com"
+    client-fingerprint: "chrome"
 
 proxy-groups:
   - name: "PROXY"
@@ -1096,6 +1523,41 @@ proxy-groups:
     tolerance: 50
     lazy: true
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
@@ -1256,6 +1718,41 @@ proxy-groups:
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
 
   - name: "Fallback"
     type: fallback
@@ -1263,6 +1760,41 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
+      - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
       - "@DeltaKroneckerGithub"
