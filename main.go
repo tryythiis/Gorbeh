@@ -3938,10 +3938,11 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	repoBase := "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main"
 
 	// ── SINGLE SNI TABLE (everything together) ────────────────────────────────────
-	w.WriteString("## SNI-Spoofing Configs (server=127.0.0.1, port=40443)\n\n")
-	w.WriteString("> https://t.me/DeltaSNI برای اموزش و گفت و گو درباره روش های مبتنی بر این روش در گروه تلگرامی ما عضو بشید \n")
-	w.WriteString("> لطفا هر پروژه ای براتون مفید بود حتما استار بدید، با این کار انگیزه توسعه دهنده برای ادامه رو تامین می کنید🫀 \n")
-
+	w.WriteString("## SNI Configs\n\n")
+	w.WriteString("> If you don't know what SNI-Spoofing configurations are for, skip this table.\n")
+	w.WriteString("> [https://t.me/DeltaSNI](https://t.me/DeltaSNI) برای آموزش و گفت و گو درباره روش های مبتنی بر این روش در گروه تلگرامی ما عضو بشید\n")
+	w.WriteString("> لطفا هر پروژه ای براتون مفید بود حتما استار بدید، با این کار انگیزه توسعه دهنده برای ادامه رو تامین می کنید🫀\n\n")
+	
 	fmt.Fprintf(w, "| Type | Count | Link |\n|---|---|---|\n")
 	
 	// Main SNI file
@@ -4055,10 +4056,9 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	w.WriteString("---\n\n")
 	w.WriteString("## 🔥 Keep This Project Going!\n\n")
 	w.WriteString("If you're finding this useful, please show your support with:\n\n")
-	w.WriteString("⭐ **Star the repository **\n\n")
+	w.WriteString("⭐ **Star the repository**\n\n")
 	w.WriteString("Your stars fuel our motivation to keep improving!\n")
 }
-
 
 
 
