@@ -3940,7 +3940,9 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	// ── SINGLE SNI TABLE (everything together) ────────────────────────────────────
 	w.WriteString("## SNI Configs\n\n")
 	w.WriteString("> If you don't know what SNI-Spoofing configurations are for, skip this table.\n")
-	w.WriteString("> [https://t.me/DeltaSNI](https://t.me/DeltaSNI) برای آموزش و گفت و گو درباره روش های مبتنی بر این روش در گروه تلگرامی ما عضو بشید\n")
+	w.WriteString("\n")
+	w.WriteString("> https://t.me/DeltaSNI برای آموزش و گفت و گو درباره روش های مبتنی بر این روش در گروه تلگرامی ما عضو بشید\n")
+	w.WriteString("\n")
 	w.WriteString("> لطفا هر پروژه ای براتون مفید بود حتما استار بدید، با این کار انگیزه توسعه دهنده برای ادامه رو تامین می کنید🫀\n\n")
 	
 	fmt.Fprintf(w, "| Type | Count | Link |\n|---|---|---|\n")
@@ -4055,11 +4057,11 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 
 	w.WriteString("---\n\n")
 	w.WriteString("## 🔥 Keep This Project Going!\n\n")
-	w.WriteString("If you're finding this useful, please show your support with:\n\n")
-	w.WriteString("⭐ **Star the repository**\n\n")
+	w.WriteString("If you're finding this useful, please show your support:\n\n")
+	w.WriteString("⭐ **Star the repository on GitHub**\n\n")
+	w.WriteString("⭐ **Star our [Telegram posts](https://t.me/DeltaKroneckerGithub)** \n\n")
 	w.WriteString("Your stars fuel our motivation to keep improving!\n")
 }
-
 
 
 
