@@ -3961,31 +3961,7 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 		}
 	}
 	w.WriteString("\n")
-
-	// ── SNI Files table ───────────────────────────────────────────────────────
-	w.WriteString("### SNI Configs (server=127.0.0.1, port=40443)\n\n")
-	w.WriteString("> These configs have the server address replaced with `127.0.0.1:40443`.\n")
-	w.WriteString("> Use them with a local tunnel or gateway that forwards to the real server.\n")
-	w.WriteString("> All TLS SNI/peer fields are preserved so TLS handshake still works correctly.\n\n")
-	fmt.Fprintf(w, "| File | Link |\n|---|---|\n")
-	fmt.Fprintf(w, "| All SNI configs (txt) | [all_configs_sni.txt](%s/config/sni/all_configs_sni.txt) |\n", repoBase)
-	fmt.Fprintf(w, "| clash_sni.yaml (all protocols) | [clash_sni.yaml](%s/config/sni/clash_sni.yaml) |\n", repoBase)
-	fmt.Fprintf(w, "| clash_advanced_sni.yaml | [clash_advanced_sni.yaml](%s/config/sni/clash_advanced_sni.yaml) |\n", repoBase)
-	w.WriteString("\n")
-
-	w.WriteString("#### SNI — By Protocol\n\n")
-	fmt.Fprintf(w, "| Protocol | Count | V2ray | Clash | Clash Advanced |\n|---|---|---|---|---|\n")
-	for _, p := range cfg.ProtocolOrder {
-		if n := byProtoOut[p]; n > 0 {
-			fmt.Fprintf(w, "| %s | %d | [%s_sni.txt](%s/config/sni/protocols/%s_sni.txt) | [%s_clash_sni.yaml](%s/config/sni/protocols/%s_clash_sni.yaml) | [%s_clash_advanced_sni.yaml](%s/config/sni/protocols/%s_clash_advanced_sni.yaml) |\n",
-				strings.ToUpper(p), n,
-				p, repoBase, p,
-				p, repoBase, p,
-				p, repoBase, p)
-		}
-	}
-	w.WriteString("\n")
-
+	
 	w.WriteString("---\n\n")
 	w.WriteString("## Batch Files — Random 500-Config Groups\n\n")
 	w.WriteString("> Each file contains 500 randomly selected configs from all protocols.\n\n")
@@ -4012,6 +3988,17 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	}
 	w.WriteString("\n")
 
+
+		// ── SNI Files table ───────────────────────────────────────────────────────
+	w.WriteString("### SNI Configs (server=127.0.0.1, port=40443)\n\n")
+	w.WriteString("> These configs have the server address replaced with `127.0.0.1:40443`.\n")
+	w.WriteString("> Use them with a local tunnel or gateway.\n")
+	fmt.Fprintf(w, "| File | Link |\n|---|---|\n")
+	fmt.Fprintf(w, "| All SNI configs (txt) | [all_configs_sni.txt](%s/config/sni/all_configs_sni.txt) |\n", repoBase)
+	fmt.Fprintf(w, "| clash_sni.yaml (all protocols) | [clash_sni.yaml](%s/config/sni/clash_sni.yaml) |\n", repoBase)
+	fmt.Fprintf(w, "| clash_advanced_sni.yaml | [clash_advanced_sni.yaml](%s/config/sni/clash_advanced_sni.yaml) |\n", repoBase)
+	w.WriteString("\n")
+
 	w.WriteString("### SNI V2ray Batches\n\n")
 	fmt.Fprintf(w, "| Batch | Count | Link |\n|---|---|---|\n")
 	for i := 1; i <= sniV2rayBatches; i++ {
@@ -4021,11 +4008,16 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	}
 	w.WriteString("\n")
 
-	w.WriteString("### SNI Clash Batches\n\n")
-	fmt.Fprintf(w, "| Batch | Link |\n|---|---|\n")
-	for i := 1; i <= sniClashBatches; i++ {
-		fmt.Fprintf(w, "| Batch %03d | [batch_%03d.yaml](%s/config/batches/sni_clash/batch_%03d.yaml) |\n",
-			i, i, repoBase, i)
+	w.WriteString("#### SNI — By Protocol\n\n")
+	fmt.Fprintf(w, "| Protocol | Count | V2ray |\n|---|---|---|\n")
+	for _, p := range cfg.ProtocolOrder {
+		if n := byProtoOut[p]; n > 0 {
+			fmt.Fprintf(w, "| %s | %d | [%s_sni.txt](%s/config/sni/protocols/%s_sni.txt) |\n",
+				strings.ToUpper(p), n,
+				p, repoBase, p,
+				p, repoBase, p,
+				p, repoBase, p)
+		}
 	}
 	w.WriteString("\n")
 
