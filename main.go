@@ -1282,7 +1282,7 @@ func main() {
 	}
 
 	writeOutputFiles(results)
-	writeSummary(results, failedLinks, elapsed, len(allConfigs))
+	// writeSummary(results, failedLinks, elapsed, len(allConfigs))
 	fmt.Println("✅ Done!")
 }
 
