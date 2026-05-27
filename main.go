@@ -3138,7 +3138,7 @@ func writeOutputFiles(results []configResult) {
 	var allSNIClash []string
 	var allSNIClashNames []string
 
-	const ownerName = "@DeltaKroneckerGithub"
+	const ownerName = "@rossinna77Github"
 
 	for _, r := range results {
 		named := renameTo(r.line, r.proto, ownerName)
@@ -3935,13 +3935,13 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	w := bufio.NewWriter(f)
 	defer w.Flush()
 
-	repoBase := "https://github.com/Delta-Kronecker/V2ray-Config/raw/refs/heads/main"
+	repoBase := "https://github.com/rossinna77/gorbeh/raw/refs/heads/main"
 
 	// ── SINGLE SNI TABLE (everything together) ────────────────────────────────────
 	w.WriteString("## SNI Configs\n\n")
 	w.WriteString("> If you don't know what SNI-Spoofing configurations are for, skip this table.\n")
 	w.WriteString("\n")
-	w.WriteString("> https://t.me/DeltaSNI برای آموزش و گفت و گو درباره روش های مبتنی بر این روش در گروه تلگرامی ما عضو بشید\n")
+	w.WriteString("> https://t.me/rossinna77 برای آموزش و گفت و گو درباره روش های مبتنی بر این روش در گروه تلگرامی ما عضو بشید\n")
 	w.WriteString("\n")
 	w.WriteString("> لطفا هر پروژه ای براتون مفید بود حتما استار بدید، با این کار انگیزه توسعه دهنده برای ادامه رو تامین می کنید🫀\n\n")
 	
@@ -4059,7 +4059,7 @@ func writeSummary(results []configResult, failedLinks []string, duration float64
 	w.WriteString("## 🔥 Keep This Project Going!\n\n")
 	w.WriteString("If you're finding this useful, please show your support:\n\n")
 	w.WriteString("⭐ **Star the repository on GitHub**\n\n")
-	w.WriteString("⭐ **Star our [Telegram posts](https://t.me/DeltaKroneckerGithub)** \n\n")
+	w.WriteString("⭐ **Star our [Telegram posts](https://t.me/rossinna77Github)** \n\n")
 	w.WriteString("Your stars fuel our motivation to keep improving!\n")
 }
 
