@@ -1,6 +1,6 @@
 {
   "validation": {
-    "num_workers": 256,
+    "num_workers": 512,
     "global_timeout_sec": 18,
     "singbox_start_timeout_ms": 7000,
     "singbox_start_interval_ms": 300,
