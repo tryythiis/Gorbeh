@@ -1,107 +1,239 @@
-name: Update Configs
-permissions: write-all
+# ══════════════════════════════════════════════════
+#  V2Ray Config Aggregator — GitHub Actions
+#  بهینه‌شده برای امنیت، پایداری و عدم مسدودی
+# ══════════════════════════════════════════════════
 
+name: Update Configs
+
+# ──────────────────────────────────────────────────
+# دسترسی‌ها — فقط حداقل دسترسی لازم
+# ──────────────────────────────────────────────────
+permissions:
+  contents: write
+  actions: read
+
+# ──────────────────────────────────────────────────
+# زمان‌بندی اجرا
+# ──────────────────────────────────────────────────
 on:
   schedule:
-    - cron: '0 0 * * *'
+    # هر ۸ ساعت = ۳ بار در روز (امن برای گیت‌هاب)
+    # ساعت ۰۰:۰۰ و ۰۸:۰۰ و ۱۶:۰۰ UTC
+    - cron: '0 */8 * * *'
+
+  # دکمه اجرای دستی در تب Actions
   workflow_dispatch:
 
+# ──────────────────────────────────────────────────
+# جلوگیری از اجرای همزمان دو نسخه
+# اگر اجرای قبلی هنوز تمام نشده، لغو می‌شود
+# ──────────────────────────────────────────────────
+concurrency:
+  group: config-update
+  cancel-in-progress: true
+
+# ══════════════════════════════════════════════════
+#  مراحل اجرا
+# ══════════════════════════════════════════════════
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+
+    # حداکثر ۴ ساعت (از ۶ ساعت مجاز گیت‌هاب کمتر)
+    timeout-minutes: 240
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0  # Fetch all history for proper merging
-        token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Setup Go
-      uses: actions/setup-go@v5
-      with:
-        go-version: '1.21'
-        cache: true
+      # ────────────────────────────────────────────
+      # مرحله ۱: دانلود کد از مخزن
+      # ────────────────────────────────────────────
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Download sing-box
-      run: |
-        SINGBOX_VERSION="1.12.22"
-        echo "Downloading sing-box v${SINGBOX_VERSION}"
-        wget -q "https://github.com/SagerNet/sing-box/releases/download/v${SINGBOX_VERSION}/sing-box-${SINGBOX_VERSION}-linux-amd64.tar.gz"
-        tar -xzf "sing-box-${SINGBOX_VERSION}-linux-amd64.tar.gz"
-        cp "sing-box-${SINGBOX_VERSION}-linux-amd64/sing-box" ./sing-box
-        chmod +x ./sing-box
-        rm -rf "sing-box-${SINGBOX_VERSION}-linux-amd64"*
-        ./sing-box version
+      # ────────────────────────────────────────────
+      # مرحله ۲: نصب Go
+      # ────────────────────────────────────────────
+      - name: 🔧 Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+          cache: true
 
-    - name: Build
-      run: |
-        export GOPROXY=https://goproxy.io,direct
-        go mod tidy
-        go build -ldflags="-s -w" -o aggregator main.go
+      # ────────────────────────────────────────────
+      # مرحله ۳: دانلود و نصب sing-box
+      # ────────────────────────────────────────────
+      - name: 📦 Install sing-box
+        run: |
+          SINGBOX_VERSION="1.12.22"
+          echo "📦 Downloading sing-box v${SINGBOX_VERSION}..."
 
-    - name: Run
-      run: |
-        ulimit -n 65535
-        mkdir -p logs
-        ./aggregator
+          wget -q "https://github.com/SagerNet/sing-box/releases/download/v${SINGBOX_VERSION}/sing-box-${SINGBOX_VERSION}-linux-amd64.tar.gz"
+          tar -xzf "sing-box-${SINGBOX_VERSION}-linux-amd64.tar.gz"
+          cp "sing-box-${SINGBOX_VERSION}-linux-amd64/sing-box" ./sing-box
+          chmod +x ./sing-box
 
-    - name: Verify
-      run: |
-        echo "=== Config Output ==="
-        ls -lh config/
-        ls -lh config/protocols/ 2>/dev/null || true
-        ls -lh config/batches/v2ray/ 2>/dev/null || true
-        ls -lh config/batches/clash/ 2>/dev/null || true
-        ls -lh config/batches/clash_advanced/ 2>/dev/null || true
+          echo "✅ sing-box installed:"
+          ./sing-box version
 
-        if [ -f "config/all_configs.txt" ]; then
-          echo "Total V2ray configs: $(wc -l < config/all_configs.txt)"
-        fi
-        if [ -f "config/clash.yaml" ]; then
-          CLASH_COUNT=$(grep -c '  - name:' config/clash.yaml 2>/dev/null || echo 0)
-          echo "Clash standard proxies: $CLASH_COUNT"
-        fi
-        if [ -f "config/clash_advanced.yaml" ]; then
-          ADV_COUNT=$(grep -c '  - name:' config/clash_advanced.yaml 2>/dev/null || echo 0)
-          echo "Clash advanced proxies: $ADV_COUNT"
-        fi
-        echo "V2ray batches: $(ls config/batches/v2ray/*.txt 2>/dev/null | wc -l)"
-        echo "Clash standard batches: $(ls config/batches/clash/*.yaml 2>/dev/null | wc -l)"
-        echo "Clash advanced batches: $(ls config/batches/clash_advanced/*.yaml 2>/dev/null | wc -l)"
+          # پاکسازی فایل‌های اضافی
+          rm -rf "sing-box-${SINGBOX_VERSION}-linux-amd64"*
 
-        echo "=== Logs ==="
-        ls -lh logs/ 2>/dev/null || echo "No logs directory"
-        if ls logs/*.log 2>/dev/null | head -1 | xargs -I{} tail -30 {}; then
-          true
-        fi
+      # ────────────────────────────────────────────
+      # مرحله ۴: افزایش محدودیت‌های سیستم
+      # ────────────────────────────────────────────
+      - name: 🔧 Increase system limits
+        run: |
+          echo "🔧 Configuring system limits..."
+          ulimit -n 65535
+          ulimit -u 4096
+          echo "  ✅ File descriptors: $(ulimit -n)"
+          echo "  ✅ Max processes: $(ulimit -u)"
 
-    - name: Upload Validation Logs
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: validation-logs-${{ github.run_number }}
-        path: logs/
-        retention-days: 14
-        if-no-files-found: warn
+      # ────────────────────────────────────────────
+      # مرحله ۵: دانلود وابستگی‌ها و Build
+      # ────────────────────────────────────────────
+      - name: 🔨 Build aggregator
+        run: |
+          echo "📥 Downloading dependencies..."
+          export GOPROXY=https://goproxy.io,direct
+          go mod tidy
 
-    - name: Commit and Push
-      run: |
-        # Configure git
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
-        
-        # First, pull latest changes
-        git pull origin main --rebase --autostash
-        
-        # Now add and commit our changes
-        git add config/ README.md
-        
-        # Only commit if there are changes
-        if ! git diff --staged --quiet; then
-          git commit -m "Update configs [$(date -u '+%Y-%m-%d %H:%M UTC')]"
-          git push origin main
-        else
-          echo "No changes to commit"
-        fi
+          echo "🔨 Building..."
+          go build -ldflags="-s -w" -o aggregator main.go
+
+          echo "✅ Build complete"
+          ls -lh aggregator
+
+      # ────────────────────────────────────────────
+      # مرحله ۶: اجرای برنامه اصلی
+      # ────────────────────────────────────────────
+      - name: 🚀 Run aggregator
+        run: |
+          echo "🚀 Starting V2Ray Config Aggregator..."
+          echo "⏰ Start: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo ""
+
+          mkdir -p logs
+          ./aggregator
+
+          echo ""
+          echo "⏰ Finish: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+        env:
+          # به Go بگو فقط از ۲ هسته CPU استفاده کن
+          GOMAXPROCS: 2
+
+      # ────────────────────────────────────────────
+      # مرحله ۷: بررسی نتایج
+      # ────────────────────────────────────────────
+      - name: 📊 Verify results
+        run: |
+          echo "═══════════════════════════════════════"
+          echo "  📊 RESULTS SUMMARY"
+          echo "═══════════════════════════════════════"
+
+          # تعداد کل کانفیگ‌ها
+          if [ -f "config/all_configs.txt" ]; then
+            TOTAL=$(wc -l < config/all_configs.txt)
+            echo "  ✅ Total valid configs: $TOTAL"
+          else
+            echo "  ⚠️  No output file found!"
+          fi
+
+          echo ""
+
+          # آمار پروتکل‌ها
+          echo "  📂 Protocol breakdown:"
+          for f in config/protocols/*.txt; do
+            if [ -f "$f" ]; then
+              NAME=$(basename "$f" .txt)
+              COUNT=$(wc -l < "$f")
+              echo "     ${NAME}: ${COUNT}"
+            fi
+          done
+
+          echo ""
+
+          # آمار Clash
+          if [ -f "config/clash.yaml" ]; then
+            CLASH=$(grep -c '  - name:' config/clash.yaml 2>/dev/null || echo 0)
+            echo "  📂 Clash proxies: $CLASH"
+          fi
+
+          if [ -f "config/clash_advanced.yaml" ]; then
+            ADV=$(grep -c '  - name:' config/clash_advanced.yaml 2>/dev/null || echo 0)
+            echo "  📂 Clash advanced proxies: $ADV"
+          fi
+
+          echo ""
+
+          # آمار Batch ها
+          V2BATCH=$(ls config/batches/v2ray/*.txt 2>/dev/null | wc -l)
+          CLBATCH=$(ls config/batches/clash/*.yaml 2>/dev/null | wc -l)
+          echo "  📦 V2ray batches: $V2BATCH"
+          echo "  📦 Clash batches: $CLBATCH"
+
+          echo ""
+
+          # آمار SNI
+          if [ -f "config/sni/all_configs_sni.txt" ]; then
+            SNI=$(wc -l < config/sni/all_configs_sni.txt)
+            echo "  🔒 SNI configs: $SNI"
+          fi
+
+          echo ""
+
+          # حجم فایل‌ها
+          echo "  💾 Disk usage:"
+          du -sh config/ 2>/dev/null
+          du -sh logs/ 2>/dev/null
+
+          echo "═══════════════════════════════════════"
+
+      # ────────────────────────────────────────────
+      # مرحله ۸: ذخیره لاگ‌ها (حتی اگر اجرا fail شود)
+      # ────────────────────────────────────────────
+      - name: 📋 Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-${{ github.run_number }}
+          path: logs/
+          retention-days: 7
+          if-no-files-found: warn
+
+      # ────────────────────────────────────────────
+      # مرحله ۹: ارسال نتایج به گیت‌هاب
+      # ────────────────────────────────────────────
+      - name: 📤 Commit and Push
+        run: |
+          # تنظیم مشخصات git
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+          # دریافت آخرین تغییرات
+          git pull origin main --rebase --autostash
+
+          # فقط پوشه config را اضافه کن
+          # README.md عمداً اضافه نمی‌شود
+          git add config/
+
+          # بررسی وجود تغییرات
+          if git diff --staged --quiet; then
+            echo "ℹ️  No changes to commit"
+          else
+            # ساخت پیام commit با آمار
+            TOTAL=0
+            if [ -f config/all_configs.txt ]; then
+              TOTAL=$(wc -l < config/all_configs.txt)
+            fi
+
+            TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
+
+            git commit -m "🔄 Update: ${TOTAL} configs | ${TIMESTAMP}"
+            git push origin main
+
+            echo "✅ Pushed ${TOTAL} configs successfully"
+          fi
